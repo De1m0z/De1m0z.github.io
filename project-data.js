@@ -108,7 +108,7 @@ window.portfolioProjects = [
     image: "assets/cheentea-kiosk-ui.jpeg",
     alt: "Cheen Tea kiosk UI reference image",
     summary: "A tea-shop kiosk and POS platform with customer ordering, kitchen queues, cashier views, admin tools, loyalty rewards, QR registration, and voice-order processing.",
-    status: "Public API repo and local kiosk work",
+    status: "Public repo with GitHub Pages sample-data demo",
     category: "Business app",
     stack: ["Next.js", "React", "Tailwind CSS", "Laravel 12", "Sanctum", "Reverb", "Cloudinary"],
     metrics: [
@@ -132,7 +132,11 @@ window.portfolioProjects = [
       ["Kitchen", "Staff sees queued drinks and order status"],
       ["Admin", "Products, reports, customers, and rewards are maintained"]
     ],
-    links: [["GitHub repo", "https://github.com/De1m0z/cheentea-api"], ["Portfolio", "index.html#projects"]]
+    links: [
+      ["Live kiosk demo", "https://de1m0z.github.io/chantea-kiosk/"],
+      ["GitHub repo", "https://github.com/De1m0z/chantea-kiosk"],
+      ["Portfolio", "index.html#projects"]
+    ]
   },
   {
     id: "usmctf",

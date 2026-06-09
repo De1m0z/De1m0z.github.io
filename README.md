@@ -20,7 +20,7 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 - `classvision/` - BSCS thesis, YOWOv2 classroom activity detection framework
 - `thesis-defense-scheduler/` - secure full-stack scheduling system
 - `gym-face-management/` - gym management and face-based attendance system
-- `chantea-kiosk/` - kiosk/POS and Laravel API
+- `chantea-kiosk/` - kiosk/POS, Laravel API, and GitHub Pages sample-data demo
 - `Pentest/university-pentest-workspace/` - authorized security research workspace
 - GitHub profile: <https://github.com/De1m0z>
 

@@ -60,6 +60,7 @@ Next.js, React, Laravel 12, Sanctum, Reverb, Docker
 
 - Developed kiosk, menu, cart, cashier, kitchen display, admin, customer, loyalty, and product management interfaces.
 - Built API routes for orders, products, categories, modifiers, customers, dashboard reports, kitchen queues, image uploads, loyalty rewards, email verification, Google auth, and voice-order processing.
+- Published a GitHub Pages demo that runs with sample browser data only, separate from the real Laravel API and database.
 
 ### USMctf Platform
 
@@ -84,7 +85,8 @@ OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 
 - GitHub profile: <https://github.com/De1m0z>
 - USMctf: <https://github.com/De1m0z/CTF>
-- Cheen Tea API: <https://github.com/De1m0z/cheentea-api>
+- Cheen Tea Kiosk: <https://github.com/De1m0z/chantea-kiosk>
+- Cheen Tea sample demo: <https://de1m0z.github.io/chantea-kiosk/>
 - Optimization Algorithms Assignment: <https://github.com/De1m0z/ai_optimization_algorithms_assignment>
 - Student REST API: <https://github.com/De1m0z/REST>
 
