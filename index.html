@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio for Russel Jhon C. Buisan, a BS Computer Science student focused on full-stack systems, machine learning, computer vision, and application security."
+    >
+    <title>Russel Jhon C. Buisan - CS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Russel Jhon C. Buisan portfolio home">
+        <span class="brand-mark">RB</span>
+        <span>Russel Jhon C. Buisan</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#case-notes">Case Notes</a>
+        <a href="#skills">Skills</a>
+        <a href="#thesis">Thesis</a>
+        <a href="#cv">CV</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">BS Computer Science - Full-stack Developer - Computer Vision</p>
+          <h1>I build research prototypes, APIs, dashboards, and full-stack systems.</h1>
+          <p class="lead">
+            I am Russel Jhon C. Buisan, a Computer Science major at the University of Southern Mindanao.
+            My work combines full-stack development, computer vision, secure workflows, technical documentation,
+            and project presentation for academic and practical use cases that need to be explained and defended.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View my projects</a>
+            <a class="button secondary" href="case-studies.html">Read case studies</a>
+            <a class="button secondary" href="cv.html">Open CV</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="ClassVision thesis preview">
+          <img
+            src="assets/classvision-research-process.png"
+            alt="ClassVision overall research process figure"
+          >
+          <div class="media-caption">
+            <span>Main thesis project</span>
+            <strong>YOWOv2-based student activity detection for smart academic environments</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell proof-strip" aria-label="Portfolio summary">
+        <div>
+          <span>01</span>
+          <strong>Computer vision thesis</strong>
+          <p>Dataset preparation, CVAT annotation policy, YOWOv2 fine-tuning workflow, evaluation figures, and defense materials.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Full-stack product systems</strong>
+          <p>React, Next.js, Laravel, FastAPI, Django, ASP.NET Core, PostgreSQL, Redis, Docker, APIs, and admin dashboards.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Security and privacy-aware design</strong>
+          <p>RBAC, CSRF, encrypted data, audit logs, authorized pentest workflow, biometric consent, and privacy boundaries.</p>
+        </div>
+      </section>
+
+      <section class="section-shell profile-grid" aria-labelledby="profile-heading">
+        <div>
+          <p class="eyebrow">About Me</p>
+          <h2 id="profile-heading">A CS major who builds the system, documents the process, and prepares the presentation materials.</h2>
+        </div>
+        <div class="profile-copy">
+          <p>
+            My projects cover a YOWOv2 classroom activity-detection thesis, a gym face-attendance
+            system, a Cheen Tea kiosk/POS system, a secure thesis defense scheduler, a CTF platform, API labs, and a
+            structured university pentest workspace.
+          </p>
+          <p>
+            I do not only stop at code. I prepare documentation, workflow diagrams, evaluation figures, demo clips,
+            presentation decks, setup notes, instructions, and reports so the work can be explained,
+            reviewed, and defended.
+          </p>
+          <div class="profile-highlights">
+            <span>University of Southern Mindanao</span>
+            <span>Bachelor of Science in Computer Science</span>
+            <span>Kabacan, Cotabato</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-band work-section" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-heading">What I created and what each project proves.</h2>
+          <p>
+            This section highlights the work I can show: implementation details, research outputs, screenshots, documentation, and public repositories.
+          </p>
+        </div>
+
+        <div class="project-toolbar" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="ai">ML / CV</button>
+          <button class="filter-button" type="button" data-filter="fullstack">Full-stack</button>
+          <button class="filter-button" type="button" data-filter="security">Security</button>
+          <button class="filter-button" type="button" data-filter="academic">Academic</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-category="ai academic fullstack">
+            <img
+              src="assets/classvision-confusion-matrix.png"
+              alt="ClassVision confusion matrix evaluation figure"
+            >
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span>Main thesis</span>
+                <span>Computer vision</span>
+              </div>
+              <h3>ClassVision: YOWOv2 Student Activity Detection Framework</h3>
+              <p>
+                Privacy-conscious classroom video analytics framework for detecting visible activity context:
+                studying, idle, collaborative, and arriving/leaving. The project includes classroom CCTV clip preparation,
+                annotation policy, dataset validation, YOWOv2 fine-tuning workflow, inference post-processing,
+                evaluation figures, and web-based monitoring design.
+              </p>
+              <ul class="detail-list">
+                <li>Built the workflow from raw classroom clips to processed labels and defense-ready outputs.</li>
+                <li>Used by-video partitioning to reduce leakage from near-duplicate CCTV frames.</li>
+                <li>Kept the system privacy-conscious by excluding face recognition, identity matching, and student profiling.</li>
+              </ul>
+              <div class="metric-row">
+                <span><strong>108,116</strong> label files</span>
+                <span><strong>1,951,112</strong> annotated boxes</span>
+                <span><strong>72,491</strong> train entries</span>
+                <span><strong>20,679</strong> validation entries</span>
+                <span><strong>14,661</strong> test entries</span>
+                <span><strong>0.2774</strong> validation mAP@0.5 checkpoint note</span>
+              </div>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>YOWOv2</span>
+                <span>CVAT</span>
+                <span>Computer Vision</span>
+                <span>Research</span>
+              </div>
+              <a href="case-studies.html#classvision">Read case study</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="fullstack security academic">
+            <img src="assets/usm-campus.webp" alt="University campus visual used in the thesis defense scheduler">
+            <div class="project-card-body">
+              <div class="project-meta"><span>Full-stack system</span><span>Secure workflow</span></div>
+              <h3>Thesis Defense Scheduler</h3>
+              <p>A secure academic scheduling system for students, faculty, Department Research Coordinators, college admins, and global admins.</p>
+              <ul class="detail-list">
+                <li>Implemented HTTP-only JWT cookies, refresh rotation, signed CSRF tokens, bcrypt, and RBAC filters.</li>
+                <li>Stored sensitive PDF/signature blobs with AES-256-GCM encryption and append-only audit logs.</li>
+                <li>Modeled FCFS defense slot booking with serializable transaction logic and panel-signature workflows.</li>
+              </ul>
+              <div class="tag-list"><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>SQLAlchemy</span></div>
+              <a href="case-studies.html#systems">Case study</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ai fullstack">
+            <img src="assets/gym-scanner.png" alt="Gym scanner interface preview">
+            <div class="project-card-body">
+              <div class="project-meta"><span>Intelligent system</span><span>Face attendance</span></div>
+              <h3>Gym Face Management / RAK Fitness</h3>
+              <p>A gym operations system with members, plans, payments, attendance, enrollment, reports, and local face-based time-in/time-out.</p>
+              <ul class="detail-list">
+                <li>Built member, payment, plan, attendance, scanner, report, dashboard, and member-portal workflows.</li>
+                <li>Handled biometric consent, revocation, local-first scanner behavior, threshold checks, and manual attendance fallback.</li>
+                <li>Prepared intelligent-system documentation, figures, evaluation notes, and React/FastAPI rewrite artifacts.</li>
+              </ul>
+              <div class="tag-list"><span>Django</span><span>FastAPI</span><span>React</span><span>InsightFace</span><span>pytest</span></div>
+              <a href="case-studies.html#systems">Case study</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="fullstack">
+            <img src="assets/cheentea-kiosk-ui.jpeg" alt="Cheen Tea kiosk UI reference image">
+            <div class="project-card-body">
+              <div class="project-meta"><span>POS / Kiosk</span><span>Business app</span></div>
+              <h3>Cheen Tea Kiosk and API</h3>
+              <p>Tea-shop kiosk and POS platform with customer ordering, cashier views, kitchen boards, admin screens, loyalty rewards, QR registration, and voice-order processing.</p>
+              <ul class="detail-list">
+                <li>Built customer-facing order flows for dine-in/take-out, cart, rewards, and QR loyalty registration.</li>
+                <li>Created admin/staff workflows for products, categories, modifiers, orders, kitchen queues, and reports.</li>
+                <li>Connected Laravel API routes for order management, dashboard summaries, loyalty, uploads, and voice ordering.</li>
+              </ul>
+              <div class="tag-list"><span>Next.js</span><span>Laravel 12</span><span>Sanctum</span><span>Reverb</span><span>Docker</span></div>
+              <a href="https://github.com/De1m0z/cheentea-api">GitHub repo</a>
+            </div>
+          </article>
+
+          <article class="project-card compact" data-category="fullstack security">
+            <div class="project-card-body">
+              <div class="project-meta"><span>CTF platform</span><span>GitHub</span></div>
+              <h3>USMctf Platform</h3>
+              <p>Full-stack CTF platform with Next.js frontend, Laravel authentication/user management, FastAPI challenge service, real-time scoring, Docker Compose, PostgreSQL, Redis, and admin tooling.</p>
+              <ul class="detail-list"><li>Documented setup commands, environment variables, migrations, seeders, service URLs, and dev notes.</li></ul>
+              <div class="tag-list"><span>Laravel</span><span>FastAPI</span><span>Next.js</span><span>Docker</span></div>
+              <a href="https://github.com/De1m0z/CTF">GitHub repo</a>
+            </div>
+          </article>
+
+          <article class="project-card compact" data-category="security academic">
+            <div class="project-card-body">
+              <div class="project-meta"><span>Security workspace</span><span>Authorized testing</span></div>
+              <h3>University Pentest and Vulnerability Research Workspace</h3>
+              <p>Structured workspace for approved security research with scope, methodology, Burp projects, Ghidra tools, findings, threat intelligence, PoC safety notes, reporting, and remediation handoff.</p>
+              <ul class="detail-list"><li>Included guardrails for approved targets, repeatable documentation, written scope, and non-destructive testing.</li></ul>
+              <div class="tag-list"><span>OWASP</span><span>Burp</span><span>Ghidra</span><span>Reporting</span></div>
+              <a href="case-studies.html#systems">Case study</a>
+            </div>
+          </article>
+
+          <article class="project-card compact" data-category="ai academic">
+            <div class="project-card-body">
+              <div class="project-meta"><span>Algorithms</span><span>GitHub</span></div>
+              <h3>Optimization Algorithms Assignment</h3>
+              <p>Python examples and explanations for Genetic Algorithms, Markov Decision Processes, and Particle Swarm Optimization using only the standard library.</p>
+              <ul class="detail-list"><li>Includes examples for string evolution, knapsack optimization, gridworld value iteration, inventory decisions, and PSO functions.</li></ul>
+              <div class="tag-list"><span>Python</span><span>GA</span><span>MDP</span><span>PSO</span></div>
+              <a href="https://github.com/De1m0z/ai_optimization_algorithms_assignment">GitHub repo</a>
+            </div>
+          </article>
+
+          <article class="project-card compact" data-category="fullstack academic">
+            <div class="project-card-body">
+              <div class="project-meta"><span>API lab</span><span>GitHub</span></div>
+              <h3>Student REST API</h3>
+              <p>ASP.NET Core 7 REST API lab using controllers, DTOs, EF Core migrations, SQLite persistence, Swagger/OpenAPI, and a student data model.</p>
+              <ul class="detail-list"><li>Practiced REST API structure using controllers, DTOs, EF Core design-time tools, SQLite, and Swagger/OpenAPI.</li></ul>
+              <div class="tag-list"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQLite</span></div>
+              <a href="https://github.com/De1m0z/REST">GitHub repo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="case-notes" class="section-shell case-notes" aria-labelledby="case-notes-heading">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Detailed Portfolio Notes</p>
+          <h2 id="case-notes-heading">How I work on projects.</h2>
+          <p>These notes explain what I handled in each project beyond writing code.</p>
+        </div>
+        <div class="case-note-grid">
+          <article><span>Research pipeline</span><h3>ClassVision thesis workflow</h3><p>I worked across dataset preparation, class definition, CVAT labeling policy, data cleaning, by-video splitting, YOWOv2 fine-tuning, inference review, and defense-ready documentation.</p></article>
+          <article><span>Application security</span><h3>Secure scheduler design</h3><p>I built around role boundaries and secure data handling: cookie-based JWTs, refresh rotation, signed CSRF tokens, encrypted sensitive fields, audit logs, admin scoping, and controlled PDF generation.</p></article>
+          <article><span>Operational apps</span><h3>Real workflow systems</h3><p>The gym and kiosk projects cover enrollment, payments, attendance, reporting, product modifiers, kitchen queues, cashier views, loyalty rewards, and customer-facing ordering.</p></article>
+          <article><span>Documentation</span><h3>Reports and presentation assets</h3><p>I prepared thesis drafts, methodology guides, intelligent-system reports, figures, defense demo clips, contact sheets, PowerPoint scripts, and project notes.</p></article>
+        </div>
+        <a class="button primary case-link" href="case-studies.html">Open detailed case studies</a>
+      </section>
+
+      <section id="skills" class="section-shell skills-layout" aria-labelledby="skills-heading">
+        <div><p class="eyebrow">Skills</p><h2 id="skills-heading">CS skills shown by the projects.</h2><p>These are the skills I used across the projects on this portfolio.</p></div>
+        <div class="skill-columns">
+          <div><h3>Frontend Development</h3><p>React, Next.js, Vite, TypeScript, Tailwind CSS, dashboards, kiosk UI, admin screens, responsive layouts.</p></div>
+          <div><h3>Backend Development</h3><p>FastAPI, Laravel, Django, ASP.NET Core, REST APIs, auth flows, services, schemas, controllers, migrations.</p></div>
+          <div><h3>Machine Learning / Computer Vision</h3><p>YOWOv2 workflow, CVAT labels, dataset preparation, checkpoint documentation, inference post-processing, InsightFace embeddings.</p></div>
+          <div><h3>Data and Infrastructure</h3><p>PostgreSQL, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, EF Core, seed scripts, local services.</p></div>
+          <div><h3>Security Engineering</h3><p>RBAC, JWT cookies, CSRF, bcrypt, AES-GCM, audit logs, rate limiting, authorized pentest workflow.</p></div>
+          <div><h3>Research and Documentation</h3><p>Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, technical reports, and project notes.</p></div>
+        </div>
+      </section>
+
+      <section id="thesis" class="section-band thesis-section" aria-labelledby="thesis-heading">
+        <div class="thesis-copy">
+          <p class="eyebrow">BSCS Thesis</p>
+          <h2 id="thesis-heading">A YOWOv2-Based Student Activity Detection Framework for Smart Academic Environment</h2>
+          <p>My thesis develops a privacy-conscious computer vision framework for classroom activity-context monitoring. It avoids face recognition and identity profiling, and focuses on activity-level and room-level interpretation.</p>
+          <div class="thesis-metrics"><span>April 2026 manuscript</span><span>ICT 1 and ICT 2 classroom sources</span><span>Epoch 19 selected checkpoint</span><span>Validation mAP@0.5: 0.2774</span></div>
+        </div>
+        <div class="thesis-points">
+          <div><span>01</span><strong>Data preparation</strong><p>Classroom CCTV clips, frame extraction, annotation policy, CVAT export, cleaning, validation, and by-video splitting.</p></div>
+          <div><span>02</span><strong>Model workflow</strong><p>YOWOv2 medium fine-tuning with 16-frame clips, checkpoint selection, inference, filtering, and duplicate suppression.</p></div>
+          <div><span>03</span><strong>Output design</strong><p>Accepted detections are converted into room activity summaries rather than identity-based student records.</p></div>
+          <div><span>04</span><strong>Presentation</strong><p>Evaluation figures, manuscript sections, defense demo clips, contact sheets, and slide generation.</p></div>
+        </div>
+      </section>
+
+      <section id="cv" class="section-shell contact-layout" aria-labelledby="cv-heading">
+        <div><p class="eyebrow">CV and Links</p><h2 id="cv-heading">Use this for school, internship, or junior developer applications.</h2></div>
+        <div class="contact-list">
+          <a href="cv.html"><span>CV</span><strong>Printable HTML CV</strong></a>
+          <a href="case-studies.html"><span>Case Studies</span><strong>Detailed project writeups</strong></a>
+          <a href="cv.md"><span>Markdown</span><strong>Editable CV source</strong></a>
+          <a href="https://github.com/De1m0z"><span>GitHub</span><strong>github.com/De1m0z</strong></a>
+          <div><span>Location</span><strong>Kabacan, Cotabato, Philippines</strong></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>&copy; 2026 Russel Jhon C. Buisan</span><span>BS Computer Science portfolio.</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

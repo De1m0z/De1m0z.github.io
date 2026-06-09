@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Detailed project case studies for Russel Jhon C. Buisan's CS portfolio.">
+    <title>Russel Jhon C. Buisan - Case Studies</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to portfolio home"><span class="brand-mark">RB</span><span>Russel Jhon C. Buisan</span></a>
+      <nav class="nav" aria-label="Case study navigation"><a href="index.html">Portfolio</a><a href="cv.html">CV</a><a href="#classvision">ClassVision</a><a href="#systems">Systems</a></nav>
+    </header>
+    <main>
+      <section class="case-hero section-band">
+        <p class="eyebrow">Detailed Case Studies</p>
+        <h1>Project work, decisions, and outputs.</h1>
+        <p class="lead">This page explains the bigger projects in more detail: what problem each project addressed, what I built, which technologies were used, and what artifacts came out of the work.</p>
+      </section>
+      <section id="classvision" class="case-study section-shell">
+        <div class="case-study-heading"><p class="eyebrow">Main Thesis</p><h2>ClassVision: YOWOv2-Based Student Activity Detection Framework</h2><p>A privacy-conscious classroom activity-context framework for smart academic environments. The project uses YOWOv2 to classify visible person-level activity into studying, idle, collaborative, and arriving/leaving classes.</p></div>
+        <div class="case-study-grid">
+          <div class="case-panel"><h3>Problem</h3><p>Room occupancy alone does not explain how a classroom is being used. A room may contain students who are studying, collaborating, waiting, entering, leaving, or sitting passively. The project addresses this by detecting activity context instead of only presence.</p></div>
+          <div class="case-panel"><h3>My Work</h3><ul class="detail-list"><li>Organized classroom CCTV clips into a structured research dataset.</li><li>Prepared four activity labels and annotation rules for visible classroom behavior.</li><li>Produced label validation, cleaning, by-video data partitioning, and dataset summaries.</li><li>Prepared YOWOv2 fine-tuning workflow, inference outputs, post-processing logic, and demo materials.</li><li>Wrote manuscript sections, methodology notes, figures, and defense presentation assets.</li></ul></div>
+          <div class="case-panel"><h3>Evidence</h3><ul class="detail-list"><li>108,116 processed label files.</li><li>5,735 empty or no-person label files.</li><li>1,951,112 annotated person-action boxes.</li><li>72,491 training entries, 20,679 validation entries, and 14,661 test entries.</li><li>YOWOv2 medium, 16-frame clips, 224 image size, checkpoint saved at epoch 19.</li></ul></div>
+          <div class="case-panel"><h3>Privacy Boundary</h3><p>The framework avoids face recognition, identity matching, biometric profiling, and disciplinary automation. It reports activity context and room-level summaries instead of personal identity.</p></div>
+        </div>
+      </section>
+      <section id="systems" class="section-band case-study"><div class="case-study-heading"><p class="eyebrow">Full-Stack Systems</p><h2>Operational apps built around real workflows.</h2></div><div class="case-study-grid wide"><article class="case-panel"><h3>Thesis Defense Scheduler</h3><p>A secure academic scheduling system with student, faculty, DRC, college admin, and global admin flows.</p><ul class="detail-list"><li>Frontend: Vite, React, TypeScript, Tailwind CSS, Zustand, signature canvas.</li><li>Backend: FastAPI, SQLAlchemy async ORM, Alembic, PostgreSQL, Redis, ReportLab.</li><li>Security: JWT cookies, refresh rotation, signed CSRF token, bcrypt, AES-256-GCM, audit logs.</li><li>Workflow: faculty availability, DRC approval, panel assignment, signatures, PDF generation, FCFS booking.</li></ul></article><article class="case-panel"><h3>Gym Face Management / RAK Fitness</h3><p>A gym operations system with an intelligent local face-recognition attendance workflow.</p><ul class="detail-list"><li>Managed members, plans, payments, attendance logs, reports, scanner page, and member portal.</li><li>Used local InsightFace buffalo_l embeddings for enrollment and recognition.</li><li>Handled biometric consent, revocation, local scanner health, confidence thresholds, and manual fallbacks.</li><li>Prepared intelligent-system report figures and React/FastAPI rewrite documentation.</li></ul></article><article class="case-panel"><h3>Cheen Tea Kiosk and API</h3><p>A business kiosk/POS app for customer ordering and staff operations.</p><ul class="detail-list"><li>Frontend: Next.js, React, Tailwind, Radix UI, cart context, voice-order modal, kitchen boards.</li><li>Backend: Laravel 12, Sanctum, Reverb, Socialite, Cloudinary, migrations, policies, seeders.</li><li>Features: menu, modifiers, order queue, cashier, admin reports, products, customers, loyalty rewards, QR registration.</li></ul></article><article class="case-panel"><h3>USMctf Platform and Security Workspace</h3><p>Security-related work combining CTF platform development and organized authorized vulnerability research.</p><ul class="detail-list"><li>USMctf uses Next.js, Laravel, FastAPI, PostgreSQL, Redis, and Docker Compose.</li><li>The pentest workspace separates scope, findings, Burp, Ghidra, threat intel, PoC safety, and remediation.</li><li>Security work is framed around written authorization, repeatable documentation, and remediation handoff.</li></ul></article></div></section>
+      <section class="section-shell case-study"><div class="case-study-heading"><p class="eyebrow">Academic and API Work</p><h2>Smaller projects that show fundamentals.</h2></div><div class="case-study-grid"><div class="case-panel"><h3>Optimization Algorithms Assignment</h3><p>Python examples for Genetic Algorithms, Markov Decision Processes, and Particle Swarm Optimization, with clear academic descriptions and runnable scripts using the standard library.</p></div><div class="case-panel"><h3>Student REST API</h3><p>ASP.NET Core 7 API lab with controllers, DTOs, EF Core migrations, SQLite persistence, and Swagger/OpenAPI support.</p></div></div></section>
+    </main>
+    <footer class="site-footer"><span>&copy; 2026 Russel Jhon C. Buisan</span><span><a href="index.html">Back to portfolio</a></span></footer>
+  </body>
+</html>
