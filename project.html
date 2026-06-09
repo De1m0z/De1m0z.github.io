@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project detail page for Russel Jhon C. Buisan's CS portfolio.">
+    <title>Project - Russel Jhon C. Buisan</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to portfolio home">
+        <span class="brand-mark">RB</span>
+        <span>Russel Jhon C. Buisan</span>
+      </a>
+      <nav class="nav" aria-label="Project navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="case-studies.html">Case Notes</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <main class="project-detail-page">
+      <section class="project-detail-hero section-band">
+        <div class="project-detail-copy">
+          <p class="eyebrow" id="project-eyebrow"></p>
+          <h1 id="project-title"></h1>
+          <p class="lead" id="project-summary"></p>
+          <div class="project-detail-actions" id="project-links"></div>
+        </div>
+        <figure class="project-detail-media">
+          <img id="project-image" src="assets/classvision-research-process.png" alt="Project preview image">
+        </figure>
+      </section>
+
+      <section class="section-shell project-detail-grid" aria-label="Project facts">
+        <article class="project-fact-panel">
+          <span>Status</span>
+          <strong id="project-status"></strong>
+        </article>
+        <article class="project-fact-panel">
+          <span>Category</span>
+          <strong id="project-category"></strong>
+        </article>
+      </section>
+
+      <section class="section-shell project-detail-section" aria-labelledby="metrics-heading">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Project Snapshot</p>
+          <h2 id="metrics-heading">Main facts and outputs.</h2>
+        </div>
+        <div class="project-metric-grid" id="project-metrics"></div>
+      </section>
+
+      <section class="section-band project-detail-layout" aria-labelledby="work-heading">
+        <div>
+          <p class="eyebrow">What I Worked On</p>
+          <h2 id="work-heading">Concrete work shown by this project.</h2>
+          <ul class="detail-list project-work-list" id="project-work"></ul>
+        </div>
+        <div>
+          <p class="eyebrow">Stack</p>
+          <h2>Tools and concepts used.</h2>
+          <div class="tag-list project-stack" id="project-stack"></div>
+        </div>
+      </section>
+
+      <section class="section-shell project-detail-section" aria-labelledby="preview-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Working Preview</p>
+          <h2 id="preview-title"></h2>
+          <p>The preview below shows the main workflow, outputs, and project boundaries.</p>
+        </div>
+        <div class="project-preview-grid" id="project-preview"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Russel Jhon C. Buisan</span>
+      <span><a href="index.html#projects">Back to projects</a></span>
+    </footer>
+    <script src="project-data.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>

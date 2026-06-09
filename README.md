@@ -6,10 +6,13 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 
 - `index.html` - main portfolio website
 - `case-studies.html` - detailed project writeups
+- `project.html` - reusable project detail page
+- `project-data.js` - project facts used by the detail page
+- `project.js` - renders the selected project from the URL
 - `cv.html` - print-friendly CV
 - `cv.md` - editable markdown CV
 - `styles.css` - shared styling
-- `script.js` - project filtering
+- `script.js` - project filtering and clickable project-card behavior
 
 ## Project Materials Referenced
 
@@ -22,6 +25,8 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 
 ## Notes
 
-Image paths point to project folders in this workspace. If the portfolio is moved, copy those assets into a local `assets/` folder and update the paths.
+Images used by the portfolio are stored in `assets/` so the published GitHub Pages site works without desktop-only paths.
 
 Published site target: https://de1m0z.github.io/
+
+Project pages use packaged portfolio data instead of a separate backend, so they work on GitHub Pages.
