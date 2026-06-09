@@ -3,6 +3,8 @@ const demoId = demoParams.get("id") || "classvision";
 const demoRoot = document.querySelector("#project-demo");
 const demoTitle = document.querySelector("#demo-title");
 const demoCopy = document.querySelector("#demo-copy");
+const demoProjects = Array.isArray(window.portfolioProjects) ? window.portfolioProjects : [];
+const activeProject = demoProjects.find((item) => item.id === demoId) || demoProjects[0];
 
 const demoData = {
   classvision: {
@@ -459,6 +461,24 @@ const demoRenderers = {
   optimization: renderOptimization,
   "rest-api": renderRestApi
 };
+
+if (activeProject) {
+  document.title = `${activeProject.title} Demo - Russel Jhon C. Buisan`;
+  const title = document.querySelector("#demo-project-title");
+  const summary = document.querySelector("#demo-project-summary");
+  const eyebrow = document.querySelector("#demo-project-eyebrow");
+  const image = document.querySelector("#demo-project-image");
+  const detailLink = document.querySelector("#demo-detail-link");
+
+  if (title) title.textContent = activeProject.title;
+  if (summary) summary.textContent = activeProject.summary;
+  if (eyebrow) eyebrow.textContent = activeProject.eyebrow;
+  if (image) {
+    image.src = activeProject.image;
+    image.alt = activeProject.alt;
+  }
+  if (detailLink) detailLink.href = `project.html?id=${encodeURIComponent(activeProject.id)}`;
+}
 
 const activeDemo = demoData[demoId] || demoData.classvision;
 const activeRenderer = demoRenderers[demoId] || renderClassVision;

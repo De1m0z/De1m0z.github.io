@@ -31,6 +31,7 @@ window.portfolioProjects = [
       ["Output", "room-level activity summaries, not identity records"]
     ],
     links: [
+      ["View demo", "demo.html?id=classvision"],
       ["Case study", "case-studies.html#classvision"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -66,7 +67,7 @@ window.portfolioProjects = [
       ["Faculty", "Confirms schedule and panel participation"],
       ["Admin", "Tracks approved schedules and produced records"]
     ],
-    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=scheduler"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "gym",
@@ -99,7 +100,7 @@ window.portfolioProjects = [
       ["Verify", "Show match confidence and member account state"],
       ["Record", "Save time-in/time-out or fall back to manual entry"]
     ],
-    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=gym"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "cheentea",
@@ -133,7 +134,7 @@ window.portfolioProjects = [
       ["Admin", "Products, reports, customers, and rewards are maintained"]
     ],
     links: [
-      ["Live kiosk demo", "https://de1m0z.github.io/chantea-kiosk/"],
+      ["View demo", "https://de1m0z.github.io/chantea-kiosk/"],
       ["GitHub repo", "https://github.com/De1m0z/chantea-kiosk"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -169,7 +170,7 @@ window.portfolioProjects = [
       ["Challenge API", "FastAPI service for challenge behavior"],
       ["Runtime", "PostgreSQL, Redis, and Docker Compose"]
     ],
-    links: [["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=usmctf"], ["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "pentest",
@@ -202,7 +203,7 @@ window.portfolioProjects = [
       ["Document", "Record finding, impact, reproduction, and limits"],
       ["Handoff", "Prepare remediation guidance and retest notes"]
     ],
-    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=pentest"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "optimization",
@@ -235,7 +236,7 @@ window.portfolioProjects = [
       ["PSO", "Move particles through a search space toward better scores"],
       ["Output", "Readable console examples for study and review"]
     ],
-    links: [["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=optimization"], ["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "rest-api",
@@ -268,6 +269,6 @@ window.portfolioProjects = [
       ["DTO", "Request and response boundaries"],
       ["Docs", "Swagger/OpenAPI for endpoint review"]
     ],
-    links: [["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
+    links: [["View demo", "demo.html?id=rest-api"], ["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
   }
 ];

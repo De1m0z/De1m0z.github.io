@@ -62,7 +62,8 @@ if (!project) {
   });
 
   renderList("#project-links", project.links, ([label, href]) => {
-    const link = makeElement("a", "button secondary", label);
+    const isDemoLink = /demo/i.test(label);
+    const link = makeElement("a", isDemoLink ? "button primary" : "button secondary", label);
     link.href = href;
     return link;
   });
