@@ -19,154 +19,162 @@
         <div>
           <p class="eyebrow">Curriculum Vitae</p>
           <h1>Russel Jhon C. Buisan</h1>
-          <p class="lead">BS Computer Science - Full-stack, machine learning, computer vision, and secure systems</p>
+          <p class="lead">Full-stack Software Engineer | Specialized in Web APIs, Secure Workflows & AI Integration</p>
         </div>
         <address class="cv-contact">
-          <span>Kabacan, Cotabato, Philippines</span>
+          <span>Pikit, Cotabato, Philippines</span>
+          <a href="mailto:rjcbuisan@usm.edu.ph">rjcbuisan@usm.edu.ph</a>
+          <a href="tel:+639206331342">+63 920 633 1342</a>
           <a href="https://github.com/De1m0z">github.com/De1m0z</a>
-          <span>Contact: available on request</span>
         </address>
       </header>
 
-      <section class="cv-section">
-        <h2>Profile</h2>
-        <div>
-          <p>
-            BS Computer Science student at the University of Southern Mindanao with hands-on work in full-stack web
-            development, machine learning, computer vision, secure application workflows, database-backed systems, research documentation,
-            and defense-ready project presentation. Main thesis work is a privacy-conscious YOWOv2-based student activity
-            detection framework for smart academic environments.
-          </p>
+      <div class="cv-grid-container">
+        <div class="cv-main-col">
+          <section class="cv-section-nested">
+            <h2>Profile</h2>
+            <p>
+              BS Computer Science student at the University of Southern Mindanao with hands-on experience designing and building secure, database-backed full-stack applications. Proven track record in implementing robust API service layers, role-based access control (RBAC), and real-time features, alongside integrating specialized machine learning and computer vision workflows.
+            </p>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Professional Experience</h2>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>On-the-job Training (OJT) Developer</h3>
+                <span class="cv-date">June 2025 – August 2025</span>
+              </div>
+              <p class="cv-subheader">INFOSOFT, Matina, Davao City</p>
+              <ul>
+                <li>Gained industry experience in full-stack web development, participating in database schema design and writing clean backend APIs.</li>
+                <li>Debugged and styled client-facing interfaces, ensuring responsive layouts and proper interaction flows.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Project Experience</h2>
+            
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Cheen Tea Kiosk and API</h3>
+                <span class="cv-tech">Next.js, React, Tailwind, Laravel 12, Sanctum, Reverb</span>
+              </div>
+              <ul>
+                <li>Developed customer ordering, cashier, kitchen display, cashier dashboard, and admin dashboard interfaces.</li>
+                <li>Built real-time order queueing and notifications using Laravel Reverb (WebSockets) and Sanctum authentication.</li>
+                <li>Connected API routes for categories, modifiers, loyalty rewards, image uploads, and dashboard reports.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>USM Agapay Service Desk</h3>
+                <span class="cv-tech">Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, Docker</span>
+              </div>
+              <ul>
+                <li>Designed a university service-ticket workflow supporting ticket claims, office transfers, comments, and queues.</li>
+                <li>Built role-aware Vue 3 routing and Sanctum middleware boundaries for clients, staff, and office admins.</li>
+                <li>Containerized the environment using Docker Compose with MS SQL Server, Redis, S3-compatible MinIO, and queue workers.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Gym Face Management / RAK Fitness</h3>
+                <span class="cv-tech">Django, FastAPI, React, PostgreSQL, InsightFace, pytest</span>
+              </div>
+              <ul>
+                <li>Built gym operations workflows managing member registration, billing plans, payments, and attendance reports.</li>
+                <li>Integrated local face recognition check-in using InsightFace buffalo_l embeddings and manual fallback entry.</li>
+                <li>Prepared intelligent-check-in design notes, scanner check-in architecture, and automated verification tests.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>ClassVision: YOWOv2 Student Activity Detection</h3>
+                <span class="cv-tech">Python, YOWOv2, CVAT, PyTorch, Research Docs</span>
+              </div>
+              <ul>
+                <li>Developed a classroom video analytics framework for activity detection (studying, collaborative, idle, arriving/leaving).</li>
+                <li>Curated and validated CCTV-derived datasets consisting of 108,116 label files, 1.95M annotated bounding boxes.</li>
+                <li>Established privacy-by-design boundaries by strictly omitting facial recognition and student profiling.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>USMctf Platform</h3>
+                <span class="cv-tech">Next.js, Laravel, FastAPI, PostgreSQL, Redis, Docker Compose</span>
+              </div>
+              <ul>
+                <li>Created a full-stack CTF learning platform featuring team management, user profiles, and real-time challenge scoring.</li>
+                <li>Orchestrated a decoupled multi-service architecture using Docker Compose, leveraging Redis and PostgreSQL.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>University Pentest and Research Workspace</h3>
+                <span class="cv-tech">OWASP, Burp Suite, Ghidra, ATT&CK, CISA KEV</span>
+              </div>
+              <ul>
+                <li>Organized an authorized, non-destructive pentesting workspace using Burp Suite and Ghidra for campus systems.</li>
+                <li>Documented threat scenarios, proof-of-concept (PoC) safety guardrails, and prepared remediation handoffs.</li>
+              </ul>
+            </div>
+          </section>
         </div>
-      </section>
 
-      <section class="cv-section">
-        <h2>Education</h2>
-        <div>
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>University of Southern Mindanao, Kabacan, Cotabato</p>
-          <p>Major: Computer Science</p>
-          <p>Thesis: A YOWOv2-Based Student Activity Detection Framework for Smart Academic Environment</p>
-          <p>Thesis manuscript: April 2026</p>
+        <div class="cv-side-col">
+          <section class="cv-section-nested">
+            <h2>Education</h2>
+            <div class="cv-item-nested">
+              <h3>BS in Computer Science</h3>
+              <p class="cv-institution">University of Southern Mindanao</p>
+              <p class="cv-date-side">2022 – Present</p>
+              <p class="cv-thesis"><strong>Thesis:</strong> YOWOv2-Based Student Activity Detection Framework</p>
+            </div>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Technical Skills</h2>
+            <div class="cv-skills-block">
+              <p><strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, C#</p>
+              <p><strong>Frameworks:</strong> React, Next.js, Vue 3, FastAPI, Laravel 12, Django, ASP.NET Core</p>
+              <p><strong>Databases/DevOps:</strong> PostgreSQL, SQL Server, SQLite, Redis, Docker Compose, Alembic, MinIO/S3</p>
+              <p><strong>Security:</strong> JWT, CSRF, bcrypt, AES-GCM, RBAC, Burp Suite, Ghidra, OWASP</p>
+              <p><strong>AI & CV:</strong> YOWOv2, InsightFace, PyTorch, CVAT</p>
+            </div>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Leadership</h2>
+            <div class="cv-item-nested">
+              <h3>Socio-Cultural &amp; Sports Chairperson</h3>
+              <p class="cv-institution">University of Southern Mindanao</p>
+              <p class="cv-date-side">2025 – 2026</p>
+            </div>
+            <div class="cv-item-nested">
+              <h3>External Officer</h3>
+              <p class="cv-institution">PSITS</p>
+              <p class="cv-date-side">2024 – 2025</p>
+            </div>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Links</h2>
+            <div class="cv-links-block">
+              <a href="https://de1m0z.github.io/">Portfolio Website</a>
+              <a href="https://github.com/De1m0z">GitHub Profile</a>
+              <a href="https://github.com/De1m0z/CTF">USMctf Repo</a>
+              <a href="https://github.com/De1m0z/chantea-kiosk">Cheen Tea Repo</a>
+            </div>
+          </section>
         </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>Technical Skills</h2>
-        <div>
-          <p><strong>Frontend:</strong> React, Next.js, Vite, TypeScript, Tailwind CSS, Radix/shadcn-style components, dashboards, kiosk UI, admin screens.</p>
-          <p><strong>Backend:</strong> FastAPI, Laravel, Django, ASP.NET Core, REST APIs, service layers, schemas, controllers, authentication flows.</p>
-          <p><strong>Databases and infrastructure:</strong> PostgreSQL, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, Entity Framework Core, migrations, seed scripts.</p>
-          <p><strong>Machine learning / computer vision:</strong> YOWOv2 workflow, CVAT annotations, dataset validation, by-video partitioning, inference post-processing, InsightFace embeddings.</p>
-          <p><strong>Security:</strong> RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM encryption, audit logs, rate limiting, authorized pentest workflow.</p>
-          <p><strong>Research and documentation:</strong> Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, presentation clips, technical reports, and project notes.</p>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>Project Experience</h2>
-        <div>
-          <div class="cv-item">
-            <h3>ClassVision: YOWOv2 Student Activity Detection Framework</h3>
-            <p>Python, YOWOv2, CVAT, computer vision, dataset preparation, research documentation</p>
-            <ul>
-              <li>Developed a privacy-conscious classroom activity detection framework for studying, idle, collaborative, and arriving/leaving activity classes.</li>
-              <li>Prepared classroom CCTV-derived data, annotation policy, label validation, by-video data partitioning, YOWOv2 fine-tuning workflow, inference post-processing, and evaluation materials.</li>
-              <li>Documented 108,116 label files, 5,735 empty/no-person labels, 1,951,112 annotated person-action boxes, 72,491 training entries, 20,679 validation entries, and 14,661 test entries.</li>
-              <li>Prepared manuscript drafts, methodology guides, defense review outputs, contact sheets, figures, and presentation materials.</li>
-              <li>Defined privacy boundaries by excluding face recognition, identity matching, biometric profiling, and disciplinary automation.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>Thesis Defense Scheduler</h3>
-            <p>FastAPI, React, TypeScript, PostgreSQL, Redis, SQLAlchemy, Alembic</p>
-            <ul>
-              <li>Built secure scheduling workflows for students, faculty, DRC users, college admins, and global admins.</li>
-              <li>Implemented HTTP-only JWT cookies, rotating refresh tokens, signed CSRF tokens, bcrypt password hashing, AES-256-GCM encrypted PDF/signature fields, RBAC filters, and append-only audit logs.</li>
-              <li>Modeled faculty availability, panel assignment, application review, signature capture, PDF generation, and first-come-first-served booking logic.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>Gym Face Management / RAK Fitness</h3>
-            <p>Django, FastAPI, React, PostgreSQL, InsightFace, pytest</p>
-            <ul>
-              <li>Built gym management workflows for member records, plans, payments, attendance, enrollment, scanner operations, reports, and member portal access.</li>
-              <li>Integrated local face-recognition check-in using InsightFace buffalo_l embeddings, consent checks, match thresholds, scanner health, logs, and manual attendance fallback.</li>
-              <li>Prepared intelligent-system report documentation, privacy-aware design notes, architecture figures, evaluation notes, and React/FastAPI rewrite artifacts.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>Cheen Tea Kiosk and API</h3>
-            <p>Next.js, React, Laravel 12, Sanctum, Reverb, Docker</p>
-            <ul>
-              <li>Developed kiosk, menu, cart, cashier, kitchen display, admin, customer, loyalty, and product management interfaces.</li>
-              <li>Built API routes for orders, products, categories, modifiers, customers, dashboard reports, kitchen queues, image uploads, loyalty rewards, email verification, Google auth, and voice-order processing.</li>
-              <li>Prepared the frontend and project documentation so the kiosk, POS, kitchen, customer, and admin workflows can be reviewed clearly.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>USM Agapay Service Desk</h3>
-            <p>Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, MinIO/S3, Docker</p>
-            <ul>
-              <li>Built a university service-ticket workflow with client requests, office services, staff queues, comments, attachments, claims, transfers, status changes, notifications, evaluations, reports, and audit logs.</li>
-              <li>Used role-aware routing for clients, service staff, office admins, and system admins, with Sanctum auth and middleware boundaries.</li>
-              <li>Prepared sanitized workflow notes for interview walkthroughs.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>USMctf Platform</h3>
-            <p>Laravel, FastAPI, Next.js, PostgreSQL, Redis, Docker Compose</p>
-            <ul>
-              <li>Created a full-stack CTF platform with team management, real-time challenge scoring, admin tooling, service documentation, and Docker-based setup.</li>
-            </ul>
-          </div>
-
-          <div class="cv-item">
-            <h3>University Pentest and Vulnerability Research Workspace</h3>
-            <p>OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting</p>
-            <ul>
-              <li>Organized an authorized security research workspace with scope, findings, reverse engineering, PoC safety, threat intelligence, reporting, and remediation handoff areas.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>Additional Work</h2>
-        <div>
-          <ul>
-            <li><strong>Optimization Algorithms Assignment:</strong> Python examples for Genetic Algorithms, Markov Decision Processes, and Particle Swarm Optimization.</li>
-            <li><strong>Student REST API:</strong> ASP.NET Core 7 API lab with controllers, DTOs, EF Core migrations, SQLite, and Swagger/OpenAPI.</li>
-            <li><strong>Presentation automation:</strong> scripts for thesis and research presentation generation using JavaScript and Python tooling.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>Public Links</h2>
-        <div>
-          <ul>
-            <li>GitHub profile: <a href="https://github.com/De1m0z">https://github.com/De1m0z</a></li>
-            <li>Portfolio: <a href="https://de1m0z.github.io/">https://de1m0z.github.io/</a></li>
-            <li>USMctf: <a href="https://github.com/De1m0z/CTF">https://github.com/De1m0z/CTF</a></li>
-            <li>Cheen Tea Kiosk: <a href="https://github.com/De1m0z/chantea-kiosk">https://github.com/De1m0z/chantea-kiosk</a></li>
-            <li>Optimization Algorithms Assignment: <a href="https://github.com/De1m0z/ai_optimization_algorithms_assignment">https://github.com/De1m0z/ai_optimization_algorithms_assignment</a></li>
-            <li>Student REST API: <a href="https://github.com/De1m0z/REST">https://github.com/De1m0z/REST</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="cv-section">
-        <h2>Notes</h2>
-        <div>
-          <p>References and full contact details available on request.</p>
-        </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
