@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -51,10 +52,9 @@
           </div>
         </div>
         <div class="hero-media" aria-label="ClassVision thesis preview">
-          <img
-            src="assets/hero_cv_system.png"
-            alt="ClassVision overall research process figure"
-          >
+          <div class="hero-media-logo python-bg">
+            <i class="devicon-python-plain colored"></i>
+          </div>
           <div class="media-caption">
             <span>Main thesis project</span>
             <strong>YOWOv2-based student activity detection for smart academic environments</strong>
@@ -124,10 +124,9 @@
 
         <div class="project-grid">
           <a class="project-card featured" href="project.html?id=classvision" data-category="ai academic fullstack" aria-label="Open ClassVision project details">
-            <img
-              src="assets/cv_dashboard.png"
-              alt="ClassVision confusion matrix evaluation figure"
-            >
+            <div class="project-logo-container python-bg">
+              <i class="devicon-python-plain colored"></i>
+            </div>
             <div class="project-card-body">
               <div class="project-meta">
                 <span>Main thesis</span>
@@ -167,7 +166,9 @@
           </a>
 
           <a class="project-card" href="project.html?id=scheduler" data-category="fullstack security academic" aria-label="Open Thesis Defense Scheduler project details">
-            <img src="assets/scheduler_ui.png" alt="University campus visual used in the thesis defense scheduler">
+            <div class="project-logo-container fastapi-bg">
+              <i class="devicon-fastapi-plain colored"></i>
+            </div>
             <div class="project-card-body">
               <div class="project-meta"><span>Full-stack system</span><span>Secure workflow</span></div>
               <h3>Thesis Defense Scheduler</h3>
@@ -185,7 +186,9 @@
           </a>
 
           <a class="project-card" href="project.html?id=gym" data-category="ai fullstack" aria-label="Open Gym Face Management project details">
-            <img src="assets/gym_scanner_ui.png" alt="Gym scanner interface preview">
+            <div class="project-logo-container django-bg">
+              <i class="devicon-django-plain" style="color: #092e20;"></i>
+            </div>
             <div class="project-card-body">
               <div class="project-meta"><span>Intelligent system</span><span>Face attendance</span></div>
               <h3>Gym Face Management / RAK Fitness</h3>
@@ -203,7 +206,9 @@
           </a>
 
           <a class="project-card" href="project.html?id=cheentea" data-category="fullstack" aria-label="Open Cheen Tea Kiosk project details">
-            <img src="assets/tea_kiosk_ui.png" alt="Cheen Tea kiosk UI reference image">
+            <div class="project-logo-container laravel-bg">
+              <i class="devicon-laravel-original colored"></i>
+            </div>
             <div class="project-card-body">
               <div class="project-meta"><span>POS / Kiosk</span><span>Business app</span></div>
               <h3>Cheen Tea Kiosk and API</h3>
