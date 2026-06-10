@@ -3,28 +3,235 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Curriculum Vitae of Russel Jhon C. Buisan, Full-stack Software Engineer specializing in Web APIs, Secure Workflows, and AI Integration.">
-    <title>Russel Jhon C. Buisan - Traditional CV</title>
+    <meta name="description" content="One-page curriculum vitae of Russel Jhon C. Buisan.">
+    <title>Russel Jhon C. Buisan - One Page CV</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      :root {
+        --cv-ink: #111827;
+        --cv-text: #273142;
+        --cv-muted: #5f6b7a;
+        --cv-line: #cfd6df;
+        --cv-paper: #ffffff;
+      }
+
+      body.cv-page {
+        margin: 0;
+        background: #eef2f6;
+        color: var(--cv-text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .cv-document.one-page-cv {
+        width: 210mm;
+        min-height: 297mm;
+        max-width: none;
+        margin: 18px auto;
+        padding: 12mm 13mm 10mm;
+        border: 0;
+        border-radius: 0;
+        background: var(--cv-paper);
+        box-shadow: 0 18px 48px rgba(17, 24, 39, 0.12);
+      }
+
+      .one-page-cv .cv-top {
+        display: grid;
+        grid-template-columns: 1fr 58mm;
+        gap: 8mm;
+        padding-bottom: 4mm;
+        border-bottom: 1.5px solid var(--cv-ink);
+      }
+
+      .one-page-cv .eyebrow {
+        margin: 0 0 2mm;
+        color: var(--cv-muted);
+        font-size: 8.5px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .one-page-cv h1 {
+        margin: 0;
+        color: var(--cv-ink);
+        font-size: 27px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .one-page-cv .lead {
+        margin: 2mm 0 0;
+        color: var(--cv-text);
+        font-size: 10.5px;
+        line-height: 1.3;
+      }
+
+      .one-page-cv .cv-contact {
+        display: grid;
+        gap: 1.2mm;
+        min-width: 0;
+        color: var(--cv-text);
+        font-size: 9.3px;
+        font-style: normal;
+        line-height: 1.25;
+        text-align: right;
+      }
+
+      .one-page-cv .cv-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 57mm;
+        gap: 7mm;
+        margin-top: 4mm;
+      }
+
+      .one-page-cv .cv-main-col,
+      .one-page-cv .cv-side-col {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2mm;
+      }
+
+      .one-page-cv .cv-section-nested {
+        display: block;
+        break-inside: avoid;
+      }
+
+      .one-page-cv h2 {
+        margin: 0 0 1.8mm;
+        padding-bottom: 1mm;
+        border-bottom: 1px solid var(--cv-ink);
+        color: var(--cv-ink);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      .one-page-cv h3 {
+        margin: 0;
+        color: var(--cv-ink);
+        font-size: 10.4px;
+        line-height: 1.2;
+      }
+
+      .one-page-cv p {
+        margin: 0;
+      }
+
+      .one-page-cv .cv-section-nested > p,
+      .one-page-cv li,
+      .one-page-cv .cv-subheader,
+      .one-page-cv .cv-institution,
+      .one-page-cv .cv-date-side,
+      .one-page-cv .cv-thesis,
+      .one-page-cv .cv-skills-block p {
+        color: var(--cv-text);
+        font-size: 9.3px;
+        line-height: 1.3;
+      }
+
+      .one-page-cv .cv-item + .cv-item,
+      .one-page-cv .cv-item-nested + .cv-item-nested {
+        margin-top: 2.2mm;
+      }
+
+      .one-page-cv .cv-item-header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 3mm;
+        align-items: baseline;
+      }
+
+      .one-page-cv .cv-date,
+      .one-page-cv .cv-tech {
+        color: var(--cv-muted);
+        font-size: 8.5px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .one-page-cv .cv-subheader {
+        margin-top: 0.5mm;
+        color: var(--cv-muted);
+        font-style: italic;
+      }
+
+      .one-page-cv ul {
+        margin: 1mm 0 0;
+        padding-left: 4mm;
+      }
+
+      .one-page-cv li {
+        margin-bottom: 0.8mm;
+      }
+
+      .one-page-cv .cv-skills-block {
+        display: grid;
+        gap: 1.4mm;
+      }
+
+      .one-page-cv .cv-skills-block strong {
+        color: var(--cv-ink);
+      }
+
+      .one-page-cv .compact-list {
+        display: grid;
+        gap: 1.8mm;
+      }
+
+      .one-page-cv .compact-list p {
+        font-size: 9.2px;
+        line-height: 1.28;
+      }
+
+      .one-page-cv .compact-list strong {
+        color: var(--cv-ink);
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body.cv-page {
+          width: 210mm;
+          min-height: 297mm;
+          margin: 0 !important;
+          background: #ffffff !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .cv-document.one-page-cv {
+          width: 210mm !important;
+          min-height: 0 !important;
+          height: 297mm !important;
+          margin: 0 !important;
+          padding: 10mm 11mm 8mm !important;
+          box-shadow: none !important;
+          overflow: hidden !important;
+        }
+      }
+    </style>
   </head>
   <body class="cv-page">
-    <div class="cv-print-actions" aria-label="CV actions">
-      <button type="button" id="cv-btn-print" class="button primary" onclick="window.print()">Print or save as PDF</button>
-      <a class="button secondary" href="cv-traditional.md">Markdown version</a>
-    </div>
-
-    <main class="cv-document">
+    <main class="cv-document one-page-cv">
       <header class="cv-top">
         <div>
           <p class="eyebrow">Curriculum Vitae</p>
           <h1>Russel Jhon C. Buisan</h1>
-          <p class="lead">Full-stack Software Engineer | Specialized in Web APIs, Secure Workflows & AI Integration</p>
+          <p class="lead">BS Computer Science student focused on full-stack systems, secure workflows, APIs, and computer vision research.</p>
         </div>
         <address class="cv-contact">
           <span>Pikit, Cotabato, Philippines</span>
-          <a href="mailto:rjcbuisan@usm.edu.ph">rjcbuisan@usm.edu.ph</a>
-          <a href="tel:+639206331342">+63 920 633 1342</a>
-          <a href="https://github.com/De1m0z">github.com/De1m0z</a>
+          <span>rjcbuisan@usm.edu.ph</span>
+          <span>+63 920 633 1342</span>
+          <span>GitHub: De1m0z</span>
         </address>
       </header>
 
@@ -32,109 +239,79 @@
         <div class="cv-main-col">
           <section class="cv-section-nested">
             <h2>Profile</h2>
-            <p>
-              BS Computer Science student at the University of Southern Mindanao with hands-on experience designing and building secure, database-backed full-stack applications. Proven track record in implementing robust API service layers, role-based access control (RBAC), and real-time features, alongside integrating specialized machine learning and computer vision workflows.
-            </p>
+            <p>Computer Science student at the University of Southern Mindanao with hands-on experience building database-backed web applications, API services, role-based workflows, and AI/computer vision prototypes. Comfortable turning academic or office workflows into maintainable systems with documentation, reports, and presentation-ready outputs.</p>
           </section>
 
-
           <section class="cv-section-nested">
-            <h2>Professional Experience</h2>
+            <h2>Experience</h2>
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>Cybersecurity Researcher &amp; Web Developer</h3>
-                <span class="cv-date">June 2026 – Present</span>
+                <span class="cv-date">Jun 2026 - Present</span>
               </div>
               <p class="cv-subheader">University Information Communication Technology Office (UICTO)</p>
               <ul>
-                <li>Conduct authorized security assessments and vulnerability research on university systems.</li>
-                <li>Develop and maintain secure web applications and internal tools for university operations.</li>
+                <li>Conduct authorized vulnerability research and support secure university web systems.</li>
+                <li>Develop internal tools with attention to access control, documentation, and maintainability.</li>
               </ul>
             </div>
-
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>On-the-job Training (OJT) Developer</h3>
-                <span class="cv-date">June 2025 – August 2025</span>
+                <h3>On-the-job Training Developer</h3>
+                <span class="cv-date">Jun 2025 - Aug 2025</span>
               </div>
               <p class="cv-subheader">INFOSOFT, Matina, Davao City</p>
               <ul>
-                <li>Gained industry experience in full-stack web development, participating in database schema design and writing clean backend APIs.</li>
-                <li>Debugged and styled client-facing interfaces, ensuring responsive layouts and proper interaction flows.</li>
+                <li>Worked on full-stack development tasks including database schema work, backend APIs, debugging, and responsive interface styling.</li>
               </ul>
             </div>
           </section>
 
           <section class="cv-section-nested">
-            <h2>Project Experience</h2>
-            
+            <h2>Selected Project Experience</h2>
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>Cheen Tea Kiosk and API</h3>
-                <span class="cv-tech">Next.js, React, Tailwind, Laravel 12, Sanctum, Reverb</span>
+                <span class="cv-tech">Next.js, Laravel, Sanctum, Reverb</span>
               </div>
               <ul>
-                <li>Developed customer ordering, cashier, kitchen display, cashier dashboard, and admin dashboard interfaces.</li>
-                <li>Built real-time order queueing and notifications using Laravel Reverb (WebSockets) and Sanctum authentication.</li>
-                <li>Connected API routes for categories, modifiers, loyalty rewards, image uploads, and dashboard reports.</li>
+                <li>Built kiosk ordering, cashier, kitchen display, admin dashboard, loyalty, product, order queue, and reporting workflows.</li>
               </ul>
             </div>
-
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>USM Agapay Service Desk</h3>
-                <span class="cv-tech">Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, Docker</span>
+                <span class="cv-tech">Laravel, Vue 3, Pinia, SQL Server</span>
               </div>
               <ul>
-                <li>Designed a university service-ticket workflow supporting ticket claims, office transfers, comments, and queues.</li>
-                <li>Built role-aware Vue 3 routing and Sanctum middleware boundaries for clients, staff, and office admins.</li>
-                <li>Containerized the environment using Docker Compose with MS SQL Server, Redis, S3-compatible MinIO, and queue workers.</li>
+                <li>Modeled ticket submission, office services, staff queues, claims, transfers, comments, attachments, notifications, and audit logs.</li>
               </ul>
             </div>
-
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Gym Face Management / RAK Fitness</h3>
-                <span class="cv-tech">Django, FastAPI, React, PostgreSQL, InsightFace, pytest</span>
-              </div>
-              <ul>
-                <li>Built gym operations workflows managing member registration, billing plans, payments, and attendance reports.</li>
-                <li>Integrated local face recognition check-in using InsightFace buffalo_l embeddings and manual fallback entry.</li>
-                <li>Prepared intelligent-check-in design notes, scanner check-in architecture, and automated verification tests.</li>
-              </ul>
-            </div>
-
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>ClassVision: YOWOv2 Student Activity Detection</h3>
-                <span class="cv-tech">Python, YOWOv2, CVAT, PyTorch, Research Docs</span>
+                <span class="cv-tech">Python, YOWOv2, CVAT, PyTorch</span>
               </div>
               <ul>
-                <li>Developed a classroom video analytics framework for activity detection (studying, collaborative, idle, arriving/leaving).</li>
-                <li>Curated and validated CCTV-derived datasets consisting of 108,116 label files, 1.95M annotated bounding boxes.</li>
-                <li>Established privacy-by-design boundaries by strictly omitting facial recognition and student profiling.</li>
+                <li>Prepared classroom CCTV datasets with 108,116 label files and 1.95M boxes; documented a privacy-conscious activity detection workflow.</li>
               </ul>
             </div>
-
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>USMctf Platform</h3>
-                <span class="cv-tech">Next.js, Laravel, FastAPI, PostgreSQL, Redis, Docker Compose</span>
+                <h3>Gym Face Management / RAK Fitness</h3>
+                <span class="cv-tech">Django, FastAPI, React, InsightFace</span>
               </div>
               <ul>
-                <li>Created a full-stack CTF learning platform featuring team management, user profiles, and real-time challenge scoring.</li>
-                <li>Orchestrated a decoupled multi-service architecture using Docker Compose, leveraging Redis and PostgreSQL.</li>
+                <li>Built member registration, billing, payments, attendance, reports, and local face-recognition check-in with manual fallback.</li>
               </ul>
             </div>
-
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>University Pentest and Research Workspace</h3>
-                <span class="cv-tech">OWASP, Burp Suite, Ghidra, ATT&CK, CISA KEV</span>
+                <h3>USMctf Platform and Pentest Workspace</h3>
+                <span class="cv-tech">Next.js, Laravel, FastAPI, OWASP</span>
               </div>
               <ul>
-                <li>Organized an authorized, non-destructive pentesting workspace using Burp Suite and Ghidra for campus systems.</li>
-                <li>Documented threat scenarios, proof-of-concept (PoC) safety guardrails, and prepared remediation handoffs.</li>
+                <li>Created CTF platform services and organized an authorized, non-destructive security research workspace with reporting handoffs.</li>
               </ul>
             </div>
           </section>
@@ -146,23 +323,13 @@
             <div class="cv-item-nested">
               <h3>BS in Computer Science</h3>
               <p class="cv-institution">University of Southern Mindanao</p>
-              <p class="cv-date-side">2022 – Present</p>
+              <p class="cv-date-side">2022 - Present</p>
               <p class="cv-thesis"><strong>Thesis:</strong> YOWOv2-Based Student Activity Detection Framework</p>
             </div>
             <div class="cv-item-nested">
               <h3>Senior High School</h3>
               <p class="cv-institution">Notre Dame of Kabacan Inc.</p>
-              <p class="cv-date-side">2020 – 2022</p>
-            </div>
-            <div class="cv-item-nested">
-              <h3>Junior High School</h3>
-              <p class="cv-institution">Notre Dame of Pikit Inc.</p>
-              <p class="cv-date-side">2016 – 2020</p>
-            </div>
-            <div class="cv-item-nested">
-              <h3>Elementary</h3>
-              <p class="cv-institution">Pikit Central Elementary School</p>
-              <p class="cv-date-side">2008 – 2016</p>
+              <p class="cv-date-side">2020 - 2022</p>
             </div>
           </section>
 
@@ -170,10 +337,20 @@
             <h2>Technical Skills</h2>
             <div class="cv-skills-block">
               <p><strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, C#</p>
-              <p><strong>Frameworks:</strong> React, Next.js, Vue 3, FastAPI, Laravel 12, Django, ASP.NET Core</p>
-              <p><strong>Databases/DevOps:</strong> PostgreSQL, SQL Server, SQLite, Redis, Docker Compose, Alembic, MinIO/S3</p>
-              <p><strong>Security:</strong> JWT, CSRF, bcrypt, AES-GCM, RBAC, Burp Suite, Ghidra, OWASP</p>
-              <p><strong>AI & CV:</strong> YOWOv2, InsightFace, PyTorch, CVAT</p>
+              <p><strong>Frontend:</strong> React, Next.js, Vue 3, Vite, Tailwind CSS</p>
+              <p><strong>Backend:</strong> Laravel 12, FastAPI, Django, ASP.NET Core, REST APIs</p>
+              <p><strong>Data/DevOps:</strong> PostgreSQL, SQL Server, SQLite, Redis, Docker Compose, MinIO/S3</p>
+              <p><strong>Security:</strong> RBAC, JWT, CSRF, bcrypt, AES-GCM, Burp Suite, Ghidra, OWASP</p>
+              <p><strong>AI/CV:</strong> YOWOv2, InsightFace, PyTorch, CVAT, dataset validation</p>
+            </div>
+          </section>
+
+          <section class="cv-section-nested">
+            <h2>Strengths</h2>
+            <div class="compact-list">
+              <p><strong>System building:</strong> Turns real workflows into usable web applications and APIs.</p>
+              <p><strong>Documentation:</strong> Prepares setup notes, reports, figures, and presentation materials.</p>
+              <p><strong>Security mindset:</strong> Uses authorization boundaries, audit logs, and non-destructive testing practices.</p>
             </div>
           </section>
 
@@ -182,22 +359,12 @@
             <div class="cv-item-nested">
               <h3>Socio-Cultural &amp; Sports Chairperson</h3>
               <p class="cv-institution">University of Southern Mindanao</p>
-              <p class="cv-date-side">2025 – 2026</p>
+              <p class="cv-date-side">2025 - 2026</p>
             </div>
             <div class="cv-item-nested">
               <h3>External Officer</h3>
               <p class="cv-institution">PSITS</p>
-              <p class="cv-date-side">2024 – 2025</p>
-            </div>
-          </section>
-
-          <section class="cv-section-nested">
-            <h2>Links</h2>
-            <div class="cv-links-block">
-              <a href="https://de1m0z.github.io/">Portfolio Website</a>
-              <a href="https://github.com/De1m0z">GitHub Profile</a>
-              <a href="https://github.com/De1m0z/CTF">USMctf Repo</a>
-              <a href="https://github.com/De1m0z/chantea-kiosk">Cheen Tea Repo</a>
+              <p class="cv-date-side">2024 - 2025</p>
             </div>
           </section>
         </div>

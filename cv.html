@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Curriculum Vitae of Russel Jhon C. Buisan, Full-stack Software Engineer specializing in Web APIs, Secure Workflows, and AI Integration.">
     <title>Russel Jhon C. Buisan - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
   </head>
   <body class="cv-page">
+    <!-- Ambient grid background -->
+    <div aria-hidden="true" style="position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--grid-color) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;"></div>
     <div class="cv-print-actions" aria-label="CV actions">
       <button type="button" id="cv-btn-print" class="button primary" onclick="window.print()">Print or save as PDF</button>
       <a class="button secondary" href="index.html">Back to portfolio</a>
       <a class="button secondary" href="case-studies.html">Case studies</a>
       <a class="button secondary" href="cv.md">Markdown version</a>
+      <button id="theme-toggle" class="button secondary theme-toggle" aria-label="Toggle dark mode" style="width:auto; padding:0 12px; height:36px; border-radius:6px; margin-left:auto;">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
     </div>
 
     <main class="cv-document">
@@ -24,9 +42,9 @@
         </div>
         <address class="cv-contact">
           <span>Pikit, Cotabato, Philippines</span>
-          <a href="mailto:rjcbuisan@usm.edu.ph">rjcbuisan@usm.edu.ph</a>
-          <a href="tel:+639206331342">+63 920 633 1342</a>
-          <a href="https://github.com/De1m0z">github.com/De1m0z</a>
+          <span>rjcbuisan@usm.edu.ph</span>
+          <span>+63 920 633 1342</span>
+          <span>github.com/De1m0z</span>
         </address>
       </header>
 
@@ -195,14 +213,15 @@
           <section class="cv-section-nested">
             <h2>Links</h2>
             <div class="cv-links-block">
-              <a href="https://de1m0z.github.io/">Portfolio Website</a>
-              <a href="https://github.com/De1m0z">GitHub Profile</a>
-              <a href="https://github.com/De1m0z/CTF">USMctf Repo</a>
-              <a href="https://github.com/De1m0z/chantea-kiosk">Cheen Tea Repo</a>
+              <span>Portfolio Website</span>
+              <span>GitHub Profile</span>
+              <span>USMctf Repo</span>
+              <span>Cheen Tea Repo</span>
             </div>
           </section>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
