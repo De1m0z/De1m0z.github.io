@@ -14,7 +14,7 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 - `cv.html` - print-friendly CV
 - `cv.md` - editable markdown CV
 - `styles.css` - shared styling
-- `script.js` - project filtering and clickable project-card behavior
+- `script.js` - project filtering, clickable project-card behavior, and interview demo board rendering
 
 ## Project Materials Referenced
 
@@ -22,6 +22,7 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 - `thesis-defense-scheduler/` - secure full-stack scheduling system
 - `gym-face-management/` - gym management and face-based attendance system
 - `chantea-kiosk/` - kiosk/POS, Laravel API, and GitHub Pages sample-data demo
+- `USM_Agapay/` - Laravel/Vue service-desk system represented with sanitized sample data
 - `Pentest/university-pentest-workspace/` - authorized security research workspace
 - GitHub profile: <https://github.com/De1m0z>
 
@@ -31,4 +32,4 @@ Images used by the portfolio are stored in `assets/` so the published GitHub Pag
 
 Published site target: https://de1m0z.github.io/
 
-Project detail pages use packaged portfolio data. Interactive project previews live on `demo.html` and use browser-only sample data so they work on GitHub Pages without private databases.
+Project detail pages use packaged portfolio data. The home page includes an interview demo board, and interactive project previews live on `demo.html` with browser-only sample data so they work on GitHub Pages without private databases.

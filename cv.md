@@ -62,6 +62,14 @@ Next.js, React, Laravel 12, Sanctum, Reverb, Docker
 - Built API routes for orders, products, categories, modifiers, customers, dashboard reports, kitchen queues, image uploads, loyalty rewards, email verification, Google auth, and voice-order processing.
 - Published a GitHub Pages demo that runs with sample browser data only, separate from the real Laravel API and database.
 
+### USM Agapay Service Desk
+
+Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, MinIO/S3, Docker
+
+- Built a university service-ticket workflow with client requests, office services, staff queues, comments, attachments, claims, transfers, status changes, notifications, evaluations, reports, and audit logs.
+- Used role-aware routing for clients, service staff, office admins, and system admins, with Sanctum auth and middleware boundaries.
+- Prepared a sanitized browser demo with sample records for interview walkthroughs.
+
 ### USMctf Platform
 
 Laravel, FastAPI, Next.js, PostgreSQL, Redis, Docker Compose  
@@ -84,6 +92,7 @@ OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 ## Public Links
 
 - GitHub profile: <https://github.com/De1m0z>
+- Portfolio and project demos: <https://de1m0z.github.io/#interview-demos>
 - USMctf: <https://github.com/De1m0z/CTF>
 - Cheen Tea Kiosk: <https://github.com/De1m0z/chantea-kiosk>
 - Cheen Tea sample demo: <https://de1m0z.github.io/chantea-kiosk/>

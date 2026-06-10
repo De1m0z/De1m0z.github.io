@@ -3,6 +3,8 @@ const demoId = demoParams.get("id") || "classvision";
 const demoRoot = document.querySelector("#project-demo");
 const demoTitle = document.querySelector("#demo-title");
 const demoCopy = document.querySelector("#demo-copy");
+const demoSwitcher = document.querySelector("#demo-switcher");
+const demoInterviewPanel = document.querySelector("#demo-interview-panel");
 const demoProjects = Array.isArray(window.portfolioProjects) ? window.portfolioProjects : [];
 const activeProject = demoProjects.find((item) => item.id === demoId) || demoProjects[0];
 
@@ -61,6 +63,19 @@ const demoData = {
       ["Wintermelon Tea", 79, "500ml"]
     ]
   },
+  agapay: {
+    title: "University service desk queue",
+    copy: "Create a sample service ticket, claim it as staff, and resolve it while the queue metrics update.",
+    services: ["Transcript request", "ID replacement", "Enrollment concern", "Scholarship inquiry"],
+    priorities: ["Low", "Normal", "High", "Urgent"],
+    offices: ["Registrar", "Student Affairs", "Accounting", "ICT Office"],
+    tickets: [
+      ["AGP-104", "Jessa M.", "Registrar", "Transcript request", "Normal", "Open", "2 days"],
+      ["AGP-103", "Karl R.", "ICT Office", "Student portal access", "High", "In progress", "6 hours"],
+      ["AGP-102", "Nica P.", "Accounting", "Payment validation", "Normal", "Resolved", "Met"],
+      ["AGP-101", "Miguel T.", "Student Affairs", "Scholarship inquiry", "Low", "Open", "3 days"]
+    ]
+  },
   usmctf: {
     title: "CTF challenge board",
     copy: "Open sample challenges, submit sample flags, and watch the scoreboard update.",
@@ -113,6 +128,51 @@ const button = (label, className = "demo-button") => {
   const node = el("button", className, label);
   node.type = "button";
   return node;
+};
+
+const getProjectDemoHref = (project) => {
+  const links = Array.isArray(project.links) ? project.links : [];
+  const demoLink = links.find(([label, href]) => /demo|sample/i.test(label) || /demo\.html|chantea-kiosk/.test(href));
+  return demoLink ? demoLink[1] : `demo.html?id=${encodeURIComponent(project.id)}`;
+};
+
+const renderProjectSwitcher = () => {
+  if (!demoSwitcher || !demoProjects.length) return;
+  demoSwitcher.innerHTML = "";
+  demoProjects.forEach((project) => {
+    const link = el("a", "demo-switch-card");
+    if (activeProject && project.id === activeProject.id) link.classList.add("active");
+    link.href = getProjectDemoHref(project);
+    link.appendChild(el("span", "", project.eyebrow));
+    link.appendChild(el("strong", "", project.title));
+    link.appendChild(el("small", "", project.category));
+    demoSwitcher.appendChild(link);
+  });
+};
+
+const renderInterviewPanel = (project) => {
+  if (!demoInterviewPanel || !project) return;
+  demoInterviewPanel.innerHTML = "";
+  demoInterviewPanel.appendChild(el("h3", "", "Interview notes"));
+  demoInterviewPanel.appendChild(el("p", "", "Use this side panel when explaining what the project does, what part you built, and why the demo uses sample records."));
+
+  const stack = el("div", "demo-panel-block");
+  stack.appendChild(el("span", "", "Stack"));
+  const tags = el("div", "tag-list");
+  project.stack.slice(0, 7).forEach((item) => tags.appendChild(el("span", "", item)));
+  stack.appendChild(tags);
+
+  const work = el("div", "demo-panel-block");
+  work.appendChild(el("span", "", "What to mention"));
+  const list = el("ul", "demo-panel-list");
+  project.work.slice(0, 3).forEach((item) => list.appendChild(el("li", "", item)));
+  work.appendChild(list);
+
+  const boundary = el("div", "demo-panel-block");
+  boundary.appendChild(el("span", "", "Demo boundary"));
+  boundary.appendChild(el("p", "", "The browser demo uses sample records only. Private databases, real users, credentials, and production files are not included."));
+
+  demoInterviewPanel.append(stack, work, boundary);
 };
 
 const renderTable = (headers, rows) => {
@@ -287,6 +347,71 @@ const renderCheenTea = (data) => {
   drawCart();
 };
 
+const renderAgapay = (data) => {
+  clearDemo();
+  setDemoIntro(data);
+  let nextId = 105;
+  const tickets = data.tickets.map((ticket) => [...ticket]);
+  const form = el("div", "demo-controls stacked");
+  const office = selectFrom(data.offices);
+  const service = selectFrom(data.services);
+  const priority = selectFrom(data.priorities);
+  const requester = el("input", "demo-input");
+  requester.value = "Sample Student";
+  const create = button("Create sample ticket");
+  const claim = button("Claim next open ticket", "demo-button secondary-action");
+  const resolve = button("Resolve active ticket", "demo-button secondary-action");
+  const output = el("div", "demo-output");
+
+  form.append(
+    labelWrap("Requester", requester),
+    labelWrap("Office", office),
+    labelWrap("Service", service),
+    labelWrap("Priority", priority),
+    create,
+    claim,
+    resolve
+  );
+  demoRoot.append(form, output);
+
+  const draw = () => {
+    const open = tickets.filter((ticket) => ticket[5] === "Open").length;
+    const active = tickets.filter((ticket) => ticket[5] === "In progress").length;
+    const resolved = tickets.filter((ticket) => ticket[5] === "Resolved").length;
+    output.innerHTML = "";
+    output.appendChild(metricStrip([
+      ["Open", String(open)],
+      ["In progress", String(active)],
+      ["Resolved", String(resolved)]
+    ]));
+    output.appendChild(renderTable(["Ticket", "Requester", "Office", "Service", "Priority", "Status", "SLA"], tickets));
+  };
+
+  create.addEventListener("click", () => {
+    tickets.unshift([`AGP-${nextId}`, requester.value || "Sample Student", office.value, service.value, priority.value, "Open", priority.value === "Urgent" ? "4 hours" : "2 days"]);
+    nextId += 1;
+    draw();
+  });
+
+  claim.addEventListener("click", () => {
+    const ticket = tickets.find((item) => item[5] === "Open");
+    if (!ticket) return;
+    ticket[5] = "In progress";
+    ticket[6] = "Claimed";
+    draw();
+  });
+
+  resolve.addEventListener("click", () => {
+    const ticket = tickets.find((item) => item[5] === "In progress");
+    if (!ticket) return;
+    ticket[5] = "Resolved";
+    ticket[6] = "Met";
+    draw();
+  });
+
+  draw();
+};
+
 const renderUsmCtf = (data) => {
   clearDemo();
   setDemoIntro(data);
@@ -456,11 +581,15 @@ const demoRenderers = {
   scheduler: renderScheduler,
   gym: renderGym,
   cheentea: renderCheenTea,
+  agapay: renderAgapay,
   usmctf: renderUsmCtf,
   pentest: renderPentest,
   optimization: renderOptimization,
   "rest-api": renderRestApi
 };
+
+renderProjectSwitcher();
+renderInterviewPanel(activeProject);
 
 if (activeProject) {
   document.title = `${activeProject.title} Demo - Russel Jhon C. Buisan`;

@@ -1223,3 +1223,146 @@ h3 {
   }
 }
 
+
+.interview-demo-section {
+  display: grid;
+  gap: 24px;
+}
+
+.interview-demo-section .section-heading p:last-child,
+.demo-switcher-section .section-heading p:last-child {
+  margin: 14px 0 0;
+  color: #465163;
+  font-size: 18px;
+}
+
+.interview-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.interview-demo-card {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+}
+
+.interview-demo-card > span,
+.demo-switch-card span,
+.demo-panel-block > span {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.interview-demo-card h3 {
+  font-size: 20px;
+}
+
+.interview-demo-card p {
+  margin: 0;
+  color: #465163;
+}
+
+.demo-switcher-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.demo-switcher-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.demo-switch-card {
+  display: grid;
+  gap: 7px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.demo-switch-card.active,
+.demo-switch-card:hover {
+  border-color: var(--green);
+  background: #f0f8f7;
+}
+
+.demo-switch-card strong {
+  color: var(--ink);
+}
+
+.demo-switch-card small {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.demo-workspace-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.demo-interview-panel {
+  display: grid;
+  gap: 16px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 10px 26px rgba(17, 24, 39, 0.05);
+}
+
+.demo-interview-panel h3 {
+  font-size: 20px;
+}
+
+.demo-interview-panel p {
+  margin: 0;
+  color: #465163;
+}
+
+.demo-panel-block {
+  display: grid;
+  gap: 8px;
+}
+
+.demo-panel-block .tag-list {
+  margin-top: 0;
+}
+
+.demo-panel-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #465163;
+}
+
+.demo-panel-list li {
+  margin-bottom: 7px;
+}
+
+.demo-button.secondary-action {
+  border-color: var(--line);
+  background: var(--white);
+  color: var(--ink);
+}
+
+@media (max-width: 980px) {
+  .interview-demo-grid,
+  .demo-switcher-grid,
+  .demo-workspace-layout {
+    grid-template-columns: 1fr;
+  }
+}

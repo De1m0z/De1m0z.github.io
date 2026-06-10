@@ -140,6 +140,39 @@ window.portfolioProjects = [
     ]
   },
   {
+    id: "agapay",
+    title: "USM Agapay Service Desk",
+    eyebrow: "University service-ticket platform",
+    image: "assets/usm-campus.webp",
+    alt: "University campus image used for the USM Agapay service desk project",
+    summary: "A Laravel and Vue service-desk system for university offices, service requests, staff queues, ticket activity, notifications, evaluations, ARTA metrics, reports, and audit logs.",
+    status: "Local project with sanitized sample-data portfolio demo",
+    category: "Full-stack service desk",
+    stack: ["Laravel", "Vue 3", "Pinia", "Sanctum", "Reverb", "SQL Server", "MinIO/S3 storage", "Docker"],
+    metrics: [
+      ["User roles", "Client, staff, office admin, system admin"],
+      ["Core flow", "Tickets and service queues"],
+      ["Realtime", "Ticket and notification events"],
+      ["Storage", "MinIO-compatible attachments"],
+      ["Reports", "Tickets, ARTA, offices, evaluations"],
+      ["Audit", "Admin review logs"]
+    ],
+    work: [
+      "Modeled office services, ticket submission, staff assignment, comments, attachments, transfers, claims, and status changes.",
+      "Built role-aware Vue routes for clients, service staff, office admins, and system admins.",
+      "Connected Laravel Sanctum authentication, account-status checks, role middleware, API resources, and security headers.",
+      "Prepared Docker-based local setup around SQL Server, MinIO-compatible uploads, queue jobs, and Reverb-style realtime events."
+    ],
+    previewTitle: "Service request workflow preview",
+    preview: [
+      ["Client", "Submits a service request with office, service type, priority, and attachment note"],
+      ["Staff", "Claims the ticket, updates status, comments, and handles the request"],
+      ["Office admin", "Tracks queue health, staff workload, ARTA metrics, and service performance"],
+      ["System admin", "Manages users, offices, services, audit logs, and restrictions"]
+    ],
+    links: [["View demo", "demo.html?id=agapay"], ["Portfolio", "index.html#projects"]]
+  },
+  {
     id: "usmctf",
     title: "USMctf Platform",
     eyebrow: "Security learning platform",
