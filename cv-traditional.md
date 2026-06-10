@@ -10,6 +10,17 @@ Contact: +63 920 633 1342
 
 BS Computer Science student at the University of Southern Mindanao with hands-on experience designing and building secure, database-backed full-stack applications. Proven track record in implementing robust API service layers, role-based access control (RBAC), and real-time features, alongside integrating specialized machine learning and computer vision workflows.
 
+## Personal Information
+
+- **Full Name:** Russel Jhon Cañoneo Buisan
+- **Nickname:** Oslec
+- **Age:** 22
+- **Nationality:** Filipino
+- **Religion:** Protestant
+- **Civil Status:** Single
+- **Father's Name:** Randy U. Buisan
+- **Mother's Name:** Melani Grace Ypanto Wong
+
 ## Education
 
 **Bachelor of Science in Computer Science**  
