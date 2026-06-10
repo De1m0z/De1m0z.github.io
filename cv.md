@@ -92,7 +92,7 @@ OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 ## Public Links
 
 - GitHub profile: <https://github.com/De1m0z>
-- Portfolio and project demos: <https://de1m0z.github.io/#interview-demos>
+- Portfolio live samples: <https://de1m0z.github.io/demos/>
 - USMctf: <https://github.com/De1m0z/CTF>
 - Cheen Tea Kiosk: <https://github.com/De1m0z/chantea-kiosk>
 - Cheen Tea sample demo: <https://de1m0z.github.io/chantea-kiosk/>

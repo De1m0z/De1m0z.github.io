@@ -1,5 +1,6 @@
 const demoParams = new URLSearchParams(window.location.search);
-const demoId = demoParams.get("id") || "classvision";
+const configuredDemoId = window.PORTFOLIO_DEMO_ID;
+const demoId = configuredDemoId || demoParams.get("id") || "classvision";
 const demoRoot = document.querySelector("#project-demo");
 const demoTitle = document.querySelector("#demo-title");
 const demoCopy = document.querySelector("#demo-copy");
@@ -130,10 +131,15 @@ const button = (label, className = "demo-button") => {
   return node;
 };
 
+const resolveLocalHref = (href) => {
+  if (!href || /^(https?:|mailto:|tel:|#|\/)/.test(href)) return href;
+  return window.location.pathname.includes("/demos/") ? `../../${href}` : href;
+};
+
 const getProjectDemoHref = (project) => {
   const links = Array.isArray(project.links) ? project.links : [];
   const demoLink = links.find(([label, href]) => /demo|sample/i.test(label) || /demo\.html|chantea-kiosk/.test(href));
-  return demoLink ? demoLink[1] : `demo.html?id=${encodeURIComponent(project.id)}`;
+  return resolveLocalHref(demoLink ? demoLink[1] : `demos/${encodeURIComponent(project.id)}/`);
 };
 
 const renderProjectSwitcher = () => {
@@ -603,10 +609,10 @@ if (activeProject) {
   if (summary) summary.textContent = activeProject.summary;
   if (eyebrow) eyebrow.textContent = activeProject.eyebrow;
   if (image) {
-    image.src = activeProject.image;
+    image.src = resolveLocalHref(activeProject.image);
     image.alt = activeProject.alt;
   }
-  if (detailLink) detailLink.href = `project.html?id=${encodeURIComponent(activeProject.id)}`;
+  if (detailLink) detailLink.href = resolveLocalHref(`project.html?id=${encodeURIComponent(activeProject.id)}`);
 }
 
 const activeDemo = demoData[demoId] || demoData.classvision;

@@ -10,6 +10,7 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 - `project-data.js` - project facts used by the detail page
 - `project.js` - renders the selected project from the URL
 - `demo.html` - standalone browser-only project demos using sample data
+- `demos/` - public live-sample URLs for each project
 - `project-demo.js` - interactive demo logic used by `demo.html`
 - `cv.html` - print-friendly CV
 - `cv.md` - editable markdown CV
@@ -32,4 +33,4 @@ Images used by the portfolio are stored in `assets/` so the published GitHub Pag
 
 Published site target: https://de1m0z.github.io/
 
-Project detail pages use packaged portfolio data. The home page includes an interview demo board, and interactive project previews live on `demo.html` with browser-only sample data so they work on GitHub Pages without private databases.
+Project detail pages use packaged portfolio data. The home page includes a live-sample board, and each project has a public URL under `demos/` with browser-only sample data so the projects work on GitHub Pages without private databases.

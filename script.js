@@ -43,7 +43,7 @@ const portfolioProjects = Array.isArray(window.portfolioProjects) ? window.portf
 const findDemoHref = (project) => {
   const links = Array.isArray(project.links) ? project.links : [];
   const demoLink = links.find(([label, href]) => /demo|sample/i.test(label) || /demo\.html|chantea-kiosk/.test(href));
-  return demoLink ? demoLink[1] : `demo.html?id=${encodeURIComponent(project.id)}`;
+  return demoLink ? demoLink[1] : `demos/${encodeURIComponent(project.id)}/`;
 };
 
 if (interviewDemoGrid && portfolioProjects.length) {
@@ -66,7 +66,7 @@ if (interviewDemoGrid && portfolioProjects.length) {
 
     const demo = document.createElement("a");
     demo.href = findDemoHref(project);
-    demo.textContent = project.id === "cheentea" ? "Open live sample" : "Open sample app";
+    demo.textContent = "Open live sample";
 
     const details = document.createElement("a");
     details.href = `project.html?id=${encodeURIComponent(project.id)}`;
