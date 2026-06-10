@@ -42,6 +42,12 @@ Pikit Central Elementary School, Pikit, Cotabato
 
 ## Professional Experience
 
+**Cybersecurity Researcher and Web Developer**  
+University Information Communication Technology Office (UICTO)  
+*June 2026 – Present*
+- Conduct authorized security assessments and vulnerability research on university systems.
+- Develop and maintain secure web applications and internal tools for university operations.
+
 **On-the-job Training (OJT) Developer**  
 INFOSOFT, Matina, Davao City  
 *June 2025 – August 2025*
