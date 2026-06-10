@@ -15,7 +15,7 @@ def test_styles():
     assert "@media print" in content, "Print media query missing"
 
     # Print-specific size reductions
-    assert "page" in content, "Print page rules missing"
+    assert "@page" in content, "Print page rules missing"
     assert "0.3in" in content or "0.4in" in content, "Page margins in print missing"
 
     print("styles.css Verification: PASS")
