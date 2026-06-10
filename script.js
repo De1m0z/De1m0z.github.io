@@ -66,7 +66,7 @@ if (interviewDemoGrid && portfolioProjects.length) {
 
     const demo = document.createElement("a");
     demo.href = findDemoHref(project);
-    demo.textContent = "Open live sample";
+    demo.textContent = "Open frontend";
 
     const details = document.createElement("a");
     details.href = `project.html?id=${encodeURIComponent(project.id)}`;

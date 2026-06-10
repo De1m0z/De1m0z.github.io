@@ -31,7 +31,7 @@ window.portfolioProjects = [
       ["Output", "room-level activity summaries, not identity records"]
     ],
     links: [
-      ["View demo", "demos/classvision/"],
+      ["Open frontend", "demos/classvision/"],
       ["Case study", "case-studies.html#classvision"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -67,7 +67,7 @@ window.portfolioProjects = [
       ["Faculty", "Confirms schedule and panel participation"],
       ["Admin", "Tracks approved schedules and produced records"]
     ],
-    links: [["View demo", "demos/scheduler/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/scheduler/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "gym",
@@ -100,7 +100,7 @@ window.portfolioProjects = [
       ["Verify", "Show match confidence and member account state"],
       ["Record", "Save time-in/time-out or fall back to manual entry"]
     ],
-    links: [["View demo", "demos/gym/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/gym/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "cheentea",
@@ -134,7 +134,7 @@ window.portfolioProjects = [
       ["Admin", "Products, reports, customers, and rewards are maintained"]
     ],
     links: [
-      ["View demo", "demos/cheentea/"],
+      ["Open frontend", "demos/cheentea/"],
       ["GitHub repo", "https://github.com/De1m0z/chantea-kiosk"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -170,7 +170,7 @@ window.portfolioProjects = [
       ["Office admin", "Tracks queue health, staff workload, ARTA metrics, and service performance"],
       ["System admin", "Manages users, offices, services, audit logs, and restrictions"]
     ],
-    links: [["View demo", "demos/agapay/"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/agapay/"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "usmctf",
@@ -203,7 +203,7 @@ window.portfolioProjects = [
       ["Challenge API", "FastAPI service for challenge behavior"],
       ["Runtime", "PostgreSQL, Redis, and Docker Compose"]
     ],
-    links: [["View demo", "demos/usmctf/"], ["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/usmctf/"], ["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "pentest",
@@ -236,7 +236,7 @@ window.portfolioProjects = [
       ["Document", "Record finding, impact, reproduction, and limits"],
       ["Handoff", "Prepare remediation guidance and retest notes"]
     ],
-    links: [["View demo", "demos/pentest/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/pentest/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "optimization",
@@ -269,7 +269,7 @@ window.portfolioProjects = [
       ["PSO", "Move particles through a search space toward better scores"],
       ["Output", "Readable console examples for study and review"]
     ],
-    links: [["View demo", "demos/optimization/"], ["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/optimization/"], ["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "rest-api",
@@ -302,6 +302,6 @@ window.portfolioProjects = [
       ["DTO", "Request and response boundaries"],
       ["Docs", "Swagger/OpenAPI for endpoint review"]
     ],
-    links: [["View demo", "demos/rest-api/"], ["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
+    links: [["Open frontend", "demos/rest-api/"], ["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
   }
 ];
