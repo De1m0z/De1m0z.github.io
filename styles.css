@@ -115,6 +115,7 @@ a {
   font-size: 14px;
   font-weight: 750;
   text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav a:hover {
@@ -163,7 +164,7 @@ a {
   color: var(--green);
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: 0;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -228,6 +229,7 @@ h3 {
   font-size: 14px;
   font-weight: 850;
   text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .button.primary {
@@ -245,6 +247,7 @@ h3 {
 .contact-list a:hover {
   border-color: var(--ink);
   box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+  transform: scale(1.02);
 }
 
 .hero-snapshot {
@@ -405,11 +408,13 @@ h3 {
   box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
   color: inherit;
   text-decoration: none;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .project-card:hover {
   border-color: rgba(15, 118, 110, 0.55);
-  box-shadow: 0 18px 38px rgba(17, 24, 39, 0.09);
+  box-shadow: 0 20px 40px rgba(17, 24, 39, 0.12);
+  transform: translateY(-4px);
 }
 
 .project-card.featured {
@@ -516,6 +521,7 @@ h3 {
   color: var(--white);
   font-size: 13px;
   font-weight: 900;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .project-card:hover .project-card-cta {
