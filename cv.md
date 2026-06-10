@@ -24,7 +24,7 @@ Thesis manuscript: April 2026
 - Databases and infrastructure: PostgreSQL, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, Entity Framework Core, migrations, seed scripts.
 - Machine learning / computer vision: YOWOv2 workflow, CVAT annotations, dataset validation, by-video partitioning, inference post-processing, InsightFace embeddings.
 - Security: RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM encryption, audit logs, rate limiting, authorized pentest workflow.
-- Research and documentation: Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, demo clips, technical reports, and project notes.
+- Research and documentation: Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, presentation clips, technical reports, and project notes.
 
 ## Project Experience
 
@@ -35,7 +35,7 @@ Python, YOWOv2, CVAT, computer vision, dataset preparation, research documentati
 - Developed a privacy-conscious classroom activity detection framework for studying, idle, collaborative, and arriving/leaving activity classes.
 - Prepared classroom CCTV-derived data, annotation policy, label validation, by-video data partitioning, YOWOv2 fine-tuning workflow, inference post-processing, and evaluation materials.
 - Documented 108,116 label files, 5,735 empty/no-person labels, 1,951,112 annotated person-action boxes, 72,491 training entries, 20,679 validation entries, and 14,661 test entries.
-- Prepared manuscript drafts, methodology guides, defense demo outputs, contact sheets, figures, and presentation materials.
+- Prepared manuscript drafts, methodology guides, defense review outputs, contact sheets, figures, and presentation materials.
 - Defined privacy boundaries by excluding face recognition, identity matching, biometric profiling, and disciplinary automation.
 
 ### Thesis Defense Scheduler
@@ -60,7 +60,7 @@ Next.js, React, Laravel 12, Sanctum, Reverb, Docker
 
 - Developed kiosk, menu, cart, cashier, kitchen display, admin, customer, loyalty, and product management interfaces.
 - Built API routes for orders, products, categories, modifiers, customers, dashboard reports, kitchen queues, image uploads, loyalty rewards, email verification, Google auth, and voice-order processing.
-- Published a GitHub Pages demo that runs with sample browser data only, separate from the real Laravel API and database.
+- Prepared the frontend and project documentation so the kiosk, POS, kitchen, customer, and admin workflows can be reviewed clearly.
 
 ### USM Agapay Service Desk
 
@@ -68,7 +68,7 @@ Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, MinIO/S3, Docker
 
 - Built a university service-ticket workflow with client requests, office services, staff queues, comments, attachments, claims, transfers, status changes, notifications, evaluations, reports, and audit logs.
 - Used role-aware routing for clients, service staff, office admins, and system admins, with Sanctum auth and middleware boundaries.
-- Prepared a sanitized browser demo with sample records for interview walkthroughs.
+- Prepared sanitized workflow notes for interview walkthroughs.
 
 ### USMctf Platform
 
@@ -92,10 +92,9 @@ OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 ## Public Links
 
 - GitHub profile: <https://github.com/De1m0z>
-- Portfolio live frontends: <https://de1m0z.github.io/demos/>
+- Portfolio: <https://de1m0z.github.io/>
 - USMctf: <https://github.com/De1m0z/CTF>
 - Cheen Tea Kiosk: <https://github.com/De1m0z/chantea-kiosk>
-- Cheen Tea sample demo: <https://de1m0z.github.io/chantea-kiosk/>
 - Optimization Algorithms Assignment: <https://github.com/De1m0z/ai_optimization_algorithms_assignment>
 - Student REST API: <https://github.com/De1m0z/REST>
 

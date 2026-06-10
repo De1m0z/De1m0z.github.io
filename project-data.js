@@ -21,7 +21,7 @@ window.portfolioProjects = [
       "Prepared classroom CCTV clips, labels, validation checks, and by-video data partitions.",
       "Fine-tuned a YOWOv2 medium workflow using 16-frame clips and 224 image size.",
       "Documented privacy boundaries by excluding face recognition, identity matching, and student profiling.",
-      "Produced thesis figures, contact sheets, demo clips, methodology notes, and presentation materials."
+      "Produced thesis figures, contact sheets, recorded inference outputs, methodology notes, and presentation materials."
     ],
     previewTitle: "Activity monitoring preview",
     preview: [
@@ -31,7 +31,6 @@ window.portfolioProjects = [
       ["Output", "room-level activity summaries, not identity records"]
     ],
     links: [
-      ["Open frontend", "demos/classvision/"],
       ["Case study", "case-studies.html#classvision"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -67,7 +66,7 @@ window.portfolioProjects = [
       ["Faculty", "Confirms schedule and panel participation"],
       ["Admin", "Tracks approved schedules and produced records"]
     ],
-    links: [["Open frontend", "demos/scheduler/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "gym",
@@ -100,7 +99,7 @@ window.portfolioProjects = [
       ["Verify", "Show match confidence and member account state"],
       ["Record", "Save time-in/time-out or fall back to manual entry"]
     ],
-    links: [["Open frontend", "demos/gym/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "cheentea",
@@ -109,7 +108,7 @@ window.portfolioProjects = [
     image: "assets/cheentea-kiosk-ui.jpeg",
     alt: "Cheen Tea kiosk UI reference image",
     summary: "A tea-shop kiosk and POS platform with customer ordering, kitchen queues, cashier views, admin tools, loyalty rewards, QR registration, and voice-order processing.",
-    status: "Public repo with GitHub Pages sample-data demo",
+    status: "Public repository and documented project",
     category: "Business app",
     stack: ["Next.js", "React", "Tailwind CSS", "Laravel 12", "Sanctum", "Reverb", "Cloudinary"],
     metrics: [
@@ -134,7 +133,6 @@ window.portfolioProjects = [
       ["Admin", "Products, reports, customers, and rewards are maintained"]
     ],
     links: [
-      ["Open frontend", "demos/cheentea/"],
       ["GitHub repo", "https://github.com/De1m0z/chantea-kiosk"],
       ["Portfolio", "index.html#projects"]
     ]
@@ -146,7 +144,7 @@ window.portfolioProjects = [
     image: "assets/usm-campus.webp",
     alt: "University campus image used for the USM Agapay service desk project",
     summary: "A Laravel and Vue service-desk system for university offices, service requests, staff queues, ticket activity, notifications, evaluations, ARTA metrics, reports, and audit logs.",
-    status: "Local project with sanitized sample-data portfolio demo",
+    status: "Local project with sanitized portfolio description",
     category: "Full-stack service desk",
     stack: ["Laravel", "Vue 3", "Pinia", "Sanctum", "Reverb", "SQL Server", "MinIO/S3 storage", "Docker"],
     metrics: [
@@ -170,7 +168,7 @@ window.portfolioProjects = [
       ["Office admin", "Tracks queue health, staff workload, ARTA metrics, and service performance"],
       ["System admin", "Manages users, offices, services, audit logs, and restrictions"]
     ],
-    links: [["Open frontend", "demos/agapay/"], ["Portfolio", "index.html#projects"]]
+    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "usmctf",
@@ -203,7 +201,7 @@ window.portfolioProjects = [
       ["Challenge API", "FastAPI service for challenge behavior"],
       ["Runtime", "PostgreSQL, Redis, and Docker Compose"]
     ],
-    links: [["Open frontend", "demos/usmctf/"], ["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
+    links: [["GitHub repo", "https://github.com/De1m0z/CTF"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "pentest",
@@ -236,7 +234,7 @@ window.portfolioProjects = [
       ["Document", "Record finding, impact, reproduction, and limits"],
       ["Handoff", "Prepare remediation guidance and retest notes"]
     ],
-    links: [["Open frontend", "demos/pentest/"], ["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
+    links: [["Case study", "case-studies.html#systems"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "optimization",
@@ -269,7 +267,7 @@ window.portfolioProjects = [
       ["PSO", "Move particles through a search space toward better scores"],
       ["Output", "Readable console examples for study and review"]
     ],
-    links: [["Open frontend", "demos/optimization/"], ["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
+    links: [["GitHub repo", "https://github.com/De1m0z/ai_optimization_algorithms_assignment"], ["Portfolio", "index.html#projects"]]
   },
   {
     id: "rest-api",
@@ -302,6 +300,6 @@ window.portfolioProjects = [
       ["DTO", "Request and response boundaries"],
       ["Docs", "Swagger/OpenAPI for endpoint review"]
     ],
-    links: [["Open frontend", "demos/rest-api/"], ["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
+    links: [["GitHub repo", "https://github.com/De1m0z/REST"], ["Portfolio", "index.html#projects"]]
   }
 ];

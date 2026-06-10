@@ -18,7 +18,6 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
-        <a href="demos/">Live Frontends</a>
         <a href="#case-notes">Case Notes</a>
         <a href="#skills">Skills</a>
         <a href="#thesis">Thesis</a>
@@ -38,7 +37,6 @@
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View my projects</a>
-            <a class="button secondary" href="demos/">Open live frontends</a>
             <a class="button secondary" href="case-studies.html">Read case studies</a>
             <a class="button secondary" href="cv.html">Open CV</a>
           </div>
@@ -81,11 +79,11 @@
         <div class="profile-copy">
           <p>
             My projects cover a YOWOv2 classroom activity-detection thesis, a gym face-attendance
-            system, a Cheen Tea kiosk/POS system, a secure thesis defense scheduler, a CTF platform, API labs, and a
+            system, a Cheen Tea kiosk/POS system, a secure thesis defense scheduler, the USM Agapay service desk, a CTF platform, API labs, and a
             structured university pentest workspace.
           </p>
           <p>
-            I do not only stop at code. I prepare documentation, workflow diagrams, evaluation figures, demo clips,
+            I do not only stop at code. I prepare documentation, workflow diagrams, evaluation figures, presentation clips,
             presentation decks, setup notes, instructions, and reports so the work can be explained,
             reviewed, and defended.
           </p>
@@ -102,7 +100,7 @@
           <p class="eyebrow">Selected Projects</p>
           <h2 id="projects-heading">What I created and what each project proves.</h2>
           <p>
-            This section highlights the work I can show: implementation details, sample-data demos, research outputs, screenshots, documentation, and public repositories.
+            This section highlights the work I can explain clearly: what each project does, what I built, the stack I used, and the outputs I can discuss during an interview.
           </p>
         </div>
 
@@ -154,7 +152,6 @@
               </div>
               <div class="project-card-actions">
                 <a href="project.html?id=classvision">Details</a>
-                <a href="demos/classvision/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -173,7 +170,6 @@
               <div class="tag-list"><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>SQLAlchemy</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=scheduler">Details</a>
-                <a href="demos/scheduler/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -192,7 +188,6 @@
               <div class="tag-list"><span>Django</span><span>FastAPI</span><span>React</span><span>InsightFace</span><span>pytest</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=gym">Details</a>
-                <a href="demos/gym/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -211,7 +206,6 @@
               <div class="tag-list"><span>Next.js</span><span>Laravel 12</span><span>Sanctum</span><span>Reverb</span><span>Docker</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=cheentea">Details</a>
-                <a href="demos/cheentea/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -225,7 +219,6 @@
               <div class="tag-list"><span>Laravel</span><span>Vue</span><span>Pinia</span><span>SQL Server</span><span>Reverb</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=agapay">Details</a>
-                <a href="demos/agapay/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -239,7 +232,6 @@
               <div class="tag-list"><span>Laravel</span><span>FastAPI</span><span>Next.js</span><span>Docker</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=usmctf">Details</a>
-                <a href="demos/usmctf/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -253,7 +245,6 @@
               <div class="tag-list"><span>OWASP</span><span>Burp</span><span>Ghidra</span><span>Reporting</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=pentest">Details</a>
-                <a href="demos/pentest/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -267,7 +258,6 @@
               <div class="tag-list"><span>Python</span><span>GA</span><span>MDP</span><span>PSO</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=optimization">Details</a>
-                <a href="demos/optimization/">Open frontend</a>
               </div>
             </div>
           </article>
@@ -281,22 +271,10 @@
               <div class="tag-list"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQLite</span></div>
               <div class="project-card-actions">
                 <a href="project.html?id=rest-api">Details</a>
-                <a href="demos/rest-api/">Open frontend</a>
               </div>
             </div>
           </article>
         </div>
-      </section>
-
-      <section id="interview-demos" class="section-shell interview-demo-section" aria-labelledby="interview-demos-heading">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Live Frontends</p>
-          <h2 id="interview-demos-heading">Open every project frontend with dummy data.</h2>
-          <p>
-            These links open project-style frontends prepared for walkthroughs. They use browser-only dummy records or a public sample-data deployment, so the work can be tested without a private database.
-          </p>
-        </div>
-        <div class="interview-demo-grid" id="interview-demo-grid"></div>
       </section>
 
       <section id="case-notes" class="section-shell case-notes" aria-labelledby="case-notes-heading">
@@ -309,7 +287,7 @@
           <article><span>Research pipeline</span><h3>ClassVision thesis workflow</h3><p>I worked across dataset preparation, class definition, CVAT labeling policy, data cleaning, by-video splitting, YOWOv2 fine-tuning, inference review, and defense-ready documentation.</p></article>
           <article><span>Application security</span><h3>Secure scheduler design</h3><p>I built around role boundaries and secure data handling: cookie-based JWTs, refresh rotation, signed CSRF tokens, encrypted sensitive fields, audit logs, admin scoping, and controlled PDF generation.</p></article>
           <article><span>Operational apps</span><h3>Real workflow systems</h3><p>The gym and kiosk projects cover enrollment, payments, attendance, reporting, product modifiers, kitchen queues, cashier views, loyalty rewards, and customer-facing ordering.</p></article>
-          <article><span>Documentation</span><h3>Reports and presentation assets</h3><p>I prepared thesis drafts, methodology guides, intelligent-system reports, figures, defense demo clips, contact sheets, PowerPoint scripts, and project notes.</p></article>
+          <article><span>Documentation</span><h3>Reports and presentation assets</h3><p>I prepared thesis drafts, methodology guides, intelligent-system reports, figures, defense presentation clips, contact sheets, PowerPoint scripts, and project notes.</p></article>
         </div>
         <a class="button primary case-link" href="case-studies.html">Open detailed case studies</a>
       </section>
@@ -337,7 +315,7 @@
           <div><span>01</span><strong>Data preparation</strong><p>Classroom CCTV clips, frame extraction, annotation policy, CVAT export, cleaning, validation, and by-video splitting.</p></div>
           <div><span>02</span><strong>Model workflow</strong><p>YOWOv2 medium fine-tuning with 16-frame clips, checkpoint selection, inference, filtering, and duplicate suppression.</p></div>
           <div><span>03</span><strong>Output design</strong><p>Accepted detections are converted into room activity summaries rather than identity-based student records.</p></div>
-          <div><span>04</span><strong>Presentation</strong><p>Evaluation figures, manuscript sections, defense demo clips, contact sheets, and slide generation.</p></div>
+          <div><span>04</span><strong>Presentation</strong><p>Evaluation figures, manuscript sections, defense presentation clips, contact sheets, and slide generation.</p></div>
         </div>
       </section>
 
@@ -353,7 +331,6 @@
       </section>
     </main>
     <footer class="site-footer"><span>&copy; 2026 Russel Jhon C. Buisan</span><span>BS Computer Science portfolio.</span></footer>
-    <script src="project-data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

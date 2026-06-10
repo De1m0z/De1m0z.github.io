@@ -12,7 +12,7 @@ const renderList = (selector, items, mapper) => {
   const node = document.querySelector(selector);
   if (!node) return;
   node.innerHTML = "";
-  items.forEach((item) => node.appendChild(mapper(item)));
+  items.forEach((item, index) => node.appendChild(mapper(item, index)));
 };
 
 const makeElement = (tag, className, text) => {
@@ -61,9 +61,8 @@ if (!project) {
     return card;
   });
 
-  renderList("#project-links", project.links, ([label, href]) => {
-    const isDemoLink = /demo/i.test(label);
-    const link = makeElement("a", isDemoLink ? "button primary" : "button secondary", label);
+  renderList("#project-links", project.links, ([label, href], index) => {
+    const link = makeElement("a", index === 0 ? "button primary" : "button secondary", label);
     link.href = href;
     return link;
   });

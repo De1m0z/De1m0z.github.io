@@ -9,21 +9,18 @@ Portfolio, case studies, and CV for **Russel Jhon C. Buisan**, BS Computer Scien
 - `project.html` - reusable project detail page
 - `project-data.js` - project facts used by the detail page
 - `project.js` - renders the selected project from the URL
-- `demo.html` - standalone browser-only project frontend samples using dummy data
-- `demos/` - public live frontend URLs for each project
-- `project-demo.js` - legacy sample-data renderer used by `demo.html`
 - `cv.html` - print-friendly CV
 - `cv.md` - editable markdown CV
 - `styles.css` - shared styling
-- `script.js` - project filtering, clickable project-card behavior, and live frontend board rendering
+- `script.js` - project filtering and clickable project-card behavior
 
 ## Project Materials Referenced
 
 - `classvision/` - BSCS thesis, YOWOv2 classroom activity detection framework
 - `thesis-defense-scheduler/` - secure full-stack scheduling system
 - `gym-face-management/` - gym management and face-based attendance system
-- `chantea-kiosk/` - kiosk/POS, Laravel API, and GitHub Pages sample-data frontend
-- `USM_Agapay/` - Laravel/Vue service-desk system represented with sanitized sample data
+- `chantea-kiosk/` - kiosk/POS, Laravel API, and staff/customer workflows
+- `USM_Agapay/` - Laravel/Vue service-desk system
 - `Pentest/university-pentest-workspace/` - authorized security research workspace
 - GitHub profile: <https://github.com/De1m0z>
 
@@ -33,4 +30,4 @@ Images used by the portfolio are stored in `assets/` so the published GitHub Pag
 
 Published site target: https://de1m0z.github.io/
 
-Project detail pages use packaged portfolio data. The home page includes a live frontend board, and each project has a public URL under `demos/` with browser-only sample data so the projects work on GitHub Pages without private databases.
+Project detail pages use packaged portfolio data. The site is intentionally focused on project descriptions, work performed, stacks, metrics, and case notes so visitors can quickly understand what Russel built.
