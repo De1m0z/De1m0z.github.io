@@ -323,8 +323,11 @@ h3 {
   min-height: 0;
   max-height: 520px;
 }
-.hero-media-logo i {
-  font-size: 180px;
+.hero-media-logo img.project-logo {
+  width: auto;
+  height: 50%;
+  max-width: 60%;
+  object-fit: contain;
   filter: drop-shadow(0 12px 24px rgba(0,0,0,0.08));
 }
 
@@ -467,14 +470,17 @@ h3 {
   min-height: 260px;
 }
 
-.project-logo-container i {
-  font-size: 100px;
+.project-logo-container img.project-logo {
+  width: auto;
+  height: 45%;
+  max-width: 60%;
+  object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.06));
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.project-card:hover .project-logo-container i {
-  transform: scale(1.15) translateY(-4px);
+.project-card:hover .project-logo-container img.project-logo {
+  transform: scale(1.1) translateY(-4px);
 }
 
 .python-bg { background: linear-gradient(135deg, #f1f5f9, #e2e8f0); }
@@ -482,8 +488,8 @@ h3 {
 .django-bg { background: linear-gradient(135deg, #f0fdf4, #dcfce7); }
 .laravel-bg { background: linear-gradient(135deg, #fef2f2, #fee2e2); }
 
-.project-card.featured > .project-logo-container i {
-  font-size: 140px;
+.project-card.featured > .project-logo-container img.project-logo {
+  height: 60%;
 }
 
 .project-card-body {
