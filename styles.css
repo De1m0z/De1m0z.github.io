@@ -1112,7 +1112,7 @@ h3 {
 }
 
 .cv-subheader {
-  margin: 2px 0 6px !important;
+  margin: 2px 0 6px;
   font-size: 12px;
   font-style: italic;
   color: var(--muted);
@@ -1137,12 +1137,12 @@ h3 {
 
 .cv-institution, .cv-date-side, .cv-thesis {
   font-size: 12px;
-  margin: 0 0 2px 0 !important;
+  margin: 0 0 2px 0;
 }
 
 .cv-skills-block p {
   font-size: 12px;
-  margin: 0 0 8px 0 !important;
+  margin: 0 0 8px 0;
   line-height: 1.4;
 }
 
@@ -1164,7 +1164,7 @@ h3 {
 }
 
 /* Responsive styling override */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .cv-grid-container {
     grid-template-columns: 1fr;
     gap: 24px;
