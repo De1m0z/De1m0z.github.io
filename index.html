@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Russel Jhon C. Buisan portfolio home">
         <span class="brand-mark">RB</span>
@@ -35,6 +36,11 @@
             My work combines full-stack development, computer vision, secure workflows, technical documentation,
             and project presentation for academic and practical use cases that need to be explained and defended.
           </p>
+          <div class="hero-snapshot" aria-label="Portfolio summary">
+            <div><strong>9</strong><span>documented projects</span></div>
+            <div><strong>3</strong><span>strong case-study areas</span></div>
+            <div><strong>CS</strong><span>full-stack, ML, security</span></div>
+          </div>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View my projects</a>
             <a class="button secondary" href="case-studies.html">Read case studies</a>
@@ -105,15 +111,16 @@
         </div>
 
         <div class="project-toolbar" aria-label="Project filters">
-          <button class="filter-button active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="ai">ML / CV</button>
-          <button class="filter-button" type="button" data-filter="fullstack">Full-stack</button>
-          <button class="filter-button" type="button" data-filter="security">Security</button>
-          <button class="filter-button" type="button" data-filter="academic">Academic</button>
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">ML / CV</button>
+          <button class="filter-button" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+          <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+          <button class="filter-button" type="button" data-filter="academic" aria-pressed="false">Academic</button>
         </div>
+        <p class="project-count" id="project-count" aria-live="polite">Showing 9 projects</p>
 
         <div class="project-grid">
-          <article class="project-card featured" data-category="ai academic fullstack" data-project-id="classvision" tabindex="0" role="link" aria-label="Open ClassVision project details">
+          <a class="project-card featured" href="project.html?id=classvision" data-category="ai academic fullstack" aria-label="Open ClassVision project details">
             <img
               src="assets/classvision-confusion-matrix.png"
               alt="ClassVision confusion matrix evaluation figure"
@@ -151,12 +158,12 @@
                 <span>Research</span>
               </div>
               <div class="project-card-actions">
-                <a href="project.html?id=classvision">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card" data-category="fullstack security academic" data-project-id="scheduler" tabindex="0" role="link" aria-label="Open Thesis Defense Scheduler project details">
+          <a class="project-card" href="project.html?id=scheduler" data-category="fullstack security academic" aria-label="Open Thesis Defense Scheduler project details">
             <img src="assets/usm-campus.webp" alt="University campus visual used in the thesis defense scheduler">
             <div class="project-card-body">
               <div class="project-meta"><span>Full-stack system</span><span>Secure workflow</span></div>
@@ -169,12 +176,12 @@
               </ul>
               <div class="tag-list"><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>SQLAlchemy</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=scheduler">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card" data-category="ai fullstack" data-project-id="gym" tabindex="0" role="link" aria-label="Open Gym Face Management project details">
+          <a class="project-card" href="project.html?id=gym" data-category="ai fullstack" aria-label="Open Gym Face Management project details">
             <img src="assets/gym-scanner.png" alt="Gym scanner interface preview">
             <div class="project-card-body">
               <div class="project-meta"><span>Intelligent system</span><span>Face attendance</span></div>
@@ -187,12 +194,12 @@
               </ul>
               <div class="tag-list"><span>Django</span><span>FastAPI</span><span>React</span><span>InsightFace</span><span>pytest</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=gym">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card" data-category="fullstack" data-project-id="cheentea" tabindex="0" role="link" aria-label="Open Cheen Tea Kiosk project details">
+          <a class="project-card" href="project.html?id=cheentea" data-category="fullstack" aria-label="Open Cheen Tea Kiosk project details">
             <img src="assets/cheentea-kiosk-ui.jpeg" alt="Cheen Tea kiosk UI reference image">
             <div class="project-card-body">
               <div class="project-meta"><span>POS / Kiosk</span><span>Business app</span></div>
@@ -205,12 +212,12 @@
               </ul>
               <div class="tag-list"><span>Next.js</span><span>Laravel 12</span><span>Sanctum</span><span>Reverb</span><span>Docker</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=cheentea">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card compact" data-category="fullstack security" data-project-id="agapay" tabindex="0" role="link" aria-label="Open USM Agapay project details">
+          <a class="project-card compact" href="project.html?id=agapay" data-category="fullstack security" aria-label="Open USM Agapay project details">
             <div class="project-card-body">
               <div class="project-meta"><span>Service desk</span><span>Laravel / Vue</span></div>
               <h3>USM Agapay Service Desk</h3>
@@ -218,12 +225,12 @@
               <ul class="detail-list"><li>Built around Laravel Sanctum, Vue, Pinia, SQL Server, MinIO-compatible storage, Reverb events, and role-scoped workflows.</li></ul>
               <div class="tag-list"><span>Laravel</span><span>Vue</span><span>Pinia</span><span>SQL Server</span><span>Reverb</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=agapay">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card compact" data-category="fullstack security" data-project-id="usmctf" tabindex="0" role="link" aria-label="Open USMctf project details">
+          <a class="project-card compact" href="project.html?id=usmctf" data-category="fullstack security" aria-label="Open USMctf project details">
             <div class="project-card-body">
               <div class="project-meta"><span>CTF platform</span><span>GitHub</span></div>
               <h3>USMctf Platform</h3>
@@ -231,12 +238,12 @@
               <ul class="detail-list"><li>Documented setup commands, environment variables, migrations, seeders, service URLs, and dev notes.</li></ul>
               <div class="tag-list"><span>Laravel</span><span>FastAPI</span><span>Next.js</span><span>Docker</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=usmctf">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card compact" data-category="security academic" data-project-id="pentest" tabindex="0" role="link" aria-label="Open security workspace project details">
+          <a class="project-card compact" href="project.html?id=pentest" data-category="security academic" aria-label="Open security workspace project details">
             <div class="project-card-body">
               <div class="project-meta"><span>Security workspace</span><span>Authorized testing</span></div>
               <h3>University Pentest and Vulnerability Research Workspace</h3>
@@ -244,12 +251,12 @@
               <ul class="detail-list"><li>Included guardrails for approved targets, repeatable documentation, written scope, and non-destructive testing.</li></ul>
               <div class="tag-list"><span>OWASP</span><span>Burp</span><span>Ghidra</span><span>Reporting</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=pentest">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card compact" data-category="ai academic" data-project-id="optimization" tabindex="0" role="link" aria-label="Open Optimization Algorithms project details">
+          <a class="project-card compact" href="project.html?id=optimization" data-category="ai academic" aria-label="Open Optimization Algorithms project details">
             <div class="project-card-body">
               <div class="project-meta"><span>Algorithms</span><span>GitHub</span></div>
               <h3>Optimization Algorithms Assignment</h3>
@@ -257,12 +264,12 @@
               <ul class="detail-list"><li>Includes examples for string evolution, knapsack optimization, gridworld value iteration, inventory decisions, and PSO functions.</li></ul>
               <div class="tag-list"><span>Python</span><span>GA</span><span>MDP</span><span>PSO</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=optimization">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project-card compact" data-category="fullstack academic" data-project-id="rest-api" tabindex="0" role="link" aria-label="Open Student REST API project details">
+          <a class="project-card compact" href="project.html?id=rest-api" data-category="fullstack academic" aria-label="Open Student REST API project details">
             <div class="project-card-body">
               <div class="project-meta"><span>API lab</span><span>GitHub</span></div>
               <h3>Student REST API</h3>
@@ -270,10 +277,10 @@
               <ul class="detail-list"><li>Practiced REST API structure using controllers, DTOs, EF Core design-time tools, SQLite, and Swagger/OpenAPI.</li></ul>
               <div class="tag-list"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQLite</span></div>
               <div class="project-card-actions">
-                <a href="project.html?id=rest-api">Details</a>
+                <span class="project-card-cta">View details</span>
               </div>
             </div>
-          </article>
+          </a>
         </div>
       </section>
 
