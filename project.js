@@ -12,7 +12,7 @@ const renderList = (selector, items, mapper) => {
   const node = document.querySelector(selector);
   if (!node) return;
   node.innerHTML = "";
-  items.forEach((item, index) => node.appendChild(mapper(item, index)));
+  (items || []).forEach((item, index) => node.appendChild(mapper(item, index)));
 };
 
 const makeElement = (tag, className, text) => {
@@ -26,11 +26,35 @@ if (!project) {
   setText("#project-title", "Project not found");
 } else {
   document.title = `${project.title} - Russel Jhon C. Buisan`;
+  const description = project.summary || "Project detail page for Russel Jhon C. Buisan.";
+  const pageUrl = `${window.location.origin}${window.location.pathname}?id=${encodeURIComponent(project.id)}`;
+  const absoluteImage = new URL(project.image, window.location.href).href;
+
+  const setMeta = (selector, value) => {
+    const node = document.querySelector(selector);
+    if (node) node.setAttribute("content", value);
+  };
+
+  const canonical = document.querySelector("link[rel='canonical']");
+  if (canonical) canonical.href = pageUrl;
+
+  setMeta("meta[name='description']", description);
+  setMeta("meta[property='og:title']", `${project.title} - Russel Jhon C. Buisan`);
+  setMeta("meta[property='og:description']", description);
+  setMeta("meta[property='og:url']", pageUrl);
+  setMeta("meta[property='og:image']", absoluteImage);
+  setMeta("meta[name='twitter:title']", `${project.title} - Russel Jhon C. Buisan`);
+  setMeta("meta[name='twitter:description']", description);
+  setMeta("meta[name='twitter:image']", absoluteImage);
+
   setText("#project-eyebrow", project.eyebrow);
   setText("#project-title", project.title);
   setText("#project-summary", project.summary);
+  setText("#project-overview", project.overview);
+  setText("#project-problem", project.problem);
   setText("#project-status", project.status);
   setText("#project-category", project.category);
+  setText("#project-updated", project.lastUpdated);
   setText("#preview-title", project.previewTitle);
 
   const image = document.querySelector("#project-image");
@@ -38,6 +62,7 @@ if (!project) {
     image.src = project.image;
     image.alt = project.alt;
   }
+  setText("#project-image-caption", project.alt);
 
   renderList("#project-stack", project.stack, (item) => makeElement("span", "", item));
 
@@ -48,7 +73,19 @@ if (!project) {
     return card;
   });
 
-  renderList("#project-work", project.work, (item) => {
+  renderList("#project-work", project.responsibilities || project.work, (item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+  });
+
+  renderList("#project-features", project.features, (item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+  });
+
+  renderList("#project-talking-points", project.talkingPoints, (item) => {
     const li = document.createElement("li");
     li.textContent = item;
     return li;
@@ -64,6 +101,9 @@ if (!project) {
   renderList("#project-links", project.links, ([label, href], index) => {
     const link = makeElement("a", index === 0 ? "button primary" : "button secondary", label);
     link.href = href;
+    if (/^https?:\/\//.test(href)) {
+      link.rel = "noopener";
+    }
     return link;
   });
 }

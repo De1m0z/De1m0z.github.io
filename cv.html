@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Curriculum Vitae of Russel Jhon C. Buisan, Full-stack Software Engineer specializing in Web APIs, Secure Workflows, and AI Integration.">
+    <meta name="description" content="Curriculum Vitae of Russel Jhon C. Buisan, Full-stack Software Engineer focused on web APIs, secure web systems, and AI integration.">
     <title>Russel Jhon C. Buisan - CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script>
       (function() {
         const storedTheme = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+        if (storedTheme === "dark") {
           document.documentElement.setAttribute("data-theme", "dark");
         } else {
           document.documentElement.setAttribute("data-theme", "light");
@@ -20,8 +19,7 @@
     </script>
   </head>
   <body class="cv-page">
-    <!-- Ambient grid background -->
-    <div aria-hidden="true" style="position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--grid-color) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;"></div>
+    <div class="page-grid-bg" aria-hidden="true"></div>
     <div class="cv-print-actions" aria-label="CV actions">
       <button type="button" id="cv-btn-print" class="button primary" onclick="window.print()">Print or save as PDF</button>
       <a class="button secondary" href="index.html">Back to portfolio</a>
@@ -38,11 +36,11 @@
         <div>
           <p class="eyebrow">Curriculum Vitae</p>
           <h1>Russel Jhon C. Buisan</h1>
-          <p class="lead">Full-stack Software Engineer | Specialized in Web APIs, Secure Workflows & AI Integration</p>
+          <p class="lead">Full-stack Software Engineer | Web APIs, Secure Web Systems & AI Integration</p>
         </div>
         <address class="cv-contact">
           <span>Pikit, Cotabato, Philippines</span>
-          <span>rjcbuisan@usm.edu.ph</span>
+          <a href="mailto:rjcbuisan@usm.edu.ph">rjcbuisan@usm.edu.ph</a>
           <span>+63 920 633 1342</span>
           <span>github.com/De1m0z</span>
         </address>
@@ -53,7 +51,7 @@
           <section class="cv-section-nested">
             <h2>Profile</h2>
             <p>
-              BS Computer Science student at the University of Southern Mindanao with hands-on experience designing and building secure, database-backed full-stack applications. Proven track record in implementing robust API service layers, role-based access control (RBAC), and real-time features, alongside integrating specialized machine learning and computer vision workflows.
+              Full-stack developer with a BS Computer Science background from the University of Southern Mindanao. I design and build secure, database-backed applications with API service layers, role-based access control (RBAC), real-time features, and computer vision integrations.
             </p>
           </section>
 
@@ -105,7 +103,7 @@
                 <span class="cv-tech">Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, Docker</span>
               </div>
               <ul>
-                <li>Designed a university service-ticket workflow supporting ticket claims, office transfers, comments, and queues.</li>
+                <li>Designed a university service-ticket process supporting ticket claims, office transfers, comments, and queues.</li>
                 <li>Built role-aware Vue 3 routing and Sanctum middleware boundaries for clients, staff, and office admins.</li>
                 <li>Containerized the environment using Docker Compose with MS SQL Server, Redis, S3-compatible MinIO, and queue workers.</li>
               </ul>
@@ -117,7 +115,7 @@
                 <span class="cv-tech">Django, FastAPI, React, PostgreSQL, InsightFace, pytest</span>
               </div>
               <ul>
-                <li>Built gym operations workflows managing member registration, billing plans, payments, and attendance reports.</li>
+                <li>Built gym operations flows for member registration, billing plans, payments, and attendance reports.</li>
                 <li>Integrated local face recognition check-in using InsightFace buffalo_l embeddings and manual fallback entry.</li>
                 <li>Prepared intelligent-check-in design notes, scanner check-in architecture, and automated verification tests.</li>
               </ul>
@@ -142,7 +140,7 @@
               </div>
               <ul>
                 <li>Created a full-stack CTF learning platform featuring team management, user profiles, and real-time challenge scoring.</li>
-                <li>Orchestrated a decoupled multi-service architecture using Docker Compose, leveraging Redis and PostgreSQL.</li>
+                <li>Orchestrated a decoupled multi-service architecture using Docker Compose, Redis, and PostgreSQL.</li>
               </ul>
             </div>
 
@@ -213,10 +211,10 @@
           <section class="cv-section-nested">
             <h2>Links</h2>
             <div class="cv-links-block">
-              <span>Portfolio Website</span>
-              <span>GitHub Profile</span>
-              <span>USMctf Repo</span>
-              <span>Cheen Tea Repo</span>
+              <a href="https://de1m0z.github.io/">Portfolio Website</a>
+              <a href="https://github.com/De1m0z">GitHub Profile</a>
+              <a href="https://github.com/De1m0z/CTF">USMctf Repo</a>
+              <a href="https://github.com/De1m0z/chantea-kiosk">Cheen Tea Repo</a>
             </div>
           </section>
         </div>

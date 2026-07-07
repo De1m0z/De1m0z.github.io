@@ -4,6 +4,7 @@
 const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
 const projectCards  = Array.from(document.querySelectorAll(".project-card"));
 const projectCount  = document.querySelector("#project-count");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const updateProjectCount = () => {
   if (!projectCount) return;
@@ -30,6 +31,26 @@ filterButtons.forEach(button => {
 
     updateProjectCount();
   });
+
+  button.addEventListener("keydown", (event) => {
+    const currentIndex = filterButtons.indexOf(button);
+    let nextIndex = currentIndex;
+
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+      nextIndex = (currentIndex + 1) % filterButtons.length;
+    } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+      nextIndex = (currentIndex - 1 + filterButtons.length) % filterButtons.length;
+    } else if (event.key === "Home") {
+      nextIndex = 0;
+    } else if (event.key === "End") {
+      nextIndex = filterButtons.length - 1;
+    } else {
+      return;
+    }
+
+    event.preventDefault();
+    filterButtons[nextIndex].focus();
+  });
 });
 
 updateProjectCount();
@@ -37,24 +58,23 @@ updateProjectCount();
 // ============================================================
 // Scroll-in animations (IntersectionObserver)
 // ============================================================
-const observer = new IntersectionObserver(
-  (entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        obs.unobserve(entry.target);
-      }
-    });
-  },
-  { root: null, rootMargin: "0px", threshold: 0.1 }
-);
+if (reducedMotion.matches || !("IntersectionObserver" in window)) {
+  document.querySelectorAll(".fade-in-section").forEach(el => el.classList.add("is-visible"));
+} else {
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { root: null, rootMargin: "0px", threshold: 0.1 }
+  );
 
-document.querySelectorAll(".fade-in-section").forEach(el => observer.observe(el));
-
-// Staggered card children
-document.querySelectorAll(".project-grid .project-card").forEach((card, i) => {
-  card.style.transitionDelay = `${i * 55}ms`;
-});
+  document.querySelectorAll(".fade-in-section").forEach(el => observer.observe(el));
+}
 
 // ============================================================
 // Scroll-to-top button
@@ -68,17 +88,7 @@ if (scrollTopBtn) {
   }, { passive: true });
 
   scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  // Hover micro-animation
-  scrollTopBtn.addEventListener("mouseenter", () => {
-    scrollTopBtn.style.transform = "translateY(-3px) scale(1.08)";
-    scrollTopBtn.style.boxShadow = "0 8px 30px rgba(59,130,246,0.5)";
-  });
-  scrollTopBtn.addEventListener("mouseleave", () => {
-    scrollTopBtn.style.transform = "";
-    scrollTopBtn.style.boxShadow = "0 4px 20px rgba(0,0,0,0.4)";
+    window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
   });
 }
 
@@ -94,8 +104,11 @@ const navObserver = new IntersectionObserver(
       if (entry.isIntersecting) {
         navLinks.forEach(link => {
           const active = link.getAttribute("href") === `#${entry.target.id}`;
-          link.style.color = active ? "var(--ink)" : "";
-          link.style.background = active ? "rgba(59,130,246,0.12)" : "";
+          if (active) {
+            link.setAttribute("aria-current", "true");
+          } else {
+            link.removeAttribute("aria-current");
+          }
         });
       }
     });
@@ -114,10 +127,12 @@ const moonIcon = document.querySelector(".moon-icon");
 
 // Initialize icon state
 const updateIconState = () => {
-  if (!sunIcon || !moonIcon) return;
+  if (!themeToggle || !sunIcon || !moonIcon) return;
   const isDark = document.documentElement.getAttribute("data-theme") === "dark";
   sunIcon.style.display = isDark ? "none" : "block";
   moonIcon.style.display = isDark ? "block" : "none";
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
 };
 updateIconState();
 

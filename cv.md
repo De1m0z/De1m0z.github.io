@@ -1,6 +1,6 @@
 # Russel Jhon C. Buisan
 
-BS Computer Science - Full-stack Software Engineer | Specialized in Web APIs, Secure Workflows & AI Integration  
+BS Computer Science - Full-stack Software Engineer | Web APIs, Secure Web Systems & AI Integration
 Pikit, Cotabato, Philippines  
 GitHub: <https://github.com/De1m0z>  
 Email: <rjcbuisan@usm.edu.ph>  
@@ -8,7 +8,7 @@ Contact: +63 920 633 1342
 
 ## Profile
 
-BS Computer Science student at the University of Southern Mindanao with hands-on experience designing and building secure, database-backed full-stack applications. Proven track record in implementing robust API service layers, role-based access control (RBAC), and real-time features, alongside integrating specialized machine learning and computer vision workflows.
+Full-stack developer with a BS Computer Science background from the University of Southern Mindanao. I design and build secure, database-backed applications with API service layers, role-based access control (RBAC), real-time features, and computer vision integrations.
 
 ## Education
 
@@ -36,8 +36,8 @@ Pikit Central Elementary School, Pikit, Cotabato
 - Frontend: React, Next.js, Vue 3, Pinia, TypeScript, Tailwind CSS, Radix/shadcn-style components, dashboards, kiosk UI, admin screens.
 - Backend: FastAPI, Laravel 12 (Sanctum, Reverb), Django, ASP.NET Core, REST APIs, service layers, schemas, controllers, authentication flows.
 - Databases and infrastructure: PostgreSQL, MS SQL Server, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, Entity Framework Core, migrations, seed scripts, MinIO/S3.
-- Machine learning / computer vision: YOWOv2 workflow, CVAT annotations, dataset validation, by-video partitioning, inference post-processing, InsightFace embeddings.
-- Security: RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM encryption, audit logs, rate limiting, authorized pentest workflow.
+- Machine learning / computer vision: YOWOv2 training notes, CVAT annotations, dataset validation, by-video partitioning, inference post-processing, InsightFace embeddings.
+- Security: RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM encryption, audit logs, rate limiting, authorized pentest process.
 - Research and documentation: Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, presentation clips, technical reports, and project notes.
 
 ## Professional Experience
@@ -68,7 +68,7 @@ Next.js, React, Tailwind CSS, Laravel 12, Sanctum, Reverb, Cloudinary
 
 Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, MinIO/S3, Docker
 
-- Designed a university service-ticket workflow supporting ticket claims, office transfers, comments, attachments, and queues.
+- Designed a university service-ticket process supporting ticket claims, office transfers, comments, attachments, and queues.
 - Built role-aware Vue 3 routing and Sanctum middleware boundaries for clients, staff, office admins, and system admins.
 - Containerized the environment using Docker Compose with MS SQL Server, Redis, S3-compatible MinIO, and queue workers.
 
@@ -76,7 +76,7 @@ Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, MinIO/S3, Docker
 
 Django, FastAPI, React, PostgreSQL, InsightFace, pytest
 
-- Built gym operations workflows managing member registration, billing plans, payments, attendance reports, and cashier dashboard.
+- Built gym operations flows for member registration, billing plans, payments, attendance reports, and cashier dashboard.
 - Integrated local face recognition check-in using InsightFace buffalo_l embeddings, consent checks, and manual fallback entry.
 - Prepared intelligent-system design notes, check-in architecture, and automated verification tests with pytest.
 
@@ -98,7 +98,7 @@ Repository: <https://github.com/De1m0z/CTF>
 
 ### University Pentest and Vulnerability Research Workspace
 
-OWASP workflow, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
+OWASP process, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 
 - Organized an authorized, non-destructive pentesting workspace using Burp Suite and Ghidra for campus systems.
 - Documented threat scenarios, proof-of-concept (PoC) safety guardrails, and prepared structured remediation handoffs.
