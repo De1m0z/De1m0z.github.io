@@ -66,6 +66,15 @@
         ],
         "createdAt": "2026-10-06T09:12:05.700Z",
         "reason": "Codex: false positive. DESIGN.md CV exceptions explicitly documents the ATS document screen-only 6px action controls; their appearance did not change."
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "files": [
+          "cv-traditional.html"
+        ],
+        "createdAt": "2026-10-06T09:23:12.794Z",
+        "reason": "Codex: sanctioned print-document exception. DESIGN.md explicitly specifies Arial for the standalone single-page ATS CV. Preserve the documented readable print typography; this exception does not apply to the portfolio website."
       }
     ]
   }
