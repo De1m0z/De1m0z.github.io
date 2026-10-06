@@ -9,7 +9,7 @@ def test_cv_md():
 
     # Check for new contact details
     assert "+63 920 633 1342" in content, "Phone number missing"
-    assert "rjcbuisan@usm.edu.ph" in content, "Email address missing"
+    assert "oslecbuisan613@gmail.com" in content, "Email address missing"
     assert "Pikit, Cotabato" in content, "Home address missing"
 
     # Check for target role alignment
@@ -17,7 +17,10 @@ def test_cv_md():
 
     # Check for OJT experience
     assert "INFOSOFT" in content, "OJT company name missing"
-    assert "June 2025 – August 2025" in content, "OJT date missing"
+    assert "June 2025 - August 2025" in content, "OJT date missing"
+    assert "May - June 2026" in content, "Published UICTO dates changed"
+    assert "Cum Laude" in content, "Graduation honors missing"
+    assert "### HammerPulse" in content and "Sole developer" in content, "HammerPulse role missing"
 
     # Check for leadership roles
     assert "PSITS" in content, "PSITS organization missing"

@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T09:05:34+00:00",
+  "title": "Design System: Russel Buisan portfolio",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Cool Ground",
+        "tonalRamp": [
+          "oklch(0.150 0.0029 264.54)",
+          "oklch(0.264 0.0029 264.54)",
+          "oklch(0.379 0.0029 264.54)",
+          "oklch(0.493 0.0029 264.54)",
+          "oklch(0.607 0.0029 264.54)",
+          "oklch(0.721 0.0029 264.54)",
+          "oklch(0.836 0.0029 264.54)",
+          "oklch(0.950 0.0029 264.54)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Paper Surface",
+        "tonalRamp": [
+          "oklch(0.150 0.0013 286.38)",
+          "oklch(0.264 0.0013 286.38)",
+          "oklch(0.379 0.0013 286.38)",
+          "oklch(0.493 0.0013 286.38)",
+          "oklch(0.607 0.0013 286.38)",
+          "oklch(0.721 0.0013 286.38)",
+          "oklch(0.836 0.0013 286.38)",
+          "oklch(0.950 0.0013 286.38)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Inset Surface",
+        "tonalRamp": [
+          "oklch(0.150 0.0092 258.34)",
+          "oklch(0.264 0.0092 258.34)",
+          "oklch(0.379 0.0092 258.34)",
+          "oklch(0.493 0.0092 258.34)",
+          "oklch(0.607 0.0092 258.34)",
+          "oklch(0.721 0.0092 258.34)",
+          "oklch(0.836 0.0092 258.34)",
+          "oklch(0.950 0.0092 258.34)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Heading Ink",
+        "tonalRamp": [
+          "oklch(0.150 0.0275 259.96)",
+          "oklch(0.264 0.0275 259.96)",
+          "oklch(0.379 0.0275 259.96)",
+          "oklch(0.493 0.0275 259.96)",
+          "oklch(0.607 0.0275 259.96)",
+          "oklch(0.721 0.0275 259.96)",
+          "oklch(0.836 0.0275 259.96)",
+          "oklch(0.950 0.0275 259.96)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Reading Slate",
+        "tonalRamp": [
+          "oklch(0.150 0.0330 260.22)",
+          "oklch(0.264 0.0330 260.22)",
+          "oklch(0.379 0.0330 260.22)",
+          "oklch(0.493 0.0330 260.22)",
+          "oklch(0.607 0.0330 260.22)",
+          "oklch(0.721 0.0330 260.22)",
+          "oklch(0.836 0.0330 260.22)",
+          "oklch(0.950 0.0330 260.22)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Slate",
+        "tonalRamp": [
+          "oklch(0.150 0.0300 259.03)",
+          "oklch(0.264 0.0300 259.03)",
+          "oklch(0.379 0.0300 259.03)",
+          "oklch(0.493 0.0300 259.03)",
+          "oklch(0.607 0.0300 259.03)",
+          "oklch(0.721 0.0300 259.03)",
+          "oklch(0.836 0.0300 259.03)",
+          "oklch(0.950 0.0300 259.03)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "tonalRamp": [
+          "oklch(0.150 0.0139 258.35)",
+          "oklch(0.264 0.0139 258.35)",
+          "oklch(0.379 0.0139 258.35)",
+          "oklch(0.493 0.0139 258.35)",
+          "oklch(0.607 0.0139 258.35)",
+          "oklch(0.721 0.0139 258.35)",
+          "oklch(0.836 0.0139 258.35)",
+          "oklch(0.950 0.0139 258.35)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.1985 263.95)",
+          "oklch(0.264 0.1985 263.95)",
+          "oklch(0.379 0.1985 263.95)",
+          "oklch(0.493 0.1985 263.95)",
+          "oklch(0.607 0.1985 263.95)",
+          "oklch(0.721 0.1985 263.95)",
+          "oklch(0.836 0.1985 263.95)",
+          "oklch(0.950 0.1985 263.95)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Action Blue Hover",
+        "tonalRamp": [
+          "oklch(0.150 0.1811 263.95)",
+          "oklch(0.264 0.1811 263.95)",
+          "oklch(0.379 0.1811 263.95)",
+          "oklch(0.493 0.1811 263.95)",
+          "oklch(0.607 0.1811 263.95)",
+          "oklch(0.721 0.1811 263.95)",
+          "oklch(0.836 0.1811 263.95)",
+          "oklch(0.950 0.1811 263.95)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Soft Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.0212 268.43)",
+          "oklch(0.264 0.0212 268.43)",
+          "oklch(0.379 0.0212 268.43)",
+          "oklch(0.493 0.0212 268.43)",
+          "oklch(0.607 0.0212 268.43)",
+          "oklch(0.721 0.0212 268.43)",
+          "oklch(0.836 0.0212 268.43)",
+          "oklch(0.950 0.0212 268.43)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.0013 286.38)",
+          "oklch(0.264 0.0013 286.38)",
+          "oklch(0.379 0.0013 286.38)",
+          "oklch(0.493 0.0013 286.38)",
+          "oklch(0.607 0.0013 286.38)",
+          "oklch(0.721 0.0013 286.38)",
+          "oklch(0.836 0.0013 286.38)",
+          "oklch(0.950 0.0013 286.38)"
+        ]
+      },
+      "dark-bg": {
+        "role": "neutral",
+        "displayName": "Dark Cool Ground",
+        "tonalRamp": [
+          "oklch(0.150 0.0153 261.60)",
+          "oklch(0.264 0.0153 261.60)",
+          "oklch(0.379 0.0153 261.60)",
+          "oklch(0.493 0.0153 261.60)",
+          "oklch(0.607 0.0153 261.60)",
+          "oklch(0.721 0.0153 261.60)",
+          "oklch(0.836 0.0153 261.60)",
+          "oklch(0.950 0.0153 261.60)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Paper Surface",
+        "tonalRamp": [
+          "oklch(0.150 0.0211 260.57)",
+          "oklch(0.264 0.0211 260.57)",
+          "oklch(0.379 0.0211 260.57)",
+          "oklch(0.493 0.0211 260.57)",
+          "oklch(0.607 0.0211 260.57)",
+          "oklch(0.721 0.0211 260.57)",
+          "oklch(0.836 0.0211 260.57)",
+          "oklch(0.950 0.0211 260.57)"
+        ]
+      },
+      "dark-surface-2": {
+        "role": "neutral",
+        "displayName": "Dark Inset Surface",
+        "tonalRamp": [
+          "oklch(0.150 0.0285 259.11)",
+          "oklch(0.264 0.0285 259.11)",
+          "oklch(0.379 0.0285 259.11)",
+          "oklch(0.493 0.0285 259.11)",
+          "oklch(0.607 0.0285 259.11)",
+          "oklch(0.721 0.0285 259.11)",
+          "oklch(0.836 0.0285 259.11)",
+          "oklch(0.950 0.0285 259.11)"
+        ]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Dark Heading Ink",
+        "tonalRamp": [
+          "oklch(0.150 0.0087 264.52)",
+          "oklch(0.264 0.0087 264.52)",
+          "oklch(0.379 0.0087 264.52)",
+          "oklch(0.493 0.0087 264.52)",
+          "oklch(0.607 0.0087 264.52)",
+          "oklch(0.721 0.0087 264.52)",
+          "oklch(0.836 0.0087 264.52)",
+          "oklch(0.950 0.0087 264.52)"
+        ]
+      },
+      "dark-text": {
+        "role": "neutral",
+        "displayName": "Dark Reading Slate",
+        "tonalRamp": [
+          "oklch(0.150 0.0221 259.19)",
+          "oklch(0.264 0.0221 259.19)",
+          "oklch(0.379 0.0221 259.19)",
+          "oklch(0.493 0.0221 259.19)",
+          "oklch(0.607 0.0221 259.19)",
+          "oklch(0.721 0.0221 259.19)",
+          "oklch(0.836 0.0221 259.19)",
+          "oklch(0.950 0.0221 259.19)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Quiet Slate",
+        "tonalRamp": [
+          "oklch(0.150 0.0293 258.37)",
+          "oklch(0.264 0.0293 258.37)",
+          "oklch(0.379 0.0293 258.37)",
+          "oklch(0.493 0.0293 258.37)",
+          "oklch(0.607 0.0293 258.37)",
+          "oklch(0.721 0.0293 258.37)",
+          "oklch(0.836 0.0293 258.37)",
+          "oklch(0.950 0.0293 258.37)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark Divider",
+        "tonalRamp": [
+          "oklch(0.150 0.0343 260.17)",
+          "oklch(0.264 0.0343 260.17)",
+          "oklch(0.379 0.0343 260.17)",
+          "oklch(0.493 0.0343 260.17)",
+          "oklch(0.607 0.0343 260.17)",
+          "oklch(0.721 0.0343 260.17)",
+          "oklch(0.836 0.0343 260.17)",
+          "oklch(0.950 0.0343 260.17)"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Dark Action Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.1092 267.76)",
+          "oklch(0.264 0.1092 267.76)",
+          "oklch(0.379 0.1092 267.76)",
+          "oklch(0.493 0.1092 267.76)",
+          "oklch(0.607 0.1092 267.76)",
+          "oklch(0.721 0.1092 267.76)",
+          "oklch(0.836 0.1092 267.76)",
+          "oklch(0.950 0.1092 267.76)"
+        ]
+      },
+      "dark-accent-hover": {
+        "role": "primary",
+        "displayName": "Dark Action Blue Hover",
+        "tonalRamp": [
+          "oklch(0.150 0.0688 267.70)",
+          "oklch(0.264 0.0688 267.70)",
+          "oklch(0.379 0.0688 267.70)",
+          "oklch(0.493 0.0688 267.70)",
+          "oklch(0.607 0.0688 267.70)",
+          "oklch(0.721 0.0688 267.70)",
+          "oklch(0.836 0.0688 267.70)",
+          "oklch(0.950 0.0688 267.70)"
+        ]
+      },
+      "dark-accent-soft": {
+        "role": "primary",
+        "displayName": "Dark Soft Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.0495 266.07)",
+          "oklch(0.264 0.0495 266.07)",
+          "oklch(0.379 0.0495 266.07)",
+          "oklch(0.493 0.0495 266.07)",
+          "oklch(0.607 0.0495 266.07)",
+          "oklch(0.721 0.0495 266.07)",
+          "oklch(0.836 0.0495 266.07)",
+          "oklch(0.950 0.0495 266.07)"
+        ]
+      },
+      "dark-on-accent": {
+        "role": "primary",
+        "displayName": "Dark On Blue",
+        "tonalRamp": [
+          "oklch(0.150 0.0393 264.25)",
+          "oklch(0.264 0.0393 264.25)",
+          "oklch(0.379 0.0393 264.25)",
+          "oklch(0.493 0.0393 264.25)",
+          "oklch(0.607 0.0393 264.25)",
+          "oklch(0.721 0.0393 264.25)",
+          "oklch(0.836 0.0393 264.25)",
+          "oklch(0.950 0.0393 264.25)"
+        ]
+      },
+      "logo-backing": {
+        "role": "neutral",
+        "displayName": "Logo Backing",
+        "tonalRamp": [
+          "oklch(0.150 0.0100 155.09)",
+          "oklch(0.264 0.0100 155.09)",
+          "oklch(0.379 0.0100 155.09)",
+          "oklch(0.493 0.0100 155.09)",
+          "oklch(0.607 0.0100 155.09)",
+          "oklch(0.721 0.0100 155.09)",
+          "oklch(0.836 0.0100 155.09)",
+          "oklch(0.950 0.0100 155.09)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Generic h1/fallback title. The 3.6rem endpoint is intentional."
+      },
+      "display-hero": {
+        "displayName": "Display Hero",
+        "purpose": "Homepage .hero h1 above 1100px, including the repeated 1399px rule. The 3.6rem minimum is intentional."
+      },
+      "display-hero-intermediate": {
+        "displayName": "Display Hero Intermediate",
+        "purpose": "Homepage .hero h1 at 1024–1100px; intentional 3.2rem minimum."
+      },
+      "display-hero-tablet": {
+        "displayName": "Display Hero Tablet",
+        "purpose": "Homepage .hero h1 at 768–1023px after columns stack."
+      },
+      "display-hero-mobile": {
+        "displayName": "Display Hero Mobile",
+        "purpose": "Homepage .hero h1 below 768px; intentional 3.25rem minimum and 5.5rem maximum."
+      },
+      "display-project": {
+        "displayName": "Display Project",
+        "purpose": "Compact detail title; .project-detail-copy h1, with intentional 2.25rem minimum."
+      },
+      "display-case": {
+        "displayName": "Display Case",
+        "purpose": "Case-collection introduction; .case-hero h1."
+      },
+      "display-case-mobile": {
+        "displayName": "Display Case Mobile",
+        "purpose": "Case-collection introduction below 768px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Shared section h2, including the project-index heading."
+      },
+      "headline-thesis": {
+        "displayName": "Headline Thesis",
+        "purpose": "Scoped research introduction; .thesis-copy h2."
+      },
+      "headline-contact": {
+        "displayName": "Headline Contact",
+        "purpose": "Scoped open contact heading; .contact-copy h2."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Generic h3 fallback; component roles retain their own overrides."
+      },
+      "headline-detail": {
+        "displayName": "Headline Detail",
+        "purpose": "Technical reading-section h2; .project-detail-section h2."
+      },
+      "headline-detail-mobile": {
+        "displayName": "Headline Detail Mobile",
+        "purpose": "Reading-section h2 below 768px."
+      },
+      "title-project": {
+        "displayName": "Title Project",
+        "purpose": "Equal gallery-card h3; .project-card h3."
+      },
+      "title-project-mobile": {
+        "displayName": "Title Project Mobile",
+        "purpose": "Gallery titles below 768px; also narrow study title size/leading."
+      },
+      "title-skill": {
+        "displayName": "Title Skill",
+        "purpose": "Substantial discipline title first in each skills cell; .skill-columns h3."
+      },
+      "title-note": {
+        "displayName": "Title Note",
+        "purpose": "Illustrated note-row title; .note-link h3. Uses 1.2rem at or below 1023px."
+      },
+      "title-study": {
+        "displayName": "Title Study",
+        "purpose": "Native study-summary title; .study-summary strong. Uses 1.2rem below 768px."
+      },
+      "title-reading": {
+        "displayName": "Title Reading",
+        "purpose": "Case-panel and detail subheads; sidebar h2 shares the size with its own tracking."
+      },
+      "title-research": {
+        "displayName": "Title Research",
+        "purpose": "Research process-panel h3, reduced to 1.25rem below 768px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default DM Sans web reading, normally limited to 68ch."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Introductory text; responsive home/detail leads reduce to 1rem."
+      },
+      "reading": {
+        "displayName": "Reading",
+        "purpose": "Detail paragraphs/lists, case panels, and collection footer."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Skills/process descriptions and facts values with normal body leading."
+      },
+      "summary": {
+        "displayName": "Summary",
+        "purpose": "Equal project-index descriptions; .project-card p."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Primary and secondary action labels."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Native header links and filter labels."
+      },
+      "skill-tools": {
+        "displayName": "Skill Tools",
+        "purpose": "Smaller blue tools line below the discipline title."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "Plain stack metadata and the compact inset sidebar variant."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Counts, wall captions, note metadata, fact labels, and research evidence."
+      },
+      "caption-small": {
+        "displayName": "Caption Small",
+        "purpose": "Identity/evidence captions, footer, and CV contacts."
+      },
+      "logo-name": {
+        "displayName": "Logo Name",
+        "purpose": "Base native name-mark artwork; all context overrides are scoped in DESIGN.md."
+      },
+      "logo-agapay": {
+        "displayName": "Logo Agapay",
+        "purpose": "Agapay gallery name mark; 36px is artwork lettering, not reading copy."
+      },
+      "logo-api": {
+        "displayName": "Logo Api",
+        "purpose": "Native API name mark. Monospace is local to this identity, not an icon font."
+      },
+      "logo-label": {
+        "displayName": "Logo Label",
+        "purpose": "Ordinary visible wall project names; 10px at 1024–1399px and 12px at or below 1023px."
+      },
+      "logo-subline": {
+        "displayName": "Logo Subline",
+        "purpose": "Supporting artwork lettering beside a separately readable project title."
+      },
+      "logo-subline-compact": {
+        "displayName": "Logo Subline Compact",
+        "purpose": "Decorative 9px sublines only: wall at 1024–1100px, note marks at or below 1023px, study marks below 768px. These three aria-hidden contexts have normal adjacent project labels; never use for essential reading or controls."
+      },
+      "metric-value": {
+        "displayName": "Metric Value",
+        "purpose": "Factual project values with tabular numerals."
+      },
+      "metric-value-mobile": {
+        "displayName": "Metric Value Mobile",
+        "purpose": "Wrapping project facts below 768px."
+      },
+      "contact-email": {
+        "displayName": "Contact Email",
+        "purpose": "Open contact address with safe wrapping."
+      },
+      "contact-email-mobile": {
+        "displayName": "Contact Email Mobile",
+        "purpose": "Contact address below 768px."
+      },
+      "cv-display": {
+        "displayName": "Cv Display",
+        "purpose": "Web CV name only."
+      },
+      "cv-title": {
+        "displayName": "Cv Title",
+        "purpose": "Web CV item titles."
+      },
+      "cv-body": {
+        "displayName": "Cv Body",
+        "purpose": "Web CV paragraphs and bullets."
+      },
+      "cv-meta": {
+        "displayName": "Cv Meta",
+        "purpose": "Web CV date and stack metadata."
+      },
+      "cv-display-print": {
+        "displayName": "Cv Display Print",
+        "purpose": "Web CV name in print only."
+      },
+      "cv-body-print": {
+        "displayName": "Cv Body Print",
+        "purpose": "Web CV paragraphs and bullets in print only."
+      },
+      "cv-title-print": {
+        "displayName": "Cv Title Print",
+        "purpose": "Web CV item titles in print only."
+      },
+      "cv-meta-print": {
+        "displayName": "Cv Meta Print",
+        "purpose": "Web CV contacts, dates, stacks, and links in print only; ATS Arial remains separate."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tile-shadow",
+        "value": "0 14px 36px -20px rgb(19 38 78 / 28%)",
+        "purpose": "Root resting shadow for wall tiles, unchanged between themes."
+      },
+      {
+        "name": "tile-shadow-hover",
+        "value": "0 24px 44px -22px rgb(19 38 78 / 36%)",
+        "purpose": "Root fine-pointer tile-lift shadow."
+      },
+      {
+        "name": "ats-paper-preview",
+        "value": "0 18px 48px rgba(17, 24, 39, 0.12)",
+        "purpose": "Scoped ATS screen paper only; removed in print."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.23, 1, .32, 1)",
+        "purpose": "Shared CSS and WAAPI easing."
+      },
+      {
+        "name": "button-state",
+        "value": "160ms",
+        "purpose": "Button transforms/background/border; fine-pointer press scales .98 unless keyboard focus is visible."
+      },
+      {
+        "name": "tile-hover",
+        "value": "280ms",
+        "purpose": "Fine-pointer 8px lift and hover shadow."
+      },
+      {
+        "name": "wall-response",
+        "value": "transform 500ms var(--ease-out)",
+        "purpose": "Perspective(1200px), approximately ±3.5deg per axis, fine-pointer desktops at least 1024px only; resets on leave/focus/media change."
+      },
+      {
+        "name": "headline-entry",
+        "value": "850ms; delay 0ms / 100ms / 200ms",
+        "purpose": "WAAPI clip reveal with 32px vertical movement; default content stays visible."
+      },
+      {
+        "name": "wall-entry",
+        "value": "1100ms",
+        "purpose": "WAAPI perspective unfold from 12deg/-12deg, 30px offset, and .92 scale."
+      },
+      {
+        "name": "tile-entry",
+        "value": "900ms; delay 150ms + min(index * 20ms, 180ms)",
+        "purpose": "WAAPI from 26px/.94 scale/.3 opacity. Last tile finishes by 1230ms."
+      },
+      {
+        "name": "filter-reflow",
+        "value": "320ms",
+        "purpose": "Measured positional continuity for pointer filtering; keyboard activation is immediate."
+      },
+      {
+        "name": "project-hover",
+        "value": "320ms transform; 240ms wash opacity; 180ms title/arrow",
+        "purpose": "Subtle identity/frame response; arrow shifts 3px/-3px."
+      },
+      {
+        "name": "reading-feedback",
+        "value": "240ms transform; 200ms summary background",
+        "purpose": "Note/contact arrows and native disclosure rotation; focus suppresses toggle transition."
+      },
+      {
+        "name": "keyboard-cancellation",
+        "value": "Immediate on Tab",
+        "purpose": "Cancels intro/reflow WAAPI, resets wall, and cancels its transition."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none !important; transition: none !important; scroll-behavior: auto !important;",
+        "purpose": "CSS fallback plus live WAAPI cancellation and wall reset; static focus/hover remain usable."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "four-column-projects",
+        "value": "1399px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "stacked-hero-and-menu",
+        "value": "1023px"
+      },
+      {
+        "name": "mobile-reading",
+        "value": "767px"
+      },
+      {
+        "name": "compact-project-rows",
+        "value": "479px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "359px"
+      },
+      {
+        "name": "wall-pointer-minimum",
+        "value": "1024px"
+      },
+      {
+        "name": "ats-screen-only",
+        "value": "820px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled blue link for the leading action in an action row.",
+      "html": "<a class=\"ds-button-primary\" href=\"index.html#projects\">View projects</a>",
+      "css": ".ds-button-primary { display: inline-flex; justify-content: center; align-items: center; min-height: 52px; padding: 13px 22px; border-radius: var(--radius, 8px); text-decoration: none; font: 600 14px/1.65 'DM Sans', sans-serif; white-space: nowrap; cursor: pointer; touch-action: manipulation; transition: transform 160ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), background-color 160ms ease, border-color 160ms ease; background: var(--accent, #2759d5); color: var(--on-accent, #fcfcfd); border: 1px solid transparent; } .ds-button-primary:focus-visible { outline: 3px solid var(--accent, #2759d5); outline-offset: 5px; } @media (hover: hover) and (pointer: fine) { .ds-button-primary:hover { background: var(--accent-hover, #1944b2); } .ds-button-primary:active:not(:focus-visible) { transform: scale(.98); } } @media (prefers-reduced-motion: reduce) { .ds-button-primary { transition: none; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined supporting action that remains neutral until pointer hover.",
+      "html": "<a class=\"ds-button-secondary\" href=\"Russel_Buisan_CV.pdf\" download>Download CV</a>",
+      "css": ".ds-button-secondary { display: inline-flex; justify-content: center; align-items: center; min-height: 52px; padding: 13px 22px; border-radius: var(--radius, 8px); text-decoration: none; font: 600 14px/1.65 'DM Sans', sans-serif; white-space: nowrap; cursor: pointer; touch-action: manipulation; transition: transform 160ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), background-color 160ms ease, border-color 160ms ease; background: transparent; color: var(--ink, #19212e); border: 1px solid var(--line, #d6dce5); } .ds-button-secondary:focus-visible { outline: 3px solid var(--accent, #2759d5); outline-offset: 5px; } @media (hover: hover) and (pointer: fine) { .ds-button-secondary:hover { background: var(--surface-2, #e9edf3); } .ds-button-secondary:active:not(:focus-visible) { transform: scale(.98); } } @media (prefers-reduced-motion: reduce) { .ds-button-secondary { transition: none; } }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Underlined reading action with a full-height keyboard and pointer target.",
+      "html": "<a class=\"ds-text-link\" href=\"case-studies.html\">All case studies</a>",
+      "css": ".ds-text-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent, #2759d5); font: 600 16px/1.65 'DM Sans', sans-serif; text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; touch-action: manipulation; } .ds-text-link:focus-visible { outline: 3px solid var(--accent, #2759d5); outline-offset: 5px; } @media (hover: hover) and (pointer: fine) { .ds-text-link:hover { color: var(--accent, #2759d5); } }"
+    },
+    {
+      "name": "Project Filters",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Native pressed-state filters with ink selection. Existing script handles filtering and immediate keyboard activation.",
+      "html": "<div class=\"ds-filter-group\" role=\"group\" aria-label=\"Filter projects\"><button class=\"ds-filter ds-active\" type=\"button\" aria-pressed=\"true\">All</button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Full-stack</button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Security</button></div>",
+      "css": ".ds-filter-group { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; } .ds-filter { min-height: 44px; padding: 8px 16px; color: var(--text, #475264); background: transparent; border: 1px solid transparent; border-radius: var(--radius, 8px); font: 400 14px/1.65 'DM Sans', sans-serif; cursor: pointer; touch-action: manipulation; } .ds-filter.ds-active { background: var(--ink, #19212e); color: var(--bg, #f6f7f9); } .ds-filter:focus-visible { outline: 3px solid var(--accent, #2759d5); outline-offset: 5px; } @media (hover: hover) and (pointer: fine) { .ds-filter:hover { color: var(--accent, #2759d5); background: var(--accent-soft, #e7edfc); } } @media (max-width: 767px) { .ds-filter { padding-inline: 12px; } } @media (hover: hover) and (pointer: fine) { .ds-filter.ds-active:hover { background:var(--ink, #19212e); color:var(--bg, #f6f7f9); } }"
+    },
+    {
+      "name": "Navigation Links",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Native header links with blue, underlined current location and visible focus.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"index.html#projects\" aria-current=\"location\">Projects</a><a href=\"index.html#case-notes\">Case Notes</a><a href=\"index.html#skills\">Skills</a><a href=\"index.html#thesis\">Thesis</a><a href=\"index.html#cv\">CV</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; } .ds-nav a { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; color: var(--text, #475264); text-decoration: none; font: 400 14px/1.65 'DM Sans', sans-serif; touch-action: manipulation; } .ds-nav a[aria-current] { color: var(--accent, #2759d5); } .ds-nav a:focus-visible { outline: 3px solid var(--accent, #2759d5); outline-offset: 5px; } @media (hover: hover) and (pointer: fine) { .ds-nav a:hover { color: var(--accent, #2759d5); } } @media (max-width: 1100px) { .ds-nav a { padding-inline: 8px; } } @media (max-width: 1023px) { .ds-nav { order: 3; width: 100%; margin: 0; flex-wrap: wrap; } .ds-nav a { padding: 10px 12px; } } .ds-nav a[aria-current] { text-decoration:underline; text-underline-offset:6px; }"
+    },
+    {
+      "name": "Stack Tags",
+      "kind": "chip",
+      "refersTo": "tag-list",
+      "description": "Plain, non-interactive technology labels in a wrapping row.",
+      "html": "<div class=\"ds-tags\"><span>Node.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div>",
+      "css": ".ds-tags { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 18px; color: var(--muted, #606b7c); font: 500 12px/1.65 'DM Sans', sans-serif; }"
+    },
+    {
+      "name": "Equal Project Entry",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "One native link with identity, title, summary, stack, and action. All projects share this hierarchy.",
+      "html": "<a class=\"ds-project-card\" href=\"project.html?id=scheduler\"><div class=\"ds-project-art\"><span class=\"ds-name-mark\" aria-hidden=\"true\">defense<span>scheduler</span></span></div><div class=\"ds-project-card-body\"><h3>Thesis Scheduler</h3><p>Defense bookings, approvals, and secure documents in one workflow.</p><div class=\"ds-tag-list\"><span>FastAPI</span><span>React</span><span>PostgreSQL</span></div><span class=\"ds-project-card-cta\">Explore project <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></span></div></a>",
+      "css": ".ds-project-card { display: flex; flex-direction: column; min-width: 0; color: var(--text, #475264); text-decoration: none; }.ds-project-card h3 { margin-block: 0 12px; font-size: 1.25rem; line-height: 1.25; transition: color 180ms ease; }.ds-project-card p { font-size: 14px; line-height: 1.6; }.ds-project-art { position: relative; display: grid; place-items: center; height: 164px; padding: 24px; margin-bottom: 20px; border-radius: var(--media-radius, 14px); background: var(--surface-2, #e9edf3); overflow: hidden; }.ds-project-art::before { content: ''; position: absolute; inset: 0; background: var(--accent, #2759d5); opacity: 0; transform: translateY(100%); transition: transform 320ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), opacity 240ms ease; }.ds-name-mark { position: relative; color: var(--logo-ink, var(--ink, #19212e)); text-align: center; white-space: nowrap; font: 600 28px/1.1 'Space Grotesk', sans-serif; letter-spacing: -.035em; transition: transform 320ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-name-mark span { display: block; margin-top: 7px; white-space: normal; font: 500 12px/1.4 'DM Sans', sans-serif; letter-spacing: 0; }.ds-project-card-body { display: flex; flex: 1; flex-direction: column; min-width: 0; }.ds-tag-list { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 18px; font-size: 12px; font-weight: 500; color: var(--muted, #606b7c); }.ds-project-card .ds-tag-list { margin-top: auto; padding-top: 18px; }.ds-project-card-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; margin-top: 12px; color: var(--accent, #2759d5); font-size: 13px; font-weight: 600; }.ds-project-card-cta .ds-icon { transition: transform 180ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-icon { width: 20px; height: 20px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }.ds-project-card h3 { color: var(--ink, #19212e); font-family: 'Space Grotesk', sans-serif; font-weight: 600; line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }.ds-project-card h3 { font-size: 1.75rem; letter-spacing: -.025em; }.ds-project-card h3 { margin-block: 0 12px; font-size: 1.25rem; line-height: 1.25; transition: color 180ms ease; }.ds-project-card { font-family:\"DM Sans\",sans-serif; line-height:1.65; width:min(100%, 260px); } .ds-project-card h3, .ds-project-card p { margin-top:0; } .ds-project-card p { margin-bottom:0; } .ds-project-card:focus-visible { outline:3px solid var(--accent, #2759d5); outline-offset:5px; } @media (hover: hover) and (pointer: fine) {.ds-project-card:hover .ds-project-art::before { transform: none; opacity: .08; }.ds-project-card:hover .ds-name-mark { transform: translateY(-3px) scale(1.06); }.ds-project-card:hover h3 { color: var(--accent, #2759d5); }.ds-project-card:hover .ds-project-card-cta .ds-icon { transform: translate(3px, -3px); }} @media (prefers-reduced-motion: reduce) {.ds-project-card h3, .ds-project-art::before, .ds-name-mark, .ds-project-card-cta .ds-icon { transition:none; }}"
+    },
+    {
+      "name": "Project Logo Tile",
+      "kind": "card",
+      "refersTo": "logo-tile",
+      "description": "Native wall link with a name mark, visible project label, and fine-pointer lift.",
+      "html": "<a class=\"ds-logo-tile\" href=\"project.html?id=scheduler\"><span class=\"ds-wall-logo\" aria-hidden=\"true\"><span class=\"ds-name-mark\">defense<span>scheduler</span></span></span><span class=\"ds-wall-project-name\">Thesis Scheduler</span></a>",
+      "css": ".ds-logo-tile { display: grid; grid-template-rows: minmax(0, 1fr) auto; grid-column: span 3; align-items: center; min-height: 144px; padding: 20px 12px 14px; border-radius: var(--media-radius, 14px); color: var(--logo-ink, var(--ink, #19212e)); background: var(--surface, #fcfcfd); text-decoration: none; box-shadow: var(--tile-shadow, 0 14px 36px -20px rgb(19 38 78 / 28%)); transition: transform 280ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)), box-shadow 280ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-wall-logo { display: grid; place-items: center; min-width: 0; height: 78px; }.ds-name-mark { position: relative; color: var(--logo-ink, var(--ink, #19212e)); text-align: center; white-space: nowrap; font: 600 28px/1.1 'Space Grotesk', sans-serif; letter-spacing: -.035em; transition: transform 320ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-name-mark span { display: block; margin-top: 7px; white-space: normal; font: 500 12px/1.4 'DM Sans', sans-serif; letter-spacing: 0; }.ds-wall-logo .ds-name-mark { font-size: 20px; }.ds-wall-logo .ds-name-mark span { font-size: 10px; }.ds-wall-project-name { margin-top: 12px; font-size: 11px; font-weight: 600; text-align: center; line-height: 1.3; }.ds-logo-tile { width:160px; font-family:\"DM Sans\",sans-serif; background:var(--accent-soft, #e7edfc); } .ds-logo-tile:focus-visible { outline:3px solid var(--accent, #2759d5); outline-offset:5px; } @media (hover: hover) and (pointer: fine) {.ds-logo-tile:hover { transform: translateY(-8px); box-shadow: var(--tile-shadow-hover, 0 24px 44px -22px rgb(19 38 78 / 36%)); }} @media (prefers-reduced-motion: reduce) {.ds-logo-tile, .ds-name-mark { transition:none; }}"
+    },
+    {
+      "name": "Skills Group Cell",
+      "kind": "custom",
+      "refersTo": "skill-panel",
+      "description": "One divided-panel cell: a substantial discipline title, smaller supporting tools, description, and example-project link.",
+      "html": "<div class=\"ds-skill-columns\"><article><h3>Interfaces</h3><p class=\"ds-skill-tools\">React / Next.js / Vue</p><p>TypeScript, Vite, Tailwind CSS, responsive layouts, and accessible interactions.</p><a href=\"project.html?id=cheentea\">In practice: Cheen Tea <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></a></article></div>",
+      "css": ".ds-skill-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line, #d6dce5); border: 1px solid var(--line, #d6dce5); border-radius: var(--media-radius, 14px); overflow: hidden; }.ds-skill-columns article { display: flex; flex-direction: column; min-width: 0; padding: 28px; background: var(--surface, #fcfcfd); }.ds-skill-columns h3 { color: var(--ink, #19212e); font-size: 1.5rem; }.ds-skill-columns .ds-skill-tools { margin-block: 14px; color: var(--accent, #2759d5); font-size: 1rem; font-weight: 500; }.ds-skill-columns p { font-size: 14px; }.ds-skill-columns a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: auto; padding-top: 14px; color: var(--text, #475264); font-size: 13px; text-decoration: none; }.ds-icon { width: 20px; height: 20px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }.ds-skill-columns .ds-icon { width: 16px; height: 16px; }.ds-skill-columns h3 { color: var(--ink, #19212e); font-family: 'Space Grotesk', sans-serif; font-weight: 600; line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }.ds-skill-columns h3 { font-size: 1.75rem; letter-spacing: -.025em; }.ds-skill-columns h3 { color: var(--ink, #19212e); font-size: 1.5rem; }.ds-skill-columns { grid-template-columns:1fr; font-family:\"DM Sans\",sans-serif; line-height:1.65; } .ds-skill-columns h3, .ds-skill-columns p { margin:0; } .ds-skill-columns .ds-skill-tools { margin-block: 14px; color: var(--accent, #2759d5); font-size: 1rem; font-weight: 500; }.ds-skill-columns a:focus-visible { outline:3px solid var(--accent, #2759d5); outline-offset:5px; } @media (hover: hover) and (pointer: fine) {.ds-skill-columns a:hover { color:var(--accent, #2759d5); }}"
+    },
+    {
+      "name": "Native Case Disclosure",
+      "kind": "custom",
+      "refersTo": "study-summary",
+      "description": "Working native disclosure in its narrow layout, with a readable project title and decorative identity. Open it to read the existing engineering content.",
+      "html": "<details class=\"ds-study-entry\"><summary><span class=\"ds-study-logo\" aria-hidden=\"true\"><span class=\"ds-name-mark\">defense<span>scheduler</span></span></span><span class=\"ds-study-summary\"><strong>Thesis Scheduler</strong><span>Make approvals part of the booking.</span></span><svg class=\"ds-icon ds-study-toggle\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\"/></svg></summary><div class=\"ds-study-body\"><p class=\"ds-study-intro\">A secure academic scheduling system with student, faculty, DRC, college admin, and global admin flows.</p><ul class=\"ds-detail-list\"><li>FastAPI, SQLAlchemy async ORM, Alembic, PostgreSQL, Redis, ReportLab.</li><li>Faculty availability, DRC approval, panel assignment, signatures, PDF generation, FCFS booking.</li></ul></div></details>",
+      "css": ".ds-study-entry { border-top: 1px solid var(--line, #d6dce5); }.ds-study-entry > summary { display: grid; grid-template-columns: 104px minmax(0, 1fr) 180px 24px; gap: 28px; align-items: center; padding: 24px; list-style: none; cursor: pointer; transition: background-color 200ms ease; }.ds-study-entry > summary::-webkit-details-marker { display: none; }.ds-study-logo { display: grid; place-items: center; height: 84px; padding: 14px; border-radius: var(--media-radius, 14px); background: var(--surface-2, #e9edf3); }.ds-name-mark { position: relative; color: var(--logo-ink, var(--ink, #19212e)); text-align: center; white-space: nowrap; font: 600 28px/1.1 'Space Grotesk', sans-serif; letter-spacing: -.035em; transition: transform 320ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-name-mark span { display: block; margin-top: 7px; white-space: normal; font: 500 12px/1.4 'DM Sans', sans-serif; letter-spacing: 0; }.ds-study-logo .ds-name-mark { font-size: 18px; }.ds-study-logo .ds-name-mark span { font-size: 10px; }.ds-study-summary { min-width: 0; }.ds-study-summary strong { display: block; color: var(--ink, #19212e); font: 600 1.5rem/1.25 'Space Grotesk', sans-serif; letter-spacing: -.025em; }.ds-study-summary > span { display: block; margin-top: 8px; font-size: 14px; }.ds-study-toggle { color: var(--accent, #2759d5); transition: transform 240ms var(--ease-out, cubic-bezier(.23, 1, .32, 1)); }.ds-study-entry > summary:focus-visible .ds-study-toggle { transition: none; }.ds-study-entry[open] { background: var(--surface, #fcfcfd); }.ds-study-entry[open] .ds-study-toggle { transform: rotate(45deg); }.ds-study-body { padding: 0 24px 32px 156px; }.ds-study-intro { max-width: 65ch; margin-bottom: 28px; font-size: 16px; }.ds-detail-list { margin: 0; padding-left: 19px; font-size: 15px; }.ds-detail-list li + li { margin-top: 10px; }.ds-icon { width: 20px; height: 20px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }.ds-study-entry > summary { grid-template-columns: 64px minmax(0, 1fr) 20px; gap: 14px; padding: 20px 0; }.ds-study-logo { height: 64px; padding: 8px; }.ds-study-logo .ds-name-mark { font-size: 12px; }.ds-study-logo .ds-name-mark span { font-size: 9px; }.ds-study-summary strong { font-size: 1.2rem; }.ds-study-summary > span { font-size: 13px; line-height: 1.5; }.ds-study-body { padding: 8px 16px 24px; }.ds-study-entry { font-family:\"DM Sans\",sans-serif; line-height:1.65; color:var(--text, #475264); } .ds-study-logo { background:var(--accent-soft, #e7edfc); } .ds-study-intro { margin-top:0; } .ds-study-entry > summary:focus-visible { outline:3px solid var(--accent, #2759d5); outline-offset:5px; } @media (hover: hover) and (pointer: fine) {.ds-study-entry > summary:hover { background: var(--accent-soft, #e7edfc); }} @media (prefers-reduced-motion: reduce) {.ds-study-entry > summary, .ds-study-toggle { transition:none; }}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Project Showcase",
+    "overview": "Bold typography and compact project identities give the work an immediate presence. Cool page fields, one blue accent, and genuine logos or native name marks connect the expressive portfolio to its quieter technical reading surfaces. The lowercase `russel buisan` wordmark identifies the header; the full name remains in biographical content and metadata, and the portrait remains in About.\n\nThe system pairs open reading space and thin rules with purposeful tonal panels and softly lifted logo tiles. Motion acknowledges entry, selection, and pointer attention; content is visible before enhancement and keyboard interaction takes priority. The homepage composition belongs to `.impeccable/surfaces/index-html.md`; its three-line statement and staggered wall are an approved surface expression, not a template for every route. The ATS CV retains a separate print system.",
+    "keyCharacteristics": [
+      "Cool neutrals and one blue accent with equivalent light and dark roles.",
+      "Large Space Grotesk statements, compact project titles, and DM Sans reading text.",
+      "Equal project identities, genuine attributed marks, and optional supporting evidence.",
+      "Open reading layouts, grouped skills, native disclosures, and bounded motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Use blue for interface emphasis; keep reading surfaces and structural divisions neutral. Genuine project artwork and its necessary backing may retain their own colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Header Identity Rule",
+        "body": "Set the header home link as a lowercase `russel buisan` wordmark in Space Grotesk (28px/1.1, -.04em tracking): given name in heading ink at weight 700, surname in accent at weight 400. Stack the DM Sans role (12px/1.25, reading slate) below with a 2px gap. Below 768px, reduce the name to 22px; keep it on one line and the home link at least 44px tall. Use the accessible name `Russel Buisan, home`, with no initials or badge.",
+        "section": "typography"
+      },
+      {
+        "name": "The Title First Rule",
+        "body": "Start a content group with its actual title. Place tools, attribution, and supporting context below it; decorative name-mark sublines never become above-title labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Purposeful Depth Rule",
+        "body": "Use lift for interactive project identities and tonal grouping for related facts or tools. Keep long reading text open and let thin rules carry its structure.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reuse semantic light/dark roles and the established Space Grotesk/DM Sans pairing on web surfaces.",
+      "Do give project identities equal treatment and retain genuine logo or native name-mark attribution.",
+      "Do lead skills and reading groups with an actual title, followed by supporting context.",
+      "Do use compact identities, thin rules, semantic facts, and optional evidence to support technical reading.",
+      "Do keep native links and disclosures, visible focus, immediate keyboard actions, and a readable motion-free state.",
+      "Do preserve the scoped web CV and the ATS CV's separate Arial typography and single-page A4 geometry."
+    ],
+    "donts": [
+      "Don't add above-title eyebrows, invented project logos, or a featured-project hierarchy to the collection.",
+      "Don't promote the homepage's composition or decorative logo lettering into a mandate for every page.",
+      "Don't use entire-system screenshots as default project identity, or present demonstration data as client outcomes.",
+      "Don't turn every reading group into a raised card or remove the wall's purposeful soft depth.",
+      "Don't apply 9px decorative mark sublines or CV print sizes to essential web reading or controls.",
+      "Don't make content visibility depend on animation, or add looping motion, scroll hijacking, or a custom cursor."
+    ]
+  }
+}

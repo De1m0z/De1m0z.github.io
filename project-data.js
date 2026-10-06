@@ -1,10 +1,110 @@
 window.portfolioProjects = [
   {
+    "id": "hammerpulse",
+    "title": "HammerPulse",
+    "eyebrow": "Sole developer",
+    "image": "assets/hammerpulse-logo-light.svg",
+    "imageDark": "assets/hammerpulse-logo-dark.svg",
+    "alt": "HammerPulse logo.",
+    "summary": "An account-scoped Meta advertising analytics platform, from data ingestion and reporting to creative review and a read-only assistant.",
+    "overview": "HammerPulse brings Meta advertising data into a PostgreSQL warehouse and presents consistent reporting to analysts and clients. I built the application end to end, including data ingestion, reporting interfaces, account access, the assistant, and the containerized runtime.",
+    "problem": "Advertising teams need reports they can trace back to source data, consistent date and metric definitions, and client access that stays within the correct account.",
+    "status": "Implemented application; portfolio case study",
+    "category": "Full-stack analytics platform",
+    "lastUpdated": "October 2026",
+    "stack": [
+      "Node.js",
+      "Fastify",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis / Valkey",
+      "Docker",
+      "Meta Marketing API"
+    ],
+    "metrics": [
+      [
+        "My role",
+        "Sole developer"
+      ],
+      [
+        "Source",
+        "Meta Marketing API"
+      ],
+      [
+        "Data store",
+        "PostgreSQL"
+      ],
+      [
+        "Access",
+        "Account-scoped"
+      ],
+      [
+        "Reports",
+        "Internal and client"
+      ],
+      [
+        "Assistant",
+        "Read-only"
+      ]
+    ],
+    "responsibilities": [
+      "Built Meta API ingestion, historical imports, canonical datasets, and validation against source reports.",
+      "Implemented warehouse-backed reporting, shared metric definitions, date comparisons, and client-facing reports.",
+      "Developed reporting and creative workspaces, with React and TypeScript islands inside a server-rendered application.",
+      "Implemented account-scoped access and a read-only assistant grounded in permitted account data.",
+      "Prepared the Docker runtime, background jobs, automated checks, and deployment documentation."
+    ],
+    "features": [
+      "Reporting Workspace with complete-week comparisons, rolling ROAS, reporting views, and source-aware freshness.",
+      "Creative and product review interfaces with reporting filters and detail views.",
+      "Client-facing reports and controlled publication of account-specific information.",
+      "A read-only assistant that answers account questions from permitted data and identifies its sources."
+    ],
+    "talkingPoints": [
+      "Keeping reporting definitions consistent between analyst and client views.",
+      "Using tenant isolation and explicit account boundaries throughout the data flow.",
+      "Validating imported and API-sourced metrics before publishing them.",
+      "Adding React islands without replacing the established reporting service.",
+      "Separating assistant answers from actions that could modify advertising campaigns."
+    ],
+    "previewTitle": "From source data to a reviewable report",
+    "preview": [
+      [
+        "Collect",
+        "Read Meta advertising data and import historical report exports."
+      ],
+      [
+        "Validate",
+        "Normalize records, check parity, and publish account-scoped warehouse data."
+      ],
+      [
+        "Review",
+        "Explore performance, creatives, products, and comparisons in shared workspaces."
+      ],
+      [
+        "Share",
+        "Publish controlled client reports and answer questions from permitted account data."
+      ]
+    ],
+    "links": [
+      [
+        "Case study",
+        "case-studies.html#hammerpulse"
+      ],
+      [
+        "Back to projects",
+        "index.html#projects"
+      ]
+    ]
+  },
+  {
     id: "classvision",
+    displayName: "ClassVision",
     title: "ClassVision: YOWOv2 Student Activity Detection Framework",
     eyebrow: "Main thesis project",
-    image: "assets/classvision-logo.png",
-    alt: "ClassVision project logo",
+    image: "assets/classvision-logo.webp",
+    alt: "University of Southern Mindanao seal",
     summary: "A privacy-conscious classroom video analytics framework for activity-context monitoring in smart academic environments.",
     overview: "ClassVision detects visible classroom activity context from CCTV-derived clips and reports room-level activity summaries. It avoids identity matching, face recognition, biometric profiling, and disciplinary automation.",
     problem: "Room occupancy alone cannot show whether a class is studying, collaborating, waiting, arriving, or leaving. The project focuses on visible activity context instead of identifying individual people.",
@@ -52,10 +152,11 @@ window.portfolioProjects = [
   },
   {
     id: "usmctf",
+    displayName: "USMctf",
     title: "USMctf Platform",
     eyebrow: "Featured full-stack security platform",
     image: "assets/usm-logo.png",
-    alt: "USMctf platform project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "A full-stack CTF platform with a Next.js frontend, Laravel authentication and user management, FastAPI challenge service, scoring flow, Docker Compose, PostgreSQL, Redis, and admin tooling.",
     overview: "USMctf is a multi-service capture-the-flag platform for security learning. The project separates the player/admin interface, authentication and user management, challenge behavior, database storage, cache/scoring state, and local service orchestration.",
     problem: "CTF events need account management, teams, challenge delivery, scoring, and admin control in one deployable stack. A single codebase also needs enough setup notes for another developer to run it locally.",
@@ -105,10 +206,11 @@ window.portfolioProjects = [
   },
   {
     id: "scheduler",
+    mark: ["defense", "scheduler"],
     title: "Thesis Defense Scheduler",
     eyebrow: "Secure full-stack academic system",
     image: "assets/usm-logo.png",
-    alt: "USM thesis defense scheduler project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "A defense scheduling system for students, faculty, Department Research Coordinators, college admins, and global admins.",
     overview: "The scheduler models academic defense requests from submission to approval, panel assignment, faculty confirmation, signature handling, and generated records.",
     problem: "Defense scheduling involves several user roles, sensitive files, first-come-first-served slot booking, and records that need a traceable approval history.",
@@ -156,6 +258,7 @@ window.portfolioProjects = [
   },
   {
     id: "gym",
+    displayName: "RAK Fitness",
     title: "Gym Face Management / RAK Fitness",
     eyebrow: "Operations and attendance system",
     image: "assets/gym-logo.png",
@@ -207,6 +310,7 @@ window.portfolioProjects = [
   },
   {
     id: "cheentea",
+    displayName: "Cheen Tea",
     title: "Cheen Tea Kiosk and API",
     eyebrow: "Kiosk, POS, and staff operations",
     image: "assets/chantea-logo.png",
@@ -259,10 +363,12 @@ window.portfolioProjects = [
   },
   {
     id: "agapay",
+    displayName: "USM Agapay",
+    mark: ["agapay", "USM service desk"],
     title: "USM Agapay Service Desk",
     eyebrow: "University service-ticket platform",
     image: "assets/usm-logo.png",
-    alt: "USM Agapay service desk project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "A Laravel and Vue service-desk system for university offices, service requests, staff queues, ticket activity, notifications, evaluations, ARTA metrics, reports, and audit logs.",
     overview: "USM Agapay models university service requests from client submission through office assignment, staff handling, comments, transfers, evaluations, reports, and administrative review.",
     problem: "Service offices need a shared ticket process with staff accountability, attachments, notifications, queue visibility, ARTA metrics, and audit history.",
@@ -310,10 +416,12 @@ window.portfolioProjects = [
   },
   {
     id: "pentest",
+    displayName: "Security Research",
+    mark: ["Security", "research."],
     title: "University Pentest and Vulnerability Research Workspace",
     eyebrow: "Authorized testing workspace",
     image: "assets/usm-logo.png",
-    alt: "University security research workspace project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "A structured workspace for approved security research with scope, methodology, Burp projects, Ghidra tools, findings, PoC safety notes, reporting, and remediation handoff.",
     overview: "The workspace organizes authorized security research into scope, methodology, evidence, tool outputs, safe proof-of-concept notes, findings, reports, and retest guidance.",
     problem: "Security research can become hard to review if scope, evidence, and remediation notes are scattered. This project keeps testing non-destructive and written around approved targets.",
@@ -361,10 +469,12 @@ window.portfolioProjects = [
   },
   {
     id: "optimization",
+    displayName: "Optimization",
+    mark: ["Optimize", "Algorithms in Python"],
     title: "Optimization Algorithms Assignment",
     eyebrow: "Academic Python algorithms",
     image: "assets/usm-logo.png",
-    alt: "Optimization algorithms assignment project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "Python examples and explanations for Genetic Algorithms, Markov Decision Processes, and Particle Swarm Optimization using the standard library.",
     overview: "This assignment keeps optimization examples small enough to run and explain during class review while still showing core behavior for each algorithm family.",
     problem: "Algorithm assignments are easier to defend when examples are readable, runnable, and tied to specific decision or search behavior.",
@@ -412,10 +522,11 @@ window.portfolioProjects = [
   },
   {
     id: "rest-api",
+    mark: ["{ api }", "Student REST API"],
     title: "Student REST API",
     eyebrow: "ASP.NET Core API lab",
     image: "assets/usm-logo.png",
-    alt: "Student REST API project logo",
+    alt: "University of Southern Mindanao logo",
     summary: "An ASP.NET Core 7 REST API lab using controllers, DTOs, EF Core migrations, SQLite persistence, Swagger/OpenAPI, and a student data model.",
     overview: "The API lab demonstrates basic REST structure with a small student record model, persistence, DTOs, and generated endpoint documentation.",
     problem: "API fundamentals need clear model boundaries, request/response DTOs, persistence setup, and a way to inspect endpoints without reading every controller.",

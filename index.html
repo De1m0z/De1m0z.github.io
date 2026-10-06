@@ -1,490 +1,298 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Russel Jhon C. Buisan is a full-stack developer with a BS Computer Science background, building secure web systems, APIs, computer vision research tools, and operations dashboards."
-    >
-    <title>Russel Jhon C. Buisan - Full-Stack Developer Portfolio</title>
-    <link rel="canonical" href="https://de1m0z.github.io/">
-    <meta name="theme-color" content="#f8fafc">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Russel Jhon C. Buisan - Full-Stack Developer Portfolio">
-    <meta property="og:description" content="Full-stack developer portfolio covering secure APIs, Laravel/FastAPI/Next.js systems, computer vision research, Docker, PostgreSQL, Redis, and case-style project notes.">
-    <meta property="og:url" content="https://de1m0z.github.io/">
-    <meta property="og:image" content="https://de1m0z.github.io/assets/russel-buisan-profile.jpeg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Russel Jhon C. Buisan - Full-Stack Developer Portfolio">
-    <meta name="twitter:description" content="Secure full-stack systems, computer vision research, APIs, dashboards, Docker, PostgreSQL, Redis, and project case notes.">
-    <meta name="twitter:image" content="https://de1m0z.github.io/assets/russel-buisan-profile.jpeg">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script>
-      (function() {
-        const storedTheme = localStorage.getItem("theme");
-        if (storedTheme === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
-        } else {
-          document.documentElement.setAttribute("data-theme", "light");
-        }
-      })();
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Person",
-            "@id": "https://de1m0z.github.io/#person",
-            "name": "Russel Jhon C. Buisan",
-            "url": "https://de1m0z.github.io/",
-            "image": "https://de1m0z.github.io/assets/russel-buisan-profile.jpeg",
-            "jobTitle": "Full-Stack Developer",
-            "alumniOf": {
-              "@type": "CollegeOrUniversity",
-              "name": "University of Southern Mindanao"
-            },
-            "knowsAbout": [
-              "Full-stack web development",
-              "FastAPI",
-              "Laravel",
-              "Next.js",
-              "PostgreSQL",
-              "Redis",
-              "Docker Compose",
-              "Computer vision",
-              "Application security"
-            ],
-            "sameAs": [
-              "https://github.com/De1m0z"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://de1m0z.github.io/#website",
-            "url": "https://de1m0z.github.io/",
-            "name": "Russel Jhon C. Buisan Portfolio",
-            "inLanguage": "en",
-            "dateModified": "2026-07-07",
-            "about": {
-              "@id": "https://de1m0z.github.io/#person"
-            }
-          },
-          {
-            "@type": "ItemList",
-            "@id": "https://de1m0z.github.io/#selected-projects",
-            "name": "Selected full-stack and computer vision projects",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                  "@type": "CreativeWork",
-                  "name": "USMctf Platform",
-                  "url": "https://de1m0z.github.io/project.html?id=usmctf",
-                  "description": "A full-stack CTF platform using Next.js, Laravel authentication, FastAPI challenge services, real-time scoring, Docker Compose, PostgreSQL, Redis, and admin tooling."
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                  "@type": "CreativeWork",
-                  "name": "ClassVision: YOWOv2 Student Activity Detection Framework",
-                  "url": "https://de1m0z.github.io/project.html?id=classvision",
-                  "description": "A privacy-conscious classroom activity detection thesis using YOWOv2, CVAT labels, by-video dataset partitions, and room-level activity summaries."
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                  "@type": "CreativeWork",
-                  "name": "Thesis Defense Scheduler",
-                  "url": "https://de1m0z.github.io/project.html?id=scheduler",
-                  "description": "A secure academic scheduling system with FastAPI, React, PostgreSQL, Redis, HTTP-only JWT cookies, CSRF protection, RBAC, encrypted files, and audit logs."
-                }
-              }
-            ]
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Russel Jhon C. Buisan - Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Explore web applications, data platforms, and computer vision research by full-stack developer Russel Jhon C. Buisan.">
+  <link rel="canonical" href="https://de1m0z.github.io/">
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14181f" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Russel Jhon C. Buisan - Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Explore web applications, data platforms, and computer vision research by full-stack developer Russel Jhon C. Buisan.">
+  <meta property="og:url" content="https://de1m0z.github.io/">
+  <meta property="og:image" content="https://de1m0z.github.io/assets/russel-buisan-profile.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Russel Jhon C. Buisan - Full-Stack Developer Portfolio">
+  <meta name="twitter:description" content="Explore web applications, data platforms, and computer vision research by full-stack developer Russel Jhon C. Buisan.">
+  <meta name="twitter:image" content="https://de1m0z.github.io/assets/russel-buisan-profile.jpeg">
+  <link rel="icon" href="assets/favicon.svg?v=wordmark" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://de1m0z.github.io/#person",
+      "name": "Russel Jhon C. Buisan",
+      "url": "https://de1m0z.github.io/",
+      "image": "https://de1m0z.github.io/assets/russel-buisan-profile.jpeg",
+      "jobTitle": "Full-Stack Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Southern Mindanao"
+      },
+      "sameAs": [
+        "https://github.com/De1m0z"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://de1m0z.github.io/",
+      "name": "Russel Jhon C. Buisan Portfolio",
+      "inLanguage": "en",
+      "dateModified": "2026-10-06"
+    },
+    {
+      "@type": "ItemList",
+      "name": "Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "ClassVision",
+            "url": "https://de1m0z.github.io/project.html?id=classvision",
+            "description": "Classroom activity detection with clear boundaries around student identity."
           }
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <div class="page-grid-bg" aria-hidden="true"></div>
-    <a class="skip-link" href="#projects">Skip to projects</a>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Russel Jhon C. Buisan portfolio home">
-        <span class="brand-mark">RB</span>
-        <span>Russel Jhon C. Buisan</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "USMctf",
+            "url": "https://de1m0z.github.io/project.html?id=usmctf",
+            "description": "Challenges, team scoring, and admin tools for capture-the-flag events."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Thesis Scheduler",
+            "url": "https://de1m0z.github.io/project.html?id=scheduler",
+            "description": "Defense bookings, approvals, and secure documents in one workflow."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "RAK Fitness",
+            "url": "https://de1m0z.github.io/project.html?id=gym",
+            "description": "Membership, payments, and consent-based attendance for a local gym."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Cheen Tea",
+            "url": "https://de1m0z.github.io/project.html?id=cheentea",
+            "description": "Ordering, kitchen queues, and loyalty rewards from kiosk to counter."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "USM Agapay",
+            "url": "https://de1m0z.github.io/project.html?id=agapay",
+            "description": "Service requests, office routing, and traceable ticket histories."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "HammerPulse",
+            "url": "https://de1m0z.github.io/project.html?id=hammerpulse",
+            "description": "Meta advertising data, reporting, and account-scoped client access. Sole developer."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Security Research",
+            "url": "https://de1m0z.github.io/project.html?id=pentest",
+            "description": "Authorized testing, reproducible findings, and practical remediation reports."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Optimization",
+            "url": "https://de1m0z.github.io/project.html?id=optimization",
+            "description": "Runnable experiments with genetic algorithms, MDPs, and swarm optimization."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Student REST API",
+            "url": "https://de1m0z.github.io/project.html?id=rest-api",
+            "description": "An ASP.NET Core API with validation, migrations, and OpenAPI documentation."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Russel Buisan, home"><span class="brand-name">russel <span>buisan</span></span><span class="brand-role">Full-stack developer</span></a>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
         <a href="#case-notes">Case Notes</a>
         <a href="#skills">Skills</a>
         <a href="#thesis">Thesis</a>
         <a href="#cv">CV</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">Theme</button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="hero section-shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title"><span class="hero-title-line">From idea</span><span class="hero-title-line">to working</span><span class="hero-title-line hero-title-accent">software.</span></h1>
+      <p class="lead">I’m <strong>Russel Buisan</strong>, a full-stack developer. I build web applications, data tools, and computer vision systems with care for the details.</p>
+      <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a><a class="button secondary" href="Russel_Buisan_CV.pdf" download>Download CV <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg></a></div>
+      <div class="hero-links"><a href="https://github.com/De1m0z" rel="noopener">GitHub <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a href="mailto:oslecbuisan613@gmail.com">Let’s talk <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+    </div>
+    <div class="logo-stage">
+      <nav class="logo-wall" aria-label="Explore all ten projects">
+          <a class="logo-tile logo-art--blue" href="project.html?id=classvision"><span class="wall-logo" aria-hidden="true"><img src="assets/classvision-logo.webp" alt="" width="640" height="640" loading="eager" decoding="async"></span><span class="wall-project-name">ClassVision</span></a>
+          <a class="logo-tile logo-art--green" href="project.html?id=usmctf"><span class="wall-logo" aria-hidden="true"><img src="assets/usm-logo.png" alt="" width="429" height="120" loading="eager" decoding="async"></span><span class="wall-project-name">USMctf</span></a>
+          <a class="logo-tile logo-art--blue" href="project.html?id=scheduler"><span class="wall-logo" aria-hidden="true"><span class="name-mark scheduler-mark" aria-hidden="true">defense<span>scheduler</span></span></span><span class="wall-project-name">Thesis Scheduler</span></a>
+          <a class="logo-tile logo-art--neutral" href="project.html?id=gym"><span class="wall-logo" aria-hidden="true"><img src="assets/gym-logo.png" alt="" width="520" height="179" loading="eager" decoding="async"></span><span class="wall-project-name">RAK Fitness</span></a>
+          <a class="logo-tile logo-art--green" href="project.html?id=cheentea"><span class="wall-logo" aria-hidden="true"><img class="tea-logo" src="assets/chantea-logo.png" alt="" width="500" height="500" loading="eager" decoding="async"></span><span class="wall-project-name">Cheen Tea</span></a>
+          <a class="logo-tile logo-art--green" href="project.html?id=agapay"><span class="wall-logo" aria-hidden="true"><span class="name-mark agapay-mark" aria-hidden="true">agapay<span>USM service desk</span></span></span><span class="wall-project-name">USM Agapay</span></a>
+          <a class="logo-tile logo-art--neutral" href="project.html?id=hammerpulse"><span class="wall-logo" aria-hidden="true"><img src="assets/hammerpulse-logo-light.svg" data-light-src="assets/hammerpulse-logo-light.svg" data-dark-src="assets/hammerpulse-logo-dark.svg" alt="" width="1080" height="211" loading="eager" decoding="async"></span><span class="wall-project-name">HammerPulse</span></a>
+          <a class="logo-tile logo-art--neutral" href="project.html?id=pentest"><span class="wall-logo" aria-hidden="true"><span class="name-mark security-mark" aria-hidden="true">Security<span>research.</span></span></span><span class="wall-project-name">Security Research</span></a>
+          <a class="logo-tile logo-art--blue" href="project.html?id=optimization"><span class="wall-logo" aria-hidden="true"><span class="name-mark optimization-mark" aria-hidden="true">Optimize<span>Algorithms in Python</span></span></span><span class="wall-project-name">Optimization</span></a>
+          <a class="logo-tile logo-art--blue" href="project.html?id=rest-api"><span class="wall-logo" aria-hidden="true"><span class="name-mark api-mark" aria-hidden="true">{ api }<span>Student REST API</span></span></span><span class="wall-project-name">Student REST API</span></a>
       </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero section-band fade-in-section">
-        <div class="hero-copy">
-          <p class="eyebrow">Full-stack developer - CS graduate - secure systems</p>
-          <h1>I build APIs, dashboards, research tools, and production-style web systems.</h1>
-          <p class="lead">
-            I am Russel Jhon C. Buisan, a full-stack developer from the University of Southern Mindanao.
-            My portfolio focuses on secure web applications, computer vision research, multi-service platforms,
-            database-backed APIs, and documentation that makes the work easy to review in an interview.
-          </p>
-          <div class="hero-snapshot" aria-label="Portfolio summary">
-            <div><strong>9</strong><span>documented projects</span></div>
-            <div><strong>6+</strong><span>core stacks used</span></div>
-            <div><strong>2026</strong><span>last updated</span></div>
-          </div>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">View my projects</a>
-            <a class="button secondary" href="Russel_Buisan_CV.pdf" download>Download CV</a>
-            <a class="button secondary" href="case-studies.html">Read case studies</a>
-            <a class="button secondary" href="https://github.com/De1m0z" rel="noopener">GitHub</a>
-          </div>
-        </div>
-        <div class="hero-media profile-portrait-card" aria-label="Portrait of Russel Jhon C. Buisan">
-          <div class="hero-media-logo portrait-frame">
-            <img src="assets/russel-buisan-profile.jpeg" alt="Portrait of Russel Jhon C. Buisan" class="profile-photo" loading="eager" decoding="async" fetchpriority="high">
-          </div>
-          <div class="media-caption">
-            <span>Full-Stack Developer Portfolio</span>
-            <strong>Russel Jhon C. Buisan</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-shell proof-strip fade-in-section" aria-label="Portfolio summary">
-        <div>
-          <span>01</span>
-          <strong>Computer vision thesis</strong>
-          <p>Dataset preparation, CVAT annotation policy, YOWOv2 training notes, evaluation figures, and defense materials.</p>
-        </div>
-        <div>
-          <span>02</span>
-          <strong>Full-stack systems</strong>
-          <p>React, Next.js, Laravel, FastAPI, Django, ASP.NET Core, PostgreSQL, Redis, Docker, APIs, and admin dashboards.</p>
-        </div>
-        <div>
-          <span>03</span>
-          <strong>Security-aware design</strong>
-          <p>RBAC, CSRF protection, encrypted data, audit logs, authorized testing, biometric consent, and privacy boundaries.</p>
-        </div>
-      </section>
-
-      <section class="section-shell profile-grid fade-in-section" aria-labelledby="profile-heading">
-        <div>
-          <p class="eyebrow">About Me</p>
-          <h2 id="profile-heading">A developer who can build the system, explain the tradeoffs, and show the evidence.</h2>
-        </div>
-        <div class="profile-copy">
-          <p>
-            My projects include a YOWOv2 classroom activity-detection thesis, a USMctf platform,
-            a secure thesis defense scheduler, a gym face-attendance system, a Cheen Tea kiosk/POS,
-            the USM Agapay service desk, API labs, and an authorized university security workspace.
-          </p>
-          <p>
-            Alongside code, I prepare setup notes, diagrams, evaluation figures, reports, and presentation
-            materials so reviewers can see what I built, why it works, and where the boundaries are.
-          </p>
-          <div class="profile-highlights">
-            <span>University of Southern Mindanao</span>
-            <span>BS Computer Science</span>
-            <span>Kabacan, Cotabato</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section-band work-section fade-in-section" aria-labelledby="projects-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Projects</p>
-          <h2 id="projects-heading">Project evidence recruiters can scan quickly.</h2>
-          <p>
-            Each card states the problem, the stack, what I built, and the interview points I can discuss.
-          </p>
-        </div>
-
-        <div class="project-toolbar" aria-label="Project filters">
-          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">ML / CV</button>
-          <button class="filter-button" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
-          <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
-          <button class="filter-button" type="button" data-filter="academic" aria-pressed="false">Academic</button>
-        </div>
-        <p class="project-count" id="project-count" aria-live="polite">Showing 9 projects</p>
-
-        <div class="project-grid">
-          <a class="project-card featured" href="project.html?id=classvision" data-category="ai academic fullstack" aria-label="Open ClassVision project details">
-            <div class="project-logo-container python-bg">
-              <img src="assets/classvision-logo.png" alt="ClassVision project logo" class="project-logo" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card-body">
-              <div class="project-meta">
-                <span>Main thesis</span>
-                <span>Computer vision</span>
-              </div>
-              <h3>ClassVision: YOWOv2 Student Activity Detection Framework</h3>
-              <p>
-                Privacy-conscious classroom video analytics framework for detecting visible activity context:
-                studying, idle, collaborative, and arriving/leaving. The project includes classroom CCTV clip preparation,
-                annotation policy, dataset validation, YOWOv2 training notes, inference post-processing,
-                evaluation figures, and web-based monitoring design.
-              </p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> room occupancy alone does not show how a classroom is being used.</li>
-                <li><strong>Built:</strong> clip preparation, labels, by-video splits, model notes, and defense outputs.</li>
-                <li><strong>Discuss:</strong> privacy boundary, class definitions, evaluation limits, and dataset leakage control.</li>
-              </ul>
-              <div class="metric-row">
-                <span><strong>108,116</strong> label files</span>
-                <span><strong>1,951,112</strong> annotated boxes</span>
-                <span><strong>72,491</strong> train entries</span>
-                <span><strong>20,679</strong> validation entries</span>
-                <span><strong>14,661</strong> test entries</span>
-                <span><strong>0.2774</strong> validation mAP@0.5 checkpoint note</span>
-              </div>
-              <div class="tag-list">
-                <span>Python</span>
-                <span>YOWOv2</span>
-                <span>CVAT</span>
-                <span>Computer Vision</span>
-                <span>Research</span>
-              </div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card" href="project.html?id=scheduler" data-category="fullstack security academic" aria-label="Open Thesis Defense Scheduler project details">
-            <div class="project-logo-container fastapi-bg">
-              <img src="assets/usm-logo.png" alt="USM thesis scheduler project logo" class="project-logo" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card-body">
-              <div class="project-meta"><span>Full-stack system</span><span>Secure scheduling</span></div>
-              <h3>Thesis Defense Scheduler</h3>
-              <p>A secure academic scheduling system for students, faculty, Department Research Coordinators, college admins, and global admins.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> defense booking needs role boundaries, approvals, signatures, and traceable records.</li>
-                <li><strong>Built:</strong> JWT-cookie auth, signed CSRF tokens, RBAC, encrypted blobs, PDFs, and audit logs.</li>
-                <li><strong>Discuss:</strong> serializable slot booking, faculty availability, admin scoping, and failure cases.</li>
-              </ul>
-              <div class="tag-list"><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>SQLAlchemy</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card" href="project.html?id=gym" data-category="ai fullstack" aria-label="Open Gym Face Management project details">
-            <div class="project-logo-container django-bg">
-              <img src="assets/gym-logo.png" alt="RAK Fitness project logo" class="project-logo" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card-body">
-              <div class="project-meta"><span>Intelligent system</span><span>Face attendance</span></div>
-              <h3>Gym Face Management / RAK Fitness</h3>
-              <p>A gym operations system with members, plans, payments, attendance, enrollment, reports, and local face-based time-in/time-out.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> gyms need faster attendance without removing manual and consent controls.</li>
-                <li><strong>Built:</strong> members, plans, payments, reports, scanner, consent states, and fallback entry.</li>
-                <li><strong>Discuss:</strong> local scanner behavior, thresholds, biometric consent, and rewrite decisions.</li>
-              </ul>
-              <div class="tag-list"><span>Django</span><span>FastAPI</span><span>React</span><span>InsightFace</span><span>pytest</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card" href="project.html?id=cheentea" data-category="fullstack" aria-label="Open Cheen Tea Kiosk project details">
-            <div class="project-logo-container laravel-bg">
-              <img src="assets/chantea-logo.png" alt="Cheen Tea kiosk project logo" class="project-logo" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card-body">
-              <div class="project-meta"><span>POS / Kiosk</span><span>Business app</span></div>
-              <h3>Cheen Tea Kiosk and API</h3>
-              <p>Tea-shop kiosk and POS platform with customer ordering, cashier views, kitchen boards, admin screens, loyalty rewards, QR registration, and voice-order processing.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> counter staff need orders, kitchen status, loyalty, and product changes in one system.</li>
-                <li><strong>Built:</strong> kiosk ordering, cart, cashier, kitchen board, products, reports, rewards, and QR registration.</li>
-                <li><strong>Discuss:</strong> Laravel API routes, Sanctum auth, Reverb events, Cloudinary uploads, and POS states.</li>
-              </ul>
-              <div class="tag-list"><span>Next.js</span><span>Laravel 12</span><span>Sanctum</span><span>Reverb</span><span>Docker</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card compact" href="project.html?id=agapay" data-category="fullstack security" aria-label="Open USM Agapay project details">
-            <div class="project-card-body">
-              <div class="project-meta"><span>Service desk</span><span>Laravel / Vue</span></div>
-              <h3>USM Agapay Service Desk</h3>
-              <p>University service-ticket platform with role-based access, offices, services, staff queues, ticket activity, notifications, evaluations, ARTA metrics, reports, and audit logs.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> service requests need office routing, status history, and staff accountability.</li>
-                <li><strong>Built:</strong> Laravel/Vue routes, ticket queues, comments, attachments, evaluations, reports, and audit views.</li>
-              </ul>
-              <div class="tag-list"><span>Laravel</span><span>Vue</span><span>Pinia</span><span>SQL Server</span><span>Reverb</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card featured security-feature" href="project.html?id=usmctf" data-category="fullstack security" aria-label="Open USMctf project details">
-            <div class="project-logo-container ctf-bg">
-              <img src="assets/usm-logo.png" alt="USMctf platform project logo" class="project-logo" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card-body">
-              <div class="project-meta"><span>Featured full-stack platform</span><span>Security learning</span></div>
-              <h3>USMctf Platform</h3>
-              <p>
-                Full-stack capture-the-flag platform with a Next.js frontend, Laravel authentication and user management,
-                FastAPI challenge service, scoring flow, admin tooling, Docker Compose, PostgreSQL, and Redis.
-              </p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> CTF events need accounts, teams, challenges, scoring, and admin control in one deployable stack.</li>
-                <li><strong>Built:</strong> multi-service architecture, service URLs, migrations, seeders, environment setup, and developer notes.</li>
-                <li><strong>Discuss:</strong> auth/service boundaries, challenge API shape, Redis-backed state, containers, and platform scale.</li>
-              </ul>
-              <div class="metric-row">
-                <span><strong>Next.js</strong> player/admin UI</span>
-                <span><strong>Laravel</strong> auth and users</span>
-                <span><strong>FastAPI</strong> challenge service</span>
-                <span><strong>PostgreSQL</strong> data store</span>
-                <span><strong>Redis</strong> scoring/cache layer</span>
-                <span><strong>Docker</strong> local services</span>
-              </div>
-              <div class="tag-list"><span>Laravel</span><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card compact" href="project.html?id=pentest" data-category="security academic" aria-label="Open security workspace project details">
-            <div class="project-card-body">
-              <div class="project-meta"><span>Security workspace</span><span>Authorized testing</span></div>
-              <h3>University Pentest and Vulnerability Research Workspace</h3>
-              <p>Structured workspace for approved security research with scope, methodology, Burp projects, Ghidra tools, findings, threat intelligence, PoC safety notes, reporting, and remediation handoff.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> security research needs written scope and reproducible, non-destructive documentation.</li>
-                <li><strong>Built:</strong> organized finding notes, tool output areas, PoC guardrails, reports, and retest handoff.</li>
-              </ul>
-              <div class="tag-list"><span>OWASP</span><span>Burp</span><span>Ghidra</span><span>Reporting</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card compact" href="project.html?id=optimization" data-category="ai academic" aria-label="Open Optimization Algorithms project details">
-            <div class="project-card-body">
-              <div class="project-meta"><span>Algorithms</span><span>GitHub</span></div>
-              <h3>Optimization Algorithms Assignment</h3>
-              <p>Python examples and explanations for Genetic Algorithms, Markov Decision Processes, and Particle Swarm Optimization using only the standard library.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> algorithms are easier to defend when the examples are small, runnable, and readable.</li>
-                <li><strong>Built:</strong> string evolution, knapsack optimization, gridworld value iteration, inventory decisions, and PSO functions.</li>
-              </ul>
-              <div class="tag-list"><span>Python</span><span>GA</span><span>MDP</span><span>PSO</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="project-card compact" href="project.html?id=rest-api" data-category="fullstack academic" aria-label="Open Student REST API project details">
-            <div class="project-card-body">
-              <div class="project-meta"><span>API lab</span><span>GitHub</span></div>
-              <h3>Student REST API</h3>
-              <p>ASP.NET Core 7 REST API lab using controllers, DTOs, EF Core migrations, SQLite persistence, Swagger/OpenAPI, and a student data model.</p>
-              <ul class="detail-list">
-                <li><strong>Problem:</strong> API fundamentals need clean request/response boundaries and repeatable database setup.</li>
-                <li><strong>Built:</strong> controllers, DTOs, EF Core migrations, SQLite persistence, and Swagger/OpenAPI docs.</li>
-              </ul>
-              <div class="tag-list"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQLite</span></div>
-              <div class="project-card-actions">
-                <span class="project-card-cta">View details</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section id="case-notes" class="section-shell case-notes fade-in-section" aria-labelledby="case-notes-heading">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Detailed Portfolio Notes</p>
-          <h2 id="case-notes-heading">How I work on projects.</h2>
-          <p>These notes explain the decisions and artifacts behind the larger builds.</p>
-        </div>
-        <div class="case-note-grid">
-          <article><span>Research pipeline</span><h3>ClassVision thesis process</h3><p>I worked across dataset preparation, class definition, CVAT labeling policy, data cleaning, by-video splitting, YOWOv2 training, inference review, and defense documentation.</p></article>
-          <article><span>Application security</span><h3>Secure scheduler design</h3><p>I built around role boundaries and secure data handling: cookie-based JWTs, refresh rotation, signed CSRF tokens, encrypted sensitive fields, audit logs, admin scoping, and controlled PDF generation.</p></article>
-          <article><span>Operational apps</span><h3>Real service flows</h3><p>The gym, kiosk, and Agapay projects cover enrollment, payments, attendance, service queues, reporting, kitchen queues, cashier views, rewards, and customer-facing ordering.</p></article>
-          <article><span>Documentation</span><h3>Reports and presentation assets</h3><p>I prepared thesis drafts, methodology guides, intelligent-system reports, figures, defense presentation clips, contact sheets, PowerPoint scripts, and project notes.</p></article>
-        </div>
-        <a class="button primary case-link" href="case-studies.html">Open detailed case studies</a>
-      </section>
-
-      <section id="skills" class="section-shell skills-layout fade-in-section" aria-labelledby="skills-heading">
-        <div><p class="eyebrow">Skills</p><h2 id="skills-heading">Skills shown by the project evidence.</h2><p>These are the tools and engineering areas represented in the portfolio.</p></div>
-        <div class="skill-columns">
-          <div><h3>Frontend Development</h3><p>React, Next.js, Vite, TypeScript, Tailwind CSS, dashboards, kiosk UI, admin screens, responsive layouts.</p></div>
-          <div><h3>Backend Development</h3><p>FastAPI, Laravel, Django, ASP.NET Core, REST APIs, auth flows, services, schemas, controllers, migrations.</p></div>
-          <div><h3>Machine Learning / Computer Vision</h3><p>YOWOv2 training notes, CVAT labels, dataset preparation, checkpoint documentation, inference post-processing, InsightFace embeddings.</p></div>
-          <div><h3>Data and Infrastructure</h3><p>PostgreSQL, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, EF Core, seed scripts, local services.</p></div>
-          <div><h3>Security Engineering</h3><p>RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM, audit logs, rate limiting, and authorized testing notes.</p></div>
-          <div><h3>Research and Documentation</h3><p>Thesis manuscript drafting, methodology guides, evaluation figures, defense slides, technical reports, and project notes.</p></div>
-        </div>
-      </section>
-
-      <section id="thesis" class="section-band thesis-section fade-in-section" aria-labelledby="thesis-heading">
-        <div class="thesis-copy">
-          <p class="eyebrow">BSCS Thesis</p>
-          <h2 id="thesis-heading">A YOWOv2-Based Student Activity Detection Framework for Smart Academic Environment</h2>
-          <p>My thesis develops a privacy-conscious computer vision framework for classroom activity-context monitoring. It avoids face recognition and identity profiling, and focuses on activity-level and room-level interpretation.</p>
-          <div class="thesis-metrics"><span>April 2026 manuscript</span><span>ICT 1 and ICT 2 classroom sources</span><span>Epoch 19 selected checkpoint</span><span>Validation mAP@0.5: 0.2774</span></div>
-        </div>
-        <div class="thesis-points">
-          <div><span>01</span><strong>Data preparation</strong><p>Classroom CCTV clips, frame extraction, annotation policy, CVAT export, cleaning, validation, and by-video splitting.</p></div>
-          <div><span>02</span><strong>Model training</strong><p>YOWOv2 medium training notes with 16-frame clips, checkpoint selection, inference, filtering, and duplicate suppression.</p></div>
-          <div><span>03</span><strong>Output design</strong><p>Accepted detections are converted into room activity summaries rather than identity-based student records.</p></div>
-          <div><span>04</span><strong>Presentation</strong><p>Evaluation figures, manuscript sections, defense presentation clips, contact sheets, and slide generation.</p></div>
-        </div>
-      </section>
-
-      <section id="cv" class="section-shell contact-layout fade-in-section" aria-labelledby="cv-heading">
-        <div><p class="eyebrow">Links</p><h2 id="cv-heading">CV, case studies, and public code.</h2></div>
-        <div class="contact-list">
-          <a href="Russel_Buisan_CV.pdf" download><span>CV PDF</span><strong>Download Russel_Buisan_CV.pdf</strong></a>
-          <a href="case-studies.html"><span>Case Studies</span><strong>Detailed project writeups</strong></a>
-          <a href="https://github.com/De1m0z" rel="noopener"><span>GitHub</span><strong>github.com/De1m0z</strong></a>
-          <div><span>Location</span><strong>Kabacan, Cotabato, Philippines</strong></div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer"><span>&copy; 2026 Russel Jhon C. Buisan</span><span>Last updated: July 7, 2026</span><span>BS Computer Science - University of Southern Mindanao</span></footer>
-
-    <button id="scroll-top" class="scroll-top" type="button" aria-label="Back to top">&uarr;</button>
-
-    <script src="script.js"></script>
-  </body>
+      <p class="wall-caption">Ten projects. Different problems. The same curiosity.</p>
+    </div>
+  </section>
+  <section id="projects" class="section-shell section-space work-section" aria-labelledby="projects-heading">
+    <div class="section-heading work-heading"><h2 id="projects-heading">Things I’ve built.</h2><p>Web applications, data tools, and research. Explore the projects and the thinking behind them.</p></div>
+    <div class="project-toolbar" role="group" aria-label="Filter projects">
+      <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">ML / CV</button>
+      <button class="filter-button" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+      <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+      <button class="filter-button" type="button" data-filter="academic" aria-pressed="false">Academic</button>
+    </div>
+    <p class="project-count" id="project-count" aria-live="polite" aria-atomic="true">Showing 10 projects</p>
+    <div class="project-grid">
+      <a class="project-card" id="project-classvision" href="project.html?id=classvision" data-category="ai academic fullstack">
+        <div class="project-art logo-art logo-art--blue"><img src="assets/classvision-logo.webp" alt="University of Southern Mindanao seal" width="640" height="640" loading="eager" decoding="async"></div>
+        <div class="project-card-body"><h3>ClassVision</h3><p>Classroom activity detection with clear boundaries around student identity.</p><div class="tag-list"><span>Python</span><span>PyTorch</span><span>YOWOv2</span><span>CVAT</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-usmctf" href="project.html?id=usmctf" data-category="fullstack security">
+        <div class="project-art logo-art logo-art--green"><img src="assets/usm-logo.png" alt="University of Southern Mindanao logo" width="429" height="120" loading="eager" decoding="async"></div>
+        <div class="project-card-body"><h3>USMctf</h3><p>Challenges, team scoring, and admin tools for capture-the-flag events.</p><div class="tag-list"><span>Next.js</span><span>Laravel</span><span>FastAPI</span><span>Redis</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-scheduler" href="project.html?id=scheduler" data-category="fullstack security academic">
+        <div class="project-art logo-art logo-art--blue"><span class="name-mark scheduler-mark" aria-hidden="true">defense<span>scheduler</span></span></div>
+        <div class="project-card-body"><h3>Thesis Scheduler</h3><p>Defense bookings, approvals, and secure documents in one workflow.</p><div class="tag-list"><span>FastAPI</span><span>React</span><span>PostgreSQL</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-gym" href="project.html?id=gym" data-category="ai fullstack">
+        <div class="project-art logo-art logo-art--neutral"><img src="assets/gym-logo.png" alt="RAK Fitness logo" width="520" height="179" loading="eager" decoding="async"></div>
+        <div class="project-card-body"><h3>RAK Fitness</h3><p>Membership, payments, and consent-based attendance for a local gym.</p><div class="tag-list"><span>Django</span><span>FastAPI</span><span>React</span><span>InsightFace</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-cheentea" href="project.html?id=cheentea" data-category="fullstack">
+        <div class="project-art logo-art logo-art--green"><img class="tea-logo" src="assets/chantea-logo.png" alt="Chantea logo" width="500" height="500" loading="eager" decoding="async"></div>
+        <div class="project-card-body"><h3>Cheen Tea</h3><p>Ordering, kitchen queues, and loyalty rewards from kiosk to counter.</p><div class="tag-list"><span>Next.js</span><span>Laravel</span><span>Reverb</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-agapay" href="project.html?id=agapay" data-category="fullstack security">
+        <div class="project-art logo-art logo-art--green"><span class="name-mark agapay-mark" aria-hidden="true">agapay<span>USM service desk</span></span></div>
+        <div class="project-card-body"><h3>USM Agapay</h3><p>Service requests, office routing, and traceable ticket histories.</p><div class="tag-list"><span>Laravel</span><span>Vue</span><span>SQL Server</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-hammerpulse" href="project.html?id=hammerpulse" data-category="fullstack">
+        <div class="project-art logo-art logo-art--neutral"><img src="assets/hammerpulse-logo-light.svg" data-light-src="assets/hammerpulse-logo-light.svg" data-dark-src="assets/hammerpulse-logo-dark.svg" alt="HammerPulse logo" width="1080" height="211" loading="lazy" decoding="async"></div>
+        <div class="project-card-body"><h3>HammerPulse</h3><p>Meta advertising data, reporting, and account-scoped client access. Sole developer.</p><div class="tag-list"><span>Node.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-pentest" href="project.html?id=pentest" data-category="security academic">
+        <div class="project-art logo-art logo-art--neutral"><span class="name-mark security-mark" aria-hidden="true">Security<span>research.</span></span></div>
+        <div class="project-card-body"><h3>Security Research</h3><p>Authorized testing, reproducible findings, and practical remediation reports.</p><div class="tag-list"><span>OWASP</span><span>Burp Suite</span><span>Ghidra</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-optimization" href="project.html?id=optimization" data-category="ai academic">
+        <div class="project-art logo-art logo-art--blue"><span class="name-mark optimization-mark" aria-hidden="true">Optimize<span>Algorithms in Python</span></span></div>
+        <div class="project-card-body"><h3>Optimization</h3><p>Runnable experiments with genetic algorithms, MDPs, and swarm optimization.</p><div class="tag-list"><span>Python</span><span>Standard library</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+      <a class="project-card" id="project-rest-api" href="project.html?id=rest-api" data-category="fullstack academic">
+        <div class="project-art logo-art logo-art--blue"><span class="name-mark api-mark" aria-hidden="true">{ api }<span>Student REST API</span></span></div>
+        <div class="project-card-body"><h3>Student REST API</h3><p>An ASP.NET Core API with validation, migrations, and OpenAPI documentation.</p><div class="tag-list"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span></div><span class="project-card-cta">Explore project <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+      </a>
+    </div>
+  </section>
+  <section class="section-shell section-space about-section" aria-labelledby="profile-heading">
+    <img class="profile-photo" src="assets/russel-buisan-profile.jpeg" alt="Russel Jhon C. Buisan" width="400" height="500" loading="lazy" decoding="async">
+    <div class="about-copy"><h2 id="profile-heading">Curious about how<br>things work.</h2>
+      <p>I graduated Cum Laude in Computer Science from the University of Southern Mindanao. My work moves between web applications, data pipelines, application security, and computer vision.</p>
+      <p>I like connecting the pieces: an interface that makes sense, an API that holds up, and documentation that helps the next developer pick things up.</p>
+      <a class="text-link" href="https://github.com/De1m0z" rel="noopener">Find me on GitHub</a>
+    </div>
+  </section>
+  <section id="case-notes" class="section-shell section-space case-notes" aria-labelledby="case-notes-heading">
+    <div class="section-heading"><h2 id="case-notes-heading">Good software.<br>Considered decisions.</h2><p>A closer look at the problems, boundaries, and choices that shaped these projects.</p><a class="text-link" href="case-studies.html">Explore all 10 case notes <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+    <div class="case-note-grid">
+      <a class="note-link" href="case-studies.html#classvision"><span class="note-logo logo-art--blue"><img src="assets/classvision-logo.webp" alt="" width="640" height="640" loading="lazy"></span><div><h3>Activity, without identity.</h3><p>ClassVision · Dataset design &amp; privacy</p></div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="note-link" href="case-studies.html#usmctf"><span class="note-logo logo-art--green"><img src="assets/usm-logo.png" alt="" width="429" height="120" loading="lazy"></span><div><h3>Many services. One platform.</h3><p>USMctf · Service boundaries &amp; local setup</p></div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="note-link" href="case-studies.html#scheduler"><span class="note-logo logo-art--blue"><span class="name-mark" aria-hidden="true">defense<span>scheduler</span></span></span><div><h3>A booking is only the beginning.</h3><p>Thesis Scheduler · Approvals &amp; secure documents</p></div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="note-link" href="case-studies.html#hammerpulse"><span class="note-logo"><img src="assets/hammerpulse-logo-light.svg" data-light-src="assets/hammerpulse-logo-light.svg" data-dark-src="assets/hammerpulse-logo-dark.svg" alt="" width="1080" height="211" loading="lazy"></span><div><h3>Reports that agree.</h3><p>HammerPulse · Data validation &amp; shared definitions</p></div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </section>
+  <section id="skills" class="section-shell section-space skills-layout" aria-labelledby="skills-heading">
+    <div class="section-heading"><h2 id="skills-heading">A toolkit, put to work.</h2><p>From the first interaction to the data underneath. These are the tools I use to connect the pieces.</p></div>
+    <div class="skill-columns">
+      <article><h3>Interfaces</h3><p class="skill-tools">React / Next.js / Vue</p><p>TypeScript, Vite, Tailwind CSS, responsive layouts, and accessible interactions.</p><a href="project.html?id=cheentea">In practice: Cheen Tea <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+      <article><h3>Services &amp; APIs</h3><p class="skill-tools">Node.js / Python / PHP</p><p>Fastify, FastAPI, Laravel, Django, ASP.NET Core, authentication, and real-time events.</p><a href="project.html?id=usmctf">In practice: USMctf <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+      <article><h3>Data &amp; infrastructure</h3><p class="skill-tools">PostgreSQL / Redis / Docker</p><p>SQL Server, SQLite, migrations, background jobs, and S3-compatible storage.</p><a href="project.html?id=agapay">In practice: USM Agapay <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+      <article><h3>Computer vision</h3><p class="skill-tools">PyTorch / YOWOv2 / CVAT</p><p>Dataset validation, inference review, and InsightFace integrations.</p><a href="project.html?id=classvision">In practice: ClassVision <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+      <article><h3>Application security</h3><p class="skill-tools">Access / Encryption / Audits</p><p>Role-based access, JWT cookies, CSRF protection, audit logs, and authorized testing.</p><a href="project.html?id=scheduler">In practice: Thesis Scheduler <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+      <article><h3>Technical communication</h3><p class="skill-tools">Explain / Document / Hand off</p><p>Setup guides, system diagrams, evaluation figures, research reports, and documentation.</p><a href="project.html?id=pentest">In practice: Security Research <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></article>
+    </div>
+  </section>
+  <section id="thesis" class="section-shell section-space thesis-section" aria-labelledby="thesis-heading">
+    <div class="thesis-copy"><h2 id="thesis-heading">Understanding activity.<br><span class="heading-period">Respecting identity.</span></h2><p>My BSCS thesis, ClassVision, uses YOWOv2 to study how classrooms are used. The research focuses on visible activity, with no face recognition or identity profiling.</p><a class="text-link" href="project.html?id=classvision">Explore the research <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+    <div class="research-panel">
+      <h3>From video to activity context</h3>
+      <ol class="research-process"><li><strong>Prepare</strong><span>Label clips &amp; split by video</span></li><li><strong>Detect</strong><span>YOWOv2 · 16-frame clips</span></li><li><strong>Review</strong><span>Room-level activity summaries</span></li></ol>
+      <div class="activity-classes" aria-label="Four activity classes"><span>Studying</span><span>Idle</span><span>Collaborative</span><span>Arriving / leaving</span></div>
+      <p class="research-evidence"><strong>108,116 label files</strong> · <strong>0.2774 mAP@0.5</strong><span>Validation result at epoch 19. By-video partitions reduce leakage.</span></p>
+    </div>
+  </section>
+  <section id="cv" class="section-shell section-space contact-layout" aria-labelledby="cv-heading">
+    <div class="contact-copy"><h2 id="cv-heading">Have something<br>in mind<span class="heading-period">?</span></h2><p>A project, a role, or a good technical problem. I’d like to hear about it.</p></div>
+    <div class="contact-list"><a class="contact-email" href="mailto:oslecbuisan613@gmail.com"><span>Write to me</span><strong>oslecbuisan613<wbr>@gmail.com</strong><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><div class="contact-actions"><a class="button primary" href="Russel_Buisan_CV.pdf" download>Download CV <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg></a><a class="text-link" href="cv.html">Read CV online</a><a class="text-link" href="https://github.com/De1m0z" rel="noopener">GitHub</a></div></div>
+  </section>
+</main>
+<footer class="site-footer section-shell"><span>&copy; 2026 Russel Jhon C. Buisan</span><span>Updated October 6, 2026</span><a id="scroll-top" href="#top">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
 </html>

@@ -3,38 +3,39 @@
 BS Computer Science - Full-stack Software Engineer | Web APIs, Secure Web Systems & AI Integration
 Pikit, Cotabato, Philippines  
 GitHub: <https://github.com/De1m0z>  
-Email: <rjcbuisan@usm.edu.ph>  
+Email: <oslecbuisan613@gmail.com>\
 Contact: +63 920 633 1342  
 
 ## Profile
 
-Full-stack developer with a BS Computer Science background from the University of Southern Mindanao. I design and build secure, database-backed applications with API service layers, role-based access control (RBAC), real-time features, and computer vision integrations.
+Full-stack developer and BS Computer Science graduate, Cum Laude, from the University of Southern Mindanao. I design and build secure, database-backed applications with API service layers, role-based access control (RBAC), real-time features, and computer vision integrations.
 
 ## Education
 
 **Bachelor of Science in Computer Science**  
 University of Southern Mindanao, Kabacan, Cotabato  
-*2022 – Present*  
+*2022 - 2026*\
 Major: Computer Science  
+Latin honor: Cum Laude\
 Thesis: *A YOWOv2-Based Student Activity Detection Framework for Smart Academic Environment*  
 Thesis manuscript: April 2026
 
 **Senior High School**  
 Notre Dame of Kabacan Inc., Kabacan, Cotabato  
-*2020 – 2022*
+*2020 - 2022*
 
 **Junior High School**  
 Notre Dame of Pikit Inc., Pikit, Cotabato  
-*2016 – 2020*
+*2016 - 2020*
 
 **Elementary**  
 Pikit Central Elementary School, Pikit, Cotabato  
-*2008 – 2016*
+*2008 - 2016*
 
 ## Technical Skills
 
 - Frontend: React, Next.js, Vue 3, Pinia, TypeScript, Tailwind CSS, Radix/shadcn-style components, dashboards, kiosk UI, admin screens.
-- Backend: FastAPI, Laravel 12 (Sanctum, Reverb), Django, ASP.NET Core, REST APIs, service layers, schemas, controllers, authentication flows.
+- Backend: Node.js, Fastify, FastAPI, Laravel 12 (Sanctum, Reverb), Django, ASP.NET Core, REST APIs, service layers, schemas, controllers, authentication flows.
 - Databases and infrastructure: PostgreSQL, MS SQL Server, SQLite, Redis, Docker Compose, Alembic, SQLAlchemy, Entity Framework Core, migrations, seed scripts, MinIO/S3.
 - Machine learning / computer vision: YOWOv2 training notes, CVAT annotations, dataset validation, by-video partitioning, inference post-processing, InsightFace embeddings.
 - Security: RBAC, JWT cookies, CSRF protection, bcrypt, AES-GCM encryption, audit logs, rate limiting, authorized pentest process.
@@ -44,17 +45,25 @@ Pikit Central Elementary School, Pikit, Cotabato
 
 **Cybersecurity Researcher and Web Developer**  
 University Information Communication Technology Office (UICTO)  
-*June 2026 – Present*
-- Conduct authorized security assessments and vulnerability research on university systems.
-- Develop and maintain secure web applications and internal tools for university operations.
+*May - June 2026*
+- Conducted authorized security assessments and vulnerability research on university systems.
+- Developed and maintained secure web applications and internal tools for university operations.
 
 **On-the-job Training (OJT) Developer**  
 INFOSOFT, Matina, Davao City  
-*June 2025 – August 2025*
+*June 2025 - August 2025*
 - Gained industry experience in full-stack web development, participating in database schema design and writing clean backend APIs.
 - Debugged and styled client-facing interfaces, ensuring responsive layouts and proper interaction flows.
 
 ## Project Experience
+
+### HammerPulse
+
+Sole developer | Node.js, Fastify, React, TypeScript, PostgreSQL, Redis, Docker
+
+- Built Meta advertising data ingestion, historical imports, validation, and account-scoped warehouse reporting.
+- Developed reporting and creative workspaces, controlled client reports, and a read-only assistant grounded in permitted account data.
+- Implemented access boundaries, containerized runtime roles, background jobs, and automated checks.
 
 ### Cheen Tea Kiosk and API
 
@@ -105,8 +114,8 @@ OWASP process, Burp Suite, Ghidra, ATT&CK, CISA KEV, reporting
 
 ## Leadership & Organizations
 
-- **Socio-Cultural & Sports Chairperson**, University of Southern Mindanao (2025 – 2026)
-- **External Officer**, Philippine Society of Information Technology Students (PSITS) (2024 – 2025)
+- **Socio-Cultural & Sports Chairperson**, University of Southern Mindanao (2025 - 2026)
+- **External Officer**, Philippine Society of Information Technology Students (PSITS) (2024 - 2025)
 
 ## Public Links
 

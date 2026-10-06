@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RB">
-  <rect width="64" height="64" rx="12" fill="#2563eb"/>
-  <text x="32" y="39" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff">RB</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Russel Buisan">
+  <style>
+    path { fill: #2759d5; }
+    @media (prefers-color-scheme: dark) { path { fill: #9ab6ff; } }
+  </style>
+  <path d="M6 50 26 14h12L18 50Zm20 0 20-36h12L38 50Z"/>
 </svg>

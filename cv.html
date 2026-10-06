@@ -5,43 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Curriculum Vitae of Russel Jhon C. Buisan, Full-stack Software Engineer focused on web APIs, secure web systems, and AI integration.">
     <title>Russel Jhon C. Buisan - CV</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.svg?v=wordmark" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <script>
-      (function() {
-        const storedTheme = localStorage.getItem("theme");
-        if (storedTheme === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
-        } else {
-          document.documentElement.setAttribute("data-theme", "light");
-        }
-      })();
-    </script>
+    <script src="theme.js"></script>
   </head>
   <body class="cv-page">
-    <div class="page-grid-bg" aria-hidden="true"></div>
     <div class="cv-print-actions" aria-label="CV actions">
       <button type="button" id="cv-btn-print" class="button primary" onclick="window.print()">Print or save as PDF</button>
       <a class="button secondary" href="index.html">Back to portfolio</a>
       <a class="button secondary" href="case-studies.html">Case studies</a>
       <a class="button secondary" href="cv.md">Markdown version</a>
-      <button id="theme-toggle" class="button secondary theme-toggle" aria-label="Toggle dark mode" style="width:auto; padding:0 12px; height:36px; border-radius:6px; margin-left:auto;">
-        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">Theme</button>
     </div>
 
     <main class="cv-document">
       <header class="cv-top">
         <div>
-          <p class="eyebrow">Curriculum Vitae</p>
           <h1>Russel Jhon C. Buisan</h1>
           <p class="lead">Full-stack Software Engineer | Web APIs, Secure Web Systems & AI Integration</p>
         </div>
         <address class="cv-contact">
           <span>Pikit, Cotabato, Philippines</span>
-          <a href="mailto:rjcbuisan@usm.edu.ph">rjcbuisan@usm.edu.ph</a>
+          <a href="mailto:oslecbuisan613@gmail.com">oslecbuisan613@gmail.com</a>
           <span>+63 920 633 1342</span>
           <span>github.com/De1m0z</span>
         </address>
@@ -52,7 +37,7 @@
           <section class="cv-section-nested">
             <h2>Profile</h2>
             <p>
-              Full-stack developer with a BS Computer Science background from the University of Southern Mindanao. I design and build secure, database-backed applications with API service layers, role-based access control (RBAC), real-time features, and computer vision integrations.
+              BS Computer Science graduate, Cum Laude, building secure web applications, reporting platforms, and computer vision tools. Sole developer of HammerPulse, from data ingestion to client reporting.
             </p>
           </section>
 
@@ -61,19 +46,19 @@
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>Cybersecurity Researcher &amp; Web Developer</h3>
-                <span class="cv-date">June 2026 – Present</span>
+                <span class="cv-date">May - June 2026</span>
               </div>
               <p class="cv-subheader">University Information Communication Technology Office (UICTO)</p>
               <ul>
-                <li>Conduct authorized security assessments and vulnerability research on university systems.</li>
-                <li>Develop and maintain secure web applications and internal tools for university operations.</li>
+                <li>Conducted authorized security assessments and vulnerability research on university systems.</li>
+                <li>Developed and maintained secure web applications and internal tools for university operations.</li>
               </ul>
             </div>
 
             <div class="cv-item">
               <div class="cv-item-header">
                 <h3>On-the-job Training (OJT) Developer</h3>
-                <span class="cv-date">June 2025 – August 2025</span>
+                <span class="cv-date">June 2025 - August 2025</span>
               </div>
               <p class="cv-subheader">INFOSOFT, Matina, Davao City</p>
               <ul>
@@ -85,75 +70,33 @@
 
           <section class="cv-section-nested">
             <h2>Project Experience</h2>
-            
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Cheen Tea Kiosk and API</h3>
-                <span class="cv-tech">Next.js, React, Tailwind, Laravel 12, Sanctum, Reverb</span>
-              </div>
-              <ul>
-                <li>Developed customer ordering, cashier, kitchen display, cashier dashboard, and admin dashboard interfaces.</li>
-                <li>Built real-time order queueing and notifications using Laravel Reverb (WebSockets) and Sanctum authentication.</li>
-                <li>Connected API routes for categories, modifiers, loyalty rewards, image uploads, and dashboard reports.</li>
-              </ul>
+              <div class="cv-item-header"><h3>HammerPulse</h3><span class="cv-tech">Sole developer | Node.js, Fastify, React, TypeScript, PostgreSQL, Redis, Docker</span></div>
+              <ul><li>Built Meta data ingestion, validated reporting, account-scoped workspaces, client reports, and a read-only assistant.</li></ul>
             </div>
-
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>USM Agapay Service Desk</h3>
-                <span class="cv-tech">Laravel, Vue 3, Pinia, Sanctum, Reverb, SQL Server, Docker</span>
-              </div>
-              <ul>
-                <li>Designed a university service-ticket process supporting ticket claims, office transfers, comments, and queues.</li>
-                <li>Built role-aware Vue 3 routing and Sanctum middleware boundaries for clients, staff, and office admins.</li>
-                <li>Containerized the environment using Docker Compose with MS SQL Server, Redis, S3-compatible MinIO, and queue workers.</li>
-              </ul>
+              <div class="cv-item-header"><h3>ClassVision: Student Activity Detection</h3><span class="cv-tech">Python, PyTorch | YOWOv2, CVAT, computer vision research</span></div>
+              <ul><li>Prepared 108,116 label files and 1.95M boxes with by-video splits; documented training, evaluation, and privacy boundaries.</li></ul>
             </div>
-
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Gym Face Management / RAK Fitness</h3>
-                <span class="cv-tech">Django, FastAPI, React, PostgreSQL, InsightFace, pytest</span>
-              </div>
-              <ul>
-                <li>Built gym operations flows for member registration, billing plans, payments, and attendance reports.</li>
-                <li>Integrated local face recognition check-in using InsightFace buffalo_l embeddings and manual fallback entry.</li>
-                <li>Prepared intelligent-check-in design notes, scanner check-in architecture, and automated verification tests.</li>
-              </ul>
+              <div class="cv-item-header"><h3>USMctf Platform</h3><span class="cv-tech">Next.js, Laravel, FastAPI | PostgreSQL, Redis, Docker Compose</span></div>
+              <ul><li>Built authentication, challenge delivery, scoring, and admin tools across a documented multi-service platform.</li></ul>
             </div>
-
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>ClassVision: YOWOv2 Student Activity Detection</h3>
-                <span class="cv-tech">Python, YOWOv2, CVAT, PyTorch, Research Docs</span>
-              </div>
-              <ul>
-                <li>Developed a classroom video analytics framework for activity detection (studying, collaborative, idle, arriving/leaving).</li>
-                <li>Curated and validated CCTV-derived datasets consisting of 108,116 label files, 1.95M annotated bounding boxes.</li>
-                <li>Established privacy-by-design boundaries by strictly omitting facial recognition and student profiling.</li>
-              </ul>
+              <div class="cv-item-header"><h3>Cheen Tea Kiosk and API</h3><span class="cv-tech">Next.js, Laravel | Sanctum, Reverb, MySQL</span></div>
+              <ul><li>Built customer ordering, cashier and kitchen queues, loyalty rewards, product management, and sales reporting.</li></ul>
             </div>
-
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>USMctf Platform</h3>
-                <span class="cv-tech">Next.js, Laravel, FastAPI, PostgreSQL, Redis, Docker Compose</span>
-              </div>
-              <ul>
-                <li>Created a full-stack CTF learning platform featuring team management, user profiles, and real-time challenge scoring.</li>
-                <li>Orchestrated a decoupled multi-service architecture using Docker Compose, Redis, and PostgreSQL.</li>
-              </ul>
+              <div class="cv-item-header"><h3>USM Agapay Service Desk</h3><span class="cv-tech">Laravel, Vue 3 | Pinia, SQL Server, RBAC</span></div>
+              <ul><li>Developed service requests, office routing, staff queues, transfers, attachments, notifications, and audit tracking.</li></ul>
             </div>
-
             <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>University Pentest and Research Workspace</h3>
-                <span class="cv-tech">OWASP, Burp Suite, Ghidra, ATT&CK, CISA KEV</span>
-              </div>
-              <ul>
-                <li>Organized an authorized, non-destructive pentesting workspace using Burp Suite and Ghidra for campus systems.</li>
-                <li>Documented threat scenarios, proof-of-concept (PoC) safety guardrails, and prepared remediation handoffs.</li>
-              </ul>
+              <div class="cv-item-header"><h3>RAK Fitness / Gym Face Management</h3><span class="cv-tech">Django, FastAPI, React | InsightFace, member records, billing</span></div>
+              <ul><li>Built membership, payments, attendance reports, and local face check-in with consent checks and manual fallback.</li></ul>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header"><h3>University Pentest and Research Workspace</h3><span class="cv-tech">Authorized testing | OWASP, Burp Suite, Ghidra</span></div>
+              <ul><li>Organized written scope, safe reproduction notes, evidence, and remediation handoffs for university security research.</li></ul>
             </div>
           </section>
         </div>
@@ -164,23 +107,23 @@
             <div class="cv-item-nested">
               <h3>BS in Computer Science</h3>
               <p class="cv-institution">University of Southern Mindanao</p>
-              <p class="cv-date-side">2022 – Present</p>
+              <p class="cv-date-side">2022 - 2026, Cum Laude</p>
               <p class="cv-thesis"><strong>Thesis:</strong> YOWOv2-Based Student Activity Detection Framework</p>
             </div>
             <div class="cv-item-nested">
               <h3>Senior High School</h3>
               <p class="cv-institution">Notre Dame of Kabacan Inc.</p>
-              <p class="cv-date-side">2020 – 2022</p>
+              <p class="cv-date-side">2020 - 2022</p>
             </div>
             <div class="cv-item-nested">
               <h3>Junior High School</h3>
               <p class="cv-institution">Notre Dame of Pikit Inc.</p>
-              <p class="cv-date-side">2016 – 2020</p>
+              <p class="cv-date-side">2016 - 2020</p>
             </div>
             <div class="cv-item-nested">
               <h3>Elementary</h3>
               <p class="cv-institution">Pikit Central Elementary School</p>
-              <p class="cv-date-side">2008 – 2016</p>
+              <p class="cv-date-side">2008 - 2016</p>
             </div>
           </section>
 
@@ -188,7 +131,7 @@
             <h2>Technical Skills</h2>
             <div class="cv-skills-block">
               <p><strong>Languages:</strong> TypeScript, JavaScript, Python, PHP, C#</p>
-              <p><strong>Frameworks:</strong> React, Next.js, Vue 3, FastAPI, Laravel 12, Django, ASP.NET Core</p>
+              <p><strong>Frameworks:</strong> Node.js, Fastify, React, Next.js, Vue 3, FastAPI, Laravel, Django, ASP.NET Core</p>
               <p><strong>Databases/DevOps:</strong> PostgreSQL, SQL Server, SQLite, Redis, Docker Compose, Alembic, MinIO/S3</p>
               <p><strong>Security:</strong> JWT, CSRF, bcrypt, AES-GCM, RBAC, Burp Suite, Ghidra, OWASP</p>
               <p><strong>AI & CV:</strong> YOWOv2, InsightFace, PyTorch, CVAT</p>
@@ -200,12 +143,12 @@
             <div class="cv-item-nested">
               <h3>Socio-Cultural &amp; Sports Chairperson</h3>
               <p class="cv-institution">University of Southern Mindanao</p>
-              <p class="cv-date-side">2025 – 2026</p>
+              <p class="cv-date-side">2025 - 2026</p>
             </div>
             <div class="cv-item-nested">
               <h3>External Officer</h3>
               <p class="cv-institution">PSITS</p>
-              <p class="cv-date-side">2024 – 2025</p>
+              <p class="cv-date-side">2024 - 2025</p>
             </div>
           </section>
 

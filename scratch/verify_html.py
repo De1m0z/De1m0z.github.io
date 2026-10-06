@@ -29,14 +29,17 @@ def test_cv_html():
 
     # Check elements
     assert "+63 920 633 1342" in full_text, "Phone number missing in HTML"
-    assert "rjcbuisan@usm.edu.ph" in full_text, "Email missing in HTML"
+    assert "oslecbuisan613@gmail.com" in full_text, "Email missing in HTML"
     assert "INFOSOFT" in full_text, "OJT missing in HTML"
+    assert "HammerPulse" in full_text and "Sole developer" in full_text, "HammerPulse role missing"
+    assert "May - June 2026" in full_text, "Published UICTO dates changed"
+    assert "Cum Laude" in full_text, "Graduation honors missing"
     assert "Socio-Cultural & Sports Chairperson" in full_text, "Chairperson role missing in HTML"
     assert "External Officer" in full_text, "PSITS role missing in HTML"
     assert "Thesis Defense Scheduler" not in full_text, "Thesis Defense Scheduler should be removed"
 
     # Check links
-    assert "rjcbuisan@usm.edu.ph" in parser.hrefs or "mailto:rjcbuisan@usm.edu.ph" in parser.hrefs or any("rjcbuisan@usm.edu.ph" in h for h in parser.hrefs), "Email link missing"
+    assert "oslecbuisan613@gmail.com" in parser.hrefs or "mailto:oslecbuisan613@gmail.com" in parser.hrefs or any("oslecbuisan613@gmail.com" in h for h in parser.hrefs), "Email link missing"
     assert "https://github.com/De1m0z/chantea-kiosk" in parser.hrefs, "Cheen tea link missing"
 
     print("cv.html Verification: PASS")
